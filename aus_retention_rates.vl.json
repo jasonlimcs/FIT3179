@@ -9,6 +9,13 @@
   },
   "background": "#cceeff",
 
+  "title": {
+    "text": "Apparent Retention Rates in Australia by State, 2011-2024",
+    "anchor": "middle",
+    "fontSize": 18,
+    "font": "sans-serif"
+  },
+  
   "params": [
     {
       "name": "pYear",

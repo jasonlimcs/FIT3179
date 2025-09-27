@@ -1,4 +1,4 @@
-var vg_1 = "aus_rentention_rates.vl.json";
+var vg_1 = "aus_rentention_rates.vg.json";
 vegaEmbed("#map", vg_1).then(function(result) {
 // Access the Vega view instance
 (https://vega.github.io/vega/docs/api/view/) as result.view

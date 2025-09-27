@@ -1,0 +1,240 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v6.json",
+  "background": "#cceeff",
+  "padding": 5,
+  "width": 600,
+  "height": 600,
+  "style": "view",
+  "data": [
+    {
+      "name": "source_0",
+      "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/australia.topojson",
+      "format": {"type": "topojson", "feature": "ne_110m_graticules_5"}
+    },
+    {
+      "name": "source_2",
+      "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv",
+      "format": {"type": "csv", "delimiter": ","}
+    },
+    {
+      "name": "source_1",
+      "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/australia.topojson",
+      "format": {"type": "topojson", "feature": "STE_2016_AUST", "parse": {}},
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "datum[\"properties\"] && datum[\"properties\"][\"STE_NAME16\"]",
+          "as": "properties.STE_NAME16"
+        },
+        {
+          "type": "formula",
+          "expr": "datum.properties.STE_CODE16 + '|' + pYear + '|' + pCohort + '|' + pAffil + '|' + pSex",
+          "as": "join_key"
+        },
+        {
+          "type": "lookup",
+          "from": "source_2",
+          "key": "join_key",
+          "fields": ["join_key"],
+          "values": [
+            "state_name",
+            "year",
+            "affiliation",
+            "sex",
+            "cohort",
+            "arr_all",
+            "arr_indigenous",
+            "arr_non_indigenous"
+          ]
+        },
+        {
+          "type": "fold",
+          "fields": ["arr_all", "arr_indigenous", "arr_non_indigenous"],
+          "as": ["measure", "arr_value"]
+        },
+        {"type": "filter", "expr": "datum.measure == pMeasure"},
+        {
+          "type": "formula",
+          "expr": "toNumber(datum.arr_value)",
+          "as": "arr_value_num"
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"arr_value_num\"]) && isFinite(+datum[\"arr_value_num\"])"
+        }
+      ]
+    },
+    {
+      "name": "source_3",
+      "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/state_labels.csv",
+      "format": {"type": "csv", "delimiter": ","},
+      "transform": [
+        {"type": "filter", "expr": "datum.STE_NAME16 != 'Other Territories'"},
+        {
+          "type": "geojson",
+          "fields": ["centroid_lon", "centroid_lat"],
+          "signal": "layer_2_geojson_0"
+        },
+        {
+          "type": "geopoint",
+          "projection": "projection",
+          "fields": ["centroid_lon", "centroid_lat"],
+          "as": ["layer_2_x", "layer_2_y"]
+        }
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "size": {"signal": "[width, height]"},
+      "fit": {
+        "signal": "[data('source_0'), data('source_1'), layer_2_geojson_0]"
+      }
+    }
+  ],
+  "signals": [
+    {
+      "name": "pYear",
+      "value": "2024",
+      "bind": {
+        "input": "range",
+        "min": 2011,
+        "max": 2024,
+        "step": 1,
+        "name": "Year: "
+      }
+    },
+    {
+      "name": "pCohort",
+      "value": "Year 10 - Year 12",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Year 7/8 - Year 10",
+          "Year 7/8 - Year 11",
+          "Year 7/8 - Year 12",
+          "Year 10 - Year 12"
+        ],
+        "name": "Cohort: "
+      }
+    },
+    {
+      "name": "pAffil",
+      "value": "All affiliations",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All affiliations",
+          "Government",
+          "Non-Government",
+          "Catholic",
+          "Independent"
+        ],
+        "name": "Sector: "
+      }
+    },
+    {
+      "name": "pSex",
+      "value": "Persons",
+      "bind": {
+        "input": "select",
+        "options": ["Persons", "Male", "Female"],
+        "name": "Sex: "
+      }
+    },
+    {
+      "name": "pMeasure",
+      "value": "arr_all",
+      "bind": {
+        "input": "select",
+        "options": ["arr_all", "arr_indigenous", "arr_non_indigenous"],
+        "labels": [
+          "All",
+          "Aboriginal & Torres Strait Islander",
+          "Non-Indigenous"
+        ],
+        "name": "Measure: "
+      }
+    }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_marks",
+      "type": "shape",
+      "style": ["geoshape"],
+      "from": {"data": "source_0"},
+      "encode": {
+        "update": {
+          "strokeWidth": {"value": 0.6},
+          "fill": {"value": "transparent"},
+          "stroke": {"value": "#bbb"},
+          "ariaRoleDescription": {"value": "geoshape"}
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}]
+    },
+    {
+      "name": "layer_1_marks",
+      "type": "shape",
+      "style": ["geoshape"],
+      "from": {"data": "source_1"},
+      "encode": {
+        "update": {
+          "strokeWidth": {"value": 1},
+          "fill": {"scale": "color", "field": "arr_value_num"},
+          "stroke": {"value": "#333"},
+          "tooltip": {
+            "signal": "{\"State/Territory\": isValid(datum[\"properties.STE_NAME16\"]) ? datum[\"properties.STE_NAME16\"] : \"\"+datum[\"properties.STE_NAME16\"], \"ARR\": format(datum[\"arr_value\"], \".1f\"), \"Sector\": isValid(datum[\"affiliation\"]) ? datum[\"affiliation\"] : \"\"+datum[\"affiliation\"], \"Sex\": isValid(datum[\"sex\"]) ? datum[\"sex\"] : \"\"+datum[\"sex\"], \"Cohort\": isValid(datum[\"cohort\"]) ? datum[\"cohort\"] : \"\"+datum[\"cohort\"], \"Year\": isValid(datum[\"year\"]) ? datum[\"year\"] : \"\"+datum[\"year\"]}"
+          },
+          "ariaRoleDescription": {"value": "geoshape"},
+          "description": {
+            "signal": "\"Capped ARR %: \" + (format(datum[\"arr_value_num\"], \"\")) + \"; State/Territory: \" + (isValid(datum[\"properties.STE_NAME16\"]) ? datum[\"properties.STE_NAME16\"] : \"\"+datum[\"properties.STE_NAME16\"]) + \"; ARR: \" + (format(datum[\"arr_value\"], \".1f\")) + \"; Sector: \" + (isValid(datum[\"affiliation\"]) ? datum[\"affiliation\"] : \"\"+datum[\"affiliation\"]) + \"; Sex: \" + (isValid(datum[\"sex\"]) ? datum[\"sex\"] : \"\"+datum[\"sex\"]) + \"; Cohort: \" + (isValid(datum[\"cohort\"]) ? datum[\"cohort\"] : \"\"+datum[\"cohort\"]) + \"; Year: \" + (isValid(datum[\"year\"]) ? datum[\"year\"] : \"\"+datum[\"year\"])"
+          }
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}]
+    },
+    {
+      "name": "layer_2_marks",
+      "type": "text",
+      "style": ["text"],
+      "from": {"data": "source_3"},
+      "encode": {
+        "update": {
+          "fontSize": {"value": 12},
+          "fontWeight": {"value": "bold"},
+          "fill": {"value": "black"},
+          "description": {
+            "signal": "\"centroid_lon: \" + (format(datum[\"centroid_lon\"], \"\")) + \"; centroid_lat: \" + (format(datum[\"centroid_lat\"], \"\")) + \"; STE_NAME16: \" + (isValid(datum[\"STE_NAME16\"]) ? datum[\"STE_NAME16\"] : \"\"+datum[\"STE_NAME16\"])"
+          },
+          "x": {"field": "layer_2_x"},
+          "y": {"field": "layer_2_y"},
+          "text": {
+            "signal": "isValid(datum[\"STE_NAME16\"]) ? datum[\"STE_NAME16\"] : \"\"+datum[\"STE_NAME16\"]"
+          },
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "linear",
+      "domain": {"data": "source_1", "field": "arr_value_num"},
+      "range": {"scheme": "reds"},
+      "interpolate": "hcl",
+      "zero": false
+    }
+  ],
+  "legends": [
+    {
+      "title": "Capped ARR %",
+      "fill": "color",
+      "gradientLength": {"signal": "clamp(height, 64, 200)"}
+    }
+  ],
+  "config": {"style": {"cell": {"stroke": "transparent"}}}
+}

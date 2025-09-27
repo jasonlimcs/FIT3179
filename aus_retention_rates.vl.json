@@ -15,7 +15,6 @@
     "fontSize": 18,
     "font": "sans-serif"
   },
-  
   "params": [
     {
       "name": "pYear",
@@ -48,6 +47,7 @@
       "value": "Persons",
       "bind": { "input": "select",
         "options": ["Persons","Male","Female"],
+        "labels": ["All", "Male", "Female"],
         "name": "Sex: "
       }
     },

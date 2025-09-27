@@ -2,11 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 600,
   "height": 600,
-  "config": {
-    "view": {
-      "stroke": "transparent"
-    }
-  },
   "background": "#cceeff",
 
   "title": {
@@ -121,7 +116,9 @@
     {
       "data": {"url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/state_labels.csv"},
       "transform": [
-    {"filter": "datum.STE_NAME16 != 'Other Territories'"}
+    {"filter": "datum.STE_NAME16 != 'Other Territories'"},
+    {"filter": "datum.STE_NAME16 != 'Australian Capital Territory'"}
+    
   ],
       "mark": {"type": "text", "fontSize": 12, "color": "black", "fontWeight": "bold"},
       "encoding": {

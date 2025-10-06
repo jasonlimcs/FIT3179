@@ -10,17 +10,6 @@
 
   "params": [
     {
-      "name": "pYear",
-      "value": "2024",
-      "bind": {
-        "input": "range",
-        "min": 2011,
-        "max": 2024,
-        "step": 1,
-        "name": "Year: "
-      }
-    },
-    {
       "name": "pCohort",
       "value": "Year 10 - Year 12",
       "bind": {
@@ -80,45 +69,40 @@
           "encoding": { "stroke": { "value": "#bbb" } }
         },
         {
-          "data": {
-            "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/australia.topojson",
-            "format": { "type": "topojson", "feature": "STE_2016_AUST" }
-          },
+          "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv" },
           "transform": [
-            {
-              "calculate": "datum.properties.STE_CODE16 + '|' + pYear + '|' + pCohort + '|' + pAffil + '|' + pSex",
-              "as": "join_key"
-            },
-            {
-              "lookup": "join_key",
-              "from": {
-                "data": {
-                  "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv"
-                },
-                "key": "join_key",
-                "fields": ["state_name", "year", "affiliation", "sex", "cohort", "arr_all", "arr_indigenous", "arr_non_indigenous"]
-              }
-            },
+            { "filter": "datum.cohort == pCohort && datum.affiliation == pAffil && datum.sex == pSex" },
             { "fold": ["arr_all", "arr_indigenous", "arr_non_indigenous"], "as": ["measure", "arr_value"] },
             { "filter": "datum.measure == pMeasure" },
-            { "calculate": "toNumber(datum.arr_value)", "as": "arr_value_num" }
+            { "calculate": "toNumber(datum.year)", "as": "YearNum" },
+            { "calculate": "toNumber(datum.arr_value)", "as": "ARR" },
+            { "filter": { "param": "yearBrush" } },
+            { "aggregate": [{ "op": "mean", "field": "ARR", "as": "ARR_Avg" }], "groupby": ["state_name"] },
+            {
+              "lookup": "state_name",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/australia.topojson",
+                  "format": { "type": "topojson", "feature": "STE_2016_AUST" }
+                },
+                "key": "properties.STE_NAME16",
+                "fields": ["geometry"]
+              }
+            }
           ],
           "mark": { "type": "geoshape", "filled": true, "strokeWidth": 1 },
           "encoding": {
+            "shape": { "field": "geometry", "type": "geojson" },
             "color": {
-              "field": "arr_value_num",
+              "field": "ARR_Avg",
               "type": "quantitative",
-              "title": "Capped ARR %",
+              "title": "Average ARR (%)",
               "scale": { "scheme": "reds" }
             },
             "stroke": { "value": "#333" },
             "tooltip": [
-              { "field": "properties.STE_NAME16", "title": "State/Territory" },
-              { "field": "arr_value", "title": "ARR", "format": ".1f" },
-              { "field": "affiliation", "title": "Sector" },
-              { "field": "sex", "title": "Sex" },
-              { "field": "cohort", "title": "Cohort" },
-              { "field": "year", "title": "Year" }
+              { "field": "state_name", "title": "State/Territory" },
+              { "field": "ARR_Avg", "title": "Avg ARR (%)", "format": ".1f" }
             ]
           }
         },
@@ -154,6 +138,10 @@
           ],
           "params": [
             {
+              "name": "yearBrush",
+              "select": { "type": "interval", "encodings": ["x"] }
+            },
+            {
               "name": "stateSel",
               "select": { "type": "point", "fields": ["state_name"] },
               "bind": "legend"
@@ -173,6 +161,24 @@
               { "field": "affiliation", "title": "Sector" },
               { "field": "sex", "title": "Sex" }
             ]
+          }
+        },
+        {
+          "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv" },
+          "transform": [
+            { "filter": "datum.cohort == pCohort && datum.affiliation == pAffil && datum.sex == pSex" },
+            { "fold": ["arr_all", "arr_indigenous", "arr_non_indigenous"], "as": ["measure", "arr_value"] },
+            { "filter": "datum.measure == pMeasure" },
+            { "calculate": "toNumber(datum.year)", "as": "YearNum" },
+            { "calculate": "toNumber(datum.arr_value)", "as": "ARR" },
+            { "filter": { "param": "yearBrush" } }
+          ],
+          "mark": { "type": "line", "strokeWidth": 4 },
+          "encoding": {
+            "x": { "field": "YearNum", "type": "quantitative", "title": "Year", "scale": { "nice": false }, "axis": { "format": "d" } },
+            "y": { "field": "ARR", "type": "quantitative", "title": "Retention rate (%)" },
+            "color": { "field": "state_name", "type": "nominal", "legend": null },
+            "opacity": { "condition": { "param": "stateSel", "empty": true, "value": 1 }, "value": 0.2 }
           }
         },
 

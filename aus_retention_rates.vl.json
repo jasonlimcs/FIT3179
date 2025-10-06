@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "background": "#cceeff",
   "title": {
     "text": "Apparent Retention Rates (ARR) in Australia by State, 2011-2024",
     "anchor": "middle",
@@ -61,11 +60,21 @@
       "layer": [
         {
           "data": {
-            "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/australia.topojson",
+            "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/output2.topojson", 
+            "format": { "type": "topojson", "feature": "ne_10m_ocean" }
+          },
+          "mark": { "type": "geoshape", "filled": true, "strokeWidth": 0.5 },
+          "encoding": {
+            "color": { "value": "#cce6ff" }
+          }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/output2.topojson",
             "format": { "type": "topojson", "feature": "ne_110m_graticules_5" }
           },
           "mark": { "type": "geoshape", "filled": false, "strokeWidth": 0.6 },
-          "encoding": { "stroke": { "value": "#bbb" } }
+          "encoding": { "stroke": { "value": "#636363" } }
         },
         {
           "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv" },
@@ -81,7 +90,7 @@
               "lookup": "state_name",
               "from": {
                 "data": {
-                  "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/australia.topojson",
+                  "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/output2.topojson",
                   "format": { "type": "topojson", "feature": "STE_2016_AUST" }
                 },
                 "key": "properties.STE_NAME16",
@@ -118,6 +127,7 @@
             "text": { "field": "STE_NAME16" }
           }
         }
+        
       ]
     },
 

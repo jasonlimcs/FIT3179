@@ -146,7 +146,7 @@
               "bind": "legend"
             }
           ],
-          "mark": { "type": "line", "strokeWidth": 2 },
+          "mark": { "type": "line", "strokeWidth": 1 },
           "encoding": {
             "x": { "field": "YearNum", "type": "quantitative", "title": "Year", "scale": { "nice": false }, "axis": { "format": "d" } },
             "y": { "field": "ARR", "type": "quantitative", "title": "Retention rate (%)" },
@@ -178,7 +178,7 @@
             { "calculate": "toNumber(datum.arr_value)", "as": "ARR" },
             { "filter": { "param": "yearBrush" } }
           ],
-          "mark": { "type": "line", "strokeWidth": 4 },
+          "mark": { "type": "line", "strokeWidth": 2 },
           "encoding": {
             "x": { "field": "YearNum", "type": "quantitative", "title": "Year", "scale": { "nice": false }, "axis": { "format": "d" } },
             "y": { "field": "ARR", "type": "quantitative", "title": "Retention rate (%)" },
@@ -200,7 +200,10 @@
           "mark": { "type": "line", "strokeDash": [6, 4], "opacity": 0.9, "color": "black" },
           "encoding": {
             "x": { "field": "YearNum", "type": "quantitative" },
-            "y": { "field": "NatAvg", "type": "quantitative" }
+            "y": { "field": "NatAvg", "type": "quantitative" },
+            "tooltip": [
+              { "field": "NatAvg", "title": "National Average", "format": ".1f" }
+            ]
           }
         },
 
@@ -225,18 +228,19 @@
         },
 
         {
-          "data": { "values": [{ "YearNum": 2020 }] },
-          "mark": { "type": "rule", "stroke": "black", "strokeDash": [3, 3] },
-          "encoding": { "x": { "field": "YearNum", "type": "quantitative" } }
-        },
-        {
-          "data": { "values": [{ "YearNum": 2020, "label": "COVID-19 disruption" }] },
+          "data": { "values": [{ "YearNum": 2020, "label": "COVID-19 Disruption" }] },
           "mark": { "type": "text", "dx": 6, "dy": -110, "fontSize": 11, "fontStyle": "italic", "color": "black" },
           "encoding": {
             "x": { "field": "YearNum", "type": "quantitative" },
             "y": { "value": 100 },
             "text": { "field": "label" }
           }
+        },
+
+        {
+          "data": { "values": [{ "YearNum": 2020 }] },
+          "mark": { "type": "rule", "stroke": "black", "strokeDash": [3, 3] },
+          "encoding": { "x": { "field": "YearNum", "type": "quantitative" } }
         }
       ]
     }

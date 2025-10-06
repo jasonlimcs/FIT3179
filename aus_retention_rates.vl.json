@@ -52,7 +52,6 @@
         "name": "Measure: "
       }
     }
-    
   ],
 
   "vconcat": [
@@ -151,7 +150,12 @@
           "encoding": {
             "x": { "field": "YearNum", "type": "quantitative", "title": "Year", "scale": { "nice": false }, "axis": { "format": "d" } },
             "y": { "field": "ARR", "type": "quantitative", "title": "Retention rate (%)" },
-            "color": { "field": "state_name", "type": "nominal", "title": "Click legend to focus" },
+            "color": {
+              "field": "state_name",
+              "type": "nominal",
+              "title": "Click legend to focus",
+              "legend": { "orient": "right" }
+            },
             "opacity": { "condition": { "param": "stateSel", "empty": true, "value": 1 }, "value": 0.2 },
             "tooltip": [
               { "field": "state_name", "title": "State/Territory" },
@@ -163,6 +167,7 @@
             ]
           }
         },
+
         {
           "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv" },
           "transform": [
@@ -177,7 +182,7 @@
           "encoding": {
             "x": { "field": "YearNum", "type": "quantitative", "title": "Year", "scale": { "nice": false }, "axis": { "format": "d" } },
             "y": { "field": "ARR", "type": "quantitative", "title": "Retention rate (%)" },
-            "color": { "field": "state_name", "type": "nominal", "legend": null },
+            "color": { "field": "state_name", "type": "nominal"},
             "opacity": { "condition": { "param": "stateSel", "empty": true, "value": 1 }, "value": 0.2 }
           }
         },
@@ -206,7 +211,7 @@
         },
         {
           "data": { "values": [{ "YearNum": 2020, "label": "COVID-19 disruption" }] },
-          "mark": { "type": "text", "dx": 6, "dy": -140, "fontSize": 11, "fontStyle": "italic", "color": "black" },
+          "mark": { "type": "text", "dx": 6, "dy": -110, "fontSize": 11, "fontStyle": "italic", "color": "black" },
           "encoding": {
             "x": { "field": "YearNum", "type": "quantitative" },
             "y": { "value": 100 },

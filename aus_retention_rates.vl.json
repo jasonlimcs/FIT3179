@@ -205,6 +205,26 @@
         },
 
         {
+          "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv" },
+          "transform": [
+            { "filter": "datum.cohort == pCohort && datum.affiliation == pAffil && datum.sex == pSex" },
+            { "fold": ["arr_all", "arr_indigenous", "arr_non_indigenous"], "as": ["measure", "arr_value"] },
+            { "filter": "datum.measure == pMeasure" },
+            { "calculate": "toNumber(datum.year)", "as": "YearNum" },
+            { "calculate": "toNumber(datum.arr_value)", "as": "ARR" },
+            { "aggregate": [{ "op": "mean", "field": "ARR", "as": "NatAvg" }], "groupby": ["YearNum"] },
+            { "window": [{ "op": "row_number", "as": "rn" }], "sort": [{ "field": "YearNum", "order": "descending" }] },
+            { "filter": "datum.rn == 1" }
+          ],
+          "mark": { "type": "text", "dx": -40, "dy": 12, "fontSize": 12, "fontStyle": "italic", "color": "black" },
+          "encoding": {
+            "x": { "field": "YearNum", "type": "quantitative" },
+            "y": { "field": "NatAvg", "type": "quantitative" },
+            "text": { "value": "National average" }
+          }
+        },
+
+        {
           "data": { "values": [{ "YearNum": 2020 }] },
           "mark": { "type": "rule", "stroke": "black", "strokeDash": [3, 3] },
           "encoding": { "x": { "field": "YearNum", "type": "quantitative" } }

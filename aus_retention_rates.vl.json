@@ -1,132 +1,213 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 600,
-  "height": 600,
   "background": "#cceeff",
-
   "title": {
     "text": "Apparent Retention Rates (ARR) in Australia by State, 2011-2024",
     "anchor": "middle",
     "fontSize": 18,
     "font": "sans-serif"
   },
+
   "params": [
     {
       "name": "pYear",
       "value": "2024",
-      "bind": { "input": "range",
-            "min": 2011,
-            "max": 2024,
-            "step": 1,
+      "bind": {
+        "input": "range",
+        "min": 2011,
+        "max": 2024,
+        "step": 1,
         "name": "Year: "
       }
     },
     {
       "name": "pCohort",
       "value": "Year 10 - Year 12",
-      "bind": { "input": "select",
-        "options": ["Year 7/8 - Year 10","Year 7/8 - Year 11","Year 7/8 - Year 12","Year 10 - Year 12"],
+      "bind": {
+        "input": "select",
+        "options": [
+          "Year 7/8 - Year 10",
+          "Year 7/8 - Year 11",
+          "Year 7/8 - Year 12",
+          "Year 10 - Year 12"
+        ],
         "name": "Cohort: "
       }
     },
     {
       "name": "pAffil",
       "value": "All affiliations",
-      "bind": { "input": "select",
-        "options": ["All affiliations","Government","Non-Government","Catholic","Independent"],
+      "bind": {
+        "input": "select",
+        "options": ["All affiliations", "Government", "Non-Government", "Catholic", "Independent"],
         "name": "Sector: "
       }
     },
     {
       "name": "pSex",
       "value": "Persons",
-      "bind": { "input": "select",
-        "options": ["Persons","Male","Female"],
+      "bind": {
+        "input": "select",
+        "options": ["Persons", "Male", "Female"],
         "labels": ["All", "Male", "Female"],
         "name": "Sex: "
       }
     },
-    { "name": "pMeasure", "value": "arr_all",
-      "bind": { "input": "select", "options": ["arr_all","arr_indigenous","arr_non_indigenous"], "labels": ["All","Aboriginal & Torres Strait Islander","Non-Indigenous"], "name": "Measure: " } }
-  ],
-
-  "layer": [
     {
-      "data": {
-        "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/australia.topojson",
-        "format": { "type": "topojson", "feature": "ne_110m_graticules_5" }
-      },
-      "mark": { "type": "geoshape", "filled": false, "strokeWidth": 0.6},
-      "encoding": { "stroke": { "value": "#bbb" } }
-    },
-
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/australia.topojson",
-        "format": {
-          "type": "topojson",
-          "feature": "STE_2016_AUST"
-        }
-      },
-      "transform": [
-        { "calculate":
-            "datum.properties.STE_CODE16 + '|' + pYear + '|' + pCohort + '|' + pAffil + '|' + pSex",
-          "as": "join_key"
-        },
-        {
-          "lookup": "join_key",
-          "from": {
-            "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv" },
-            "key": "join_key",
-            "fields": ["state_name","year","affiliation","sex","cohort","arr_all","arr_indigenous","arr_non_indigenous"]
-          }
-        },
-        { "fold": ["arr_all","arr_indigenous","arr_non_indigenous"],
-          "as": ["measure", "arr_value"]
-        },
-        { "filter": "datum.measure == pMeasure" },
-        { "calculate": "toNumber(datum.arr_value)", "as": "arr_value_num" }
-      ],
-      "mark": {
-        "type": "geoshape",
-        "filled": true,
-        "strokeWidth": 1
-      },
-      "encoding": {
-        "color": {
-          "field": "arr_value_num",
-          "type": "quantitative",
-          "title": "Capped ARR %",
-          "scale": {
-            "scheme": "reds"
-          }
-        },
-        "stroke": {
-          "value": "#333"
-        },
-        "tooltip": [ 
-          { "field": "properties.STE_NAME16", "title": "State/Territory" }, 
-          { "field": "arr_value", "title": "ARR", "format": ".1f" }, 
-          { "field": "affiliation", "title": "Sector" }, 
-          { "field": "sex", "title": "Sex" }, 
-          { "field": "cohort", "title": "Cohort" }, 
-          { "field": "year", "title": "Year" } ]
-      }
-    },
-    {
-      "data": {"url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/state_labels.csv"},
-      "transform": [
-    {"filter": "datum.STE_NAME16 != 'Other Territories'"},
-    {"filter": "datum.STE_NAME16 != 'Australian Capital Territory'"}
-    
-  ],
-      "mark": {"type": "text", "fontSize": 12, "color": "black", "fontWeight": "bold"},
-      "encoding": {
-        "longitude": {"field": "centroid_lon", "type": "quantitative"},
-        "latitude": {"field": "centroid_lat", "type": "quantitative"},
-        "text": {"field": "STE_NAME16"}
+      "name": "pMeasure",
+      "value": "arr_all",
+      "bind": {
+        "input": "select",
+        "options": ["arr_all", "arr_indigenous", "arr_non_indigenous"],
+        "labels": ["All", "Aboriginal & Torres Strait Islander", "Non-Indigenous"],
+        "name": "Measure: "
       }
     }
+    
+  ],
 
+  "vconcat": [
+    {
+      "width": 600,
+      "height": 600,
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/australia.topojson",
+            "format": { "type": "topojson", "feature": "ne_110m_graticules_5" }
+          },
+          "mark": { "type": "geoshape", "filled": false, "strokeWidth": 0.6 },
+          "encoding": { "stroke": { "value": "#bbb" } }
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/australia.topojson",
+            "format": { "type": "topojson", "feature": "STE_2016_AUST" }
+          },
+          "transform": [
+            {
+              "calculate": "datum.properties.STE_CODE16 + '|' + pYear + '|' + pCohort + '|' + pAffil + '|' + pSex",
+              "as": "join_key"
+            },
+            {
+              "lookup": "join_key",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv"
+                },
+                "key": "join_key",
+                "fields": ["state_name", "year", "affiliation", "sex", "cohort", "arr_all", "arr_indigenous", "arr_non_indigenous"]
+              }
+            },
+            { "fold": ["arr_all", "arr_indigenous", "arr_non_indigenous"], "as": ["measure", "arr_value"] },
+            { "filter": "datum.measure == pMeasure" },
+            { "calculate": "toNumber(datum.arr_value)", "as": "arr_value_num" }
+          ],
+          "mark": { "type": "geoshape", "filled": true, "strokeWidth": 1 },
+          "encoding": {
+            "color": {
+              "field": "arr_value_num",
+              "type": "quantitative",
+              "title": "Capped ARR %",
+              "scale": { "scheme": "reds" }
+            },
+            "stroke": { "value": "#333" },
+            "tooltip": [
+              { "field": "properties.STE_NAME16", "title": "State/Territory" },
+              { "field": "arr_value", "title": "ARR", "format": ".1f" },
+              { "field": "affiliation", "title": "Sector" },
+              { "field": "sex", "title": "Sex" },
+              { "field": "cohort", "title": "Cohort" },
+              { "field": "year", "title": "Year" }
+            ]
+          }
+        },
+        {
+          "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/state_labels.csv" },
+          "transform": [
+            { "filter": "datum.STE_NAME16 != 'Other Territories'" },
+            { "filter": "datum.STE_NAME16 != 'Australian Capital Territory'" }
+          ],
+          "mark": { "type": "text", "fontSize": 12, "color": "black", "fontWeight": "bold" },
+          "encoding": {
+            "longitude": { "field": "centroid_lon", "type": "quantitative" },
+            "latitude": { "field": "centroid_lat", "type": "quantitative" },
+            "text": { "field": "STE_NAME16" }
+          }
+        }
+      ]
+    },
+
+    {
+      "width": 600,
+      "height": 320,
+      "title": { "text": "State trajectories of capped ARR (2011-2024)", "fontSize": 14 },
+      "layer": [
+        {
+          "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv" },
+          "transform": [
+            { "filter": "datum.cohort == pCohort && datum.affiliation == pAffil && datum.sex == pSex" },
+            { "fold": ["arr_all", "arr_indigenous", "arr_non_indigenous"], "as": ["measure", "arr_value"] },
+            { "filter": "datum.measure == pMeasure" },
+            { "calculate": "toNumber(datum.year)", "as": "YearNum" },
+            { "calculate": "toNumber(datum.arr_value)", "as": "ARR" }
+          ],
+          "params": [
+            {
+              "name": "stateSel",
+              "select": { "type": "point", "fields": ["state_name"] },
+              "bind": "legend"
+            }
+          ],
+          "mark": { "type": "line", "strokeWidth": 2 },
+          "encoding": {
+            "x": { "field": "YearNum", "type": "quantitative", "title": "Year", "scale": { "nice": false }, "axis": { "format": "d" } },
+            "y": { "field": "ARR", "type": "quantitative", "title": "Retention rate (%)" },
+            "color": { "field": "state_name", "type": "nominal", "title": "Click legend to focus" },
+            "opacity": { "condition": { "param": "stateSel", "empty": true, "value": 1 }, "value": 0.2 },
+            "tooltip": [
+              { "field": "state_name", "title": "State/Territory" },
+              { "field": "YearNum", "title": "Year", "format": "d" },
+              { "field": "ARR", "title": "ARR (%)", "format": ".1f" },
+              { "field": "cohort", "title": "Cohort" },
+              { "field": "affiliation", "title": "Sector" },
+              { "field": "sex", "title": "Sex" }
+            ]
+          }
+        },
+
+        {
+          "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv" },
+          "transform": [
+            { "filter": "datum.cohort == pCohort && datum.affiliation == pAffil && datum.sex == pSex" },
+            { "fold": ["arr_all", "arr_indigenous", "arr_non_indigenous"], "as": ["measure", "arr_value"] },
+            { "filter": "datum.measure == pMeasure" },
+            { "calculate": "toNumber(datum.year)", "as": "YearNum" },
+            { "calculate": "toNumber(datum.arr_value)", "as": "ARR" },
+            { "aggregate": [{ "op": "mean", "field": "ARR", "as": "NatAvg" }], "groupby": ["YearNum"] }
+          ],
+          "mark": { "type": "line", "strokeDash": [6, 4], "opacity": 0.9, "color": "black" },
+          "encoding": {
+            "x": { "field": "YearNum", "type": "quantitative" },
+            "y": { "field": "NatAvg", "type": "quantitative" }
+          }
+        },
+
+        {
+          "data": { "values": [{ "YearNum": 2020 }] },
+          "mark": { "type": "rule", "stroke": "black", "strokeDash": [3, 3] },
+          "encoding": { "x": { "field": "YearNum", "type": "quantitative" } }
+        },
+        {
+          "data": { "values": [{ "YearNum": 2020, "label": "COVID-19 disruption" }] },
+          "mark": { "type": "text", "dx": 6, "dy": -140, "fontSize": 11, "fontStyle": "italic", "color": "black" },
+          "encoding": {
+            "x": { "field": "YearNum", "type": "quantitative" },
+            "y": { "value": 100 },
+            "text": { "field": "label" }
+          }
+        }
+      ]
+    }
   ]
 }

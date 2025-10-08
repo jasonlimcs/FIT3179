@@ -198,12 +198,6 @@
             { "calculate": "toNumber(datum.arr_value)", "as": "ARR" },
             { "filter": { "param": "yearBrush" } }
           ],
-          "params": [
-            {
-              "name": "hoverSel",
-              "select": { "type": "point", "fields": ["state_name"], "on": "pointerover", "clear": "pointerout" }
-            }
-          ],
           "mark": { "type": "line", "strokeWidth": 2 },
           "encoding": {
             "x": { "field": "YearNum", "type": "quantitative", "title": "Year", "scale": { "nice": false }, "axis": { "format": "d" } },
@@ -211,14 +205,12 @@
             "color": { "field": "state_name", "type": "nominal"},
             "opacity": {
               "condition": [
-                { "param": "hoverSel", "empty": false, "value": 1 },
                 { "param": "stateSel", "empty": true, "value": 1 }
               ],
               "value": 0.2
             },
             "size": {
               "condition": [
-                { "param": "hoverSel", "empty": false, "value": 1 },
                 { "param": "stateSel", "empty": true, "value": 3 }
               ],
               "value": 2

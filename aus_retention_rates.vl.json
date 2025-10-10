@@ -45,7 +45,17 @@
         "labels": ["All", "Aboriginal & Torres Strait Islander", "Non-Indigenous"],
         "name": "Measure: "
       }
+    },
+    {
+      "name": "pYearScatter",
+      "value": 2022,
+      "bind": {
+        "input": "select",
+        "options": [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
+        "name": "Select year: "
+      }
     }
+    
   ],
 
   "vconcat": [
@@ -274,6 +284,82 @@
           "encoding": { "x": { "field": "YearNum", "type": "quantitative" } }
         }
       ]
+    },
+
+    {
+      "width": 600,
+      "height": 380,
+      "title": {
+        "text": "Student-Teacher Ratio vs Retention (selected year)",
+        "fontSize": 18
+      },
+      "data": {"url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv"},
+
+      "transform": [
+        { "filter": "datum.cohort == pCohort && datum.affiliation == pAffil && datum.sex == pSex" },
+        { "fold": ["arr_all","arr_indigenous","arr_non_indigenous"], "as": ["measure","arr_value"] },
+        { "filter": "datum.measure == pMeasure && toNumber(datum.year) == pYearScatter" },
+        { "calculate": "toNumber(datum.arr_value)", "as": "ARR" },
+        { "calculate": "toNumber(datum.year)", "as": "YearNum" },
+  { "calculate": "datum.state_short + '|' + datum.year", "as": "join_key" },
+        {
+          "lookup": "join_key",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_student_teacher_ratio_2006_2024_with_joinkey.csv"
+            },
+            "key": "join_key",
+            "fields": ["ratio"]
+          }
+        },
+        { "calculate": "toNumber(datum.ratio)", "as": "Ratio" }
+      ],
+      "layer": [
+        {
+          "mark": { "type": "point", "filled": true, "size": 120, "opacity": 0.9 },
+          "encoding": {
+            "x": { "field": "Ratio", "type": "quantitative", "title": "Student-teacher ratio (FTE students per FTE teacher)" },
+            "y": { "field": "ARR", "type": "quantitative", "title": "Capped ARR (%)" },
+            "color": { "field": "state_name", "type": "nominal", "title": "State" },
+            "opacity": { "condition": { "param": "stateSel2", "value": 1 }, "value": 0.4 },
+            "tooltip": [
+              { "field": "state_name", "title": "State/Territory" },
+              { "field": "YearNum", "title": "Year", "format": "d" },
+              { "field": "ARR", "title": "ARR (%)", "format": ".1f" },
+              { "field": "Ratio", "title": "Student-teacher ratio", "format": ".1f" },
+              { "field": "cohort", "title": "Cohort" },
+              { "field": "affiliation", "title": "Sector" },
+              { "field": "sex", "title": "Sex" }
+            ]
+          },
+          "params": [
+            {
+              "name": "stateSel2",
+              "select": { "type": "point", "fields": ["state_name"] },
+              "bind": "legend"
+            }
+          ]
+        },
+        {
+          "transform": [{ "regression": "ARR", "on": "Ratio" }],
+          "mark": { "type": "line", "stroke": "black", "strokeDash": [6,4], "opacity": 0.7 },
+          "encoding": {
+            "x": { "field": "Ratio", "type": "quantitative" },
+            "y": { "field": "ARR", "type": "quantitative" }
+          }
+        },
+        {
+          "transform": [{ "aggregate": [{"op":"mean","field":"Ratio","as":"MeanRatio"}], "groupby": [] }],
+          "mark": { "type": "rule", "stroke": "#666", "strokeDash": [3,3], "opacity": 0.8 },
+          "encoding": { "x": { "field": "MeanRatio", "type": "quantitative" } }
+        },
+        {
+          "transform": [{ "aggregate": [{"op":"mean","field":"ARR","as":"MeanARR"}], "groupby": [] }],
+          "mark": { "type": "rule", "stroke": "#666", "strokeDash": [3,3], "opacity": 0.8 },
+          "encoding": { "y": { "field": "MeanARR", "type": "quantitative" } }
+        }
+      ]
     }
+    
   ]
 }

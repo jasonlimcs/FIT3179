@@ -48,10 +48,12 @@
     },
     {
       "name": "pYearScatter",
-      "value": 2022,
+      "value": 2024,
       "bind": {
-        "input": "select",
-        "options": [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
+        "input": "range",
+        "min": 2011,
+        "max": 2024,
+        "step": 1,
         "name": "Select year: "
       }
     }
@@ -318,8 +320,8 @@
         {
           "mark": { "type": "point", "filled": true, "size": 120, "opacity": 0.9 },
           "encoding": {
-            "x": { "field": "Ratio", "type": "quantitative", "title": "Student-teacher ratio (FTE students per FTE teacher)" },
-            "y": { "field": "ARR", "type": "quantitative", "title": "Capped ARR (%)" },
+            "x": { "field": "Ratio", "type": "quantitative", "title": "Student-teacher ratio (FTE students per FTE teacher)", "scale": { "zero": false, "nice": true } },
+            "y": { "field": "ARR", "type": "quantitative", "title": "Capped ARR (%)", "scale": { "zero": false, "nice": true } },
             "color": { "field": "state_name", "type": "nominal", "title": "State" },
             "opacity": { "condition": { "param": "stateSel2", "value": 1 }, "value": 0.4 },
             "tooltip": [

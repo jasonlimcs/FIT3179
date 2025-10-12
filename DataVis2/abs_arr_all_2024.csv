@@ -1,0 +1,9 @@
+year,state_letter,state_short,affiliation,sex,cohort,arr_indigenous,arr_non_indigenous,arr_all,state_name,state_code
+2024,a,NSW,All affiliations,Persons,Year 7/8 - Year 12,47.9,76.3,74.5,New South Wales,1
+2024,b,Vic,All affiliations,Persons,Year 7/8 - Year 12,69.7,84.7,84.4,Victoria,2
+2024,c,Qld,All affiliations,Persons,Year 7/8 - Year 12,63.6,82.4,80.8,Queensland,3
+2024,d,SA,All affiliations,Persons,Year 7/8 - Year 12,66.2,88.6,87.5,South Australia,4
+2024,e,WA,All affiliations,Persons,Year 7/8 - Year 12,59.0,83.7,82.0,Western Australia,5
+2024,f,Tas,All affiliations,Persons,Year 7/8 - Year 12,60.2,69.5,68.7,Tasmania,6
+2024,g,NT,All affiliations,Persons,Year 7/8 - Year 12,36.4,69.0,55.1,Northern Territory,7
+2024,h,ACT,All affiliations,Persons,Year 7/8 - Year 12,81.9,88.0,87.8,Australian Capital Territory,8

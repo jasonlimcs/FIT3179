@@ -1,0 +1,561 @@
+year,state_short,affiliation,arr_all,state_name
+2024,NSW,Government,68.4,New South Wales
+2024,NSW,Non-Government,83.0,New South Wales
+2024,NSW,Catholic,78.9,New South Wales
+2024,NSW,Independent,88.8,New South Wales
+2024,NSW,All affiliations,74.5,New South Wales
+2024,Vic,Government,79.5,Victoria
+2024,Vic,Non-Government,90.9,Victoria
+2024,Vic,Catholic,83.5,Victoria
+2024,Vic,Independent,99.7,Victoria
+2024,Vic,All affiliations,84.4,Victoria
+2024,Qld,Government,72.3,Queensland
+2024,Qld,Non-Government,94.9,Queensland
+2024,Qld,Catholic,86.1,Queensland
+2024,Qld,Independent,100.0,Queensland
+2024,Qld,All affiliations,80.8,Queensland
+2024,SA,Government,80.0,South Australia
+2024,SA,Non-Government,98.9,South Australia
+2024,SA,Catholic,93.2,South Australia
+2024,SA,Independent,100.0,South Australia
+2024,SA,All affiliations,87.5,South Australia
+2024,WA,Government,77.1,Western Australia
+2024,WA,Non-Government,89.6,Western Australia
+2024,WA,Catholic,81.0,Western Australia
+2024,WA,Independent,98.0,Western Australia
+2024,WA,All affiliations,82.0,Western Australia
+2024,Tas,Government,70.8,Tasmania
+2024,Tas,Non-Government,65.0,Tasmania
+2024,Tas,Catholic,58.8,Tasmania
+2024,Tas,Independent,74.6,Tasmania
+2024,Tas,All affiliations,68.7,Tasmania
+2024,NT,Government,55.6,Northern Territory
+2024,NT,Non-Government,54.2,Northern Territory
+2024,NT,Catholic,49.8,Northern Territory
+2024,NT,Independent,58.1,Northern Territory
+2024,NT,All affiliations,55.1,Northern Territory
+2024,ACT,Government,99.1,Australian Capital Territory
+2024,ACT,Non-Government,75.1,Australian Capital Territory
+2024,ACT,Catholic,69.5,Australian Capital Territory
+2024,ACT,Independent,85.4,Australian Capital Territory
+2024,ACT,All affiliations,87.8,Australian Capital Territory
+2023,NSW,Government,68.3,New South Wales
+2023,NSW,Non-Government,82.2,New South Wales
+2023,NSW,Catholic,78.1,New South Wales
+2023,NSW,Independent,88.1,New South Wales
+2023,NSW,All affiliations,74.2,New South Wales
+2023,Vic,Government,78.0,Victoria
+2023,Vic,Non-Government,88.7,Victoria
+2023,Vic,Catholic,81.8,Victoria
+2023,Vic,Independent,97.0,Victoria
+2023,Vic,All affiliations,82.6,Victoria
+2023,Qld,Government,73.0,Queensland
+2023,Qld,Non-Government,94.3,Queensland
+2023,Qld,Catholic,86.8,Queensland
+2023,Qld,Independent,100.0,Queensland
+2023,Qld,All affiliations,80.9,Queensland
+2023,SA,Government,78.4,South Australia
+2023,SA,Non-Government,98.6,South Australia
+2023,SA,Catholic,96.1,South Australia
+2023,SA,Independent,100.0,South Australia
+2023,SA,All affiliations,86.3,South Australia
+2023,WA,Government,75.2,Western Australia
+2023,WA,Non-Government,87.2,Western Australia
+2023,WA,Catholic,79.7,Western Australia
+2023,WA,Independent,94.7,Western Australia
+2023,WA,All affiliations,80.0,Western Australia
+2023,Tas,Government,71.044921875,Tasmania
+2023,Tas,Non-Government,64.7,Tasmania
+2023,Tas,Catholic,56.3,Tasmania
+2023,Tas,Independent,76.8,Tasmania
+2023,Tas,All affiliations,68.7,Tasmania
+2023,NT,Government,55.3,Northern Territory
+2023,NT,Non-Government,45.5,Northern Territory
+2023,NT,Catholic,46.5,Northern Territory
+2023,NT,Independent,44.9,Northern Territory
+2023,NT,All affiliations,51.7,Northern Territory
+2023,ACT,Government,100.0,Australian Capital Territory
+2023,ACT,Non-Government,75.5,Australian Capital Territory
+2023,ACT,Catholic,72.4,Australian Capital Territory
+2023,ACT,Independent,80.9,Australian Capital Territory
+2023,ACT,All affiliations,89.2,Australian Capital Territory
+2022,NSW,Government,70.5,New South Wales
+2022,NSW,Non-Government,82.2,New South Wales
+2022,NSW,Catholic,78.5,New South Wales
+2022,NSW,Independent,87.6,New South Wales
+2022,NSW,All affiliations,75.5,New South Wales
+2022,Vic,Government,80.9,Victoria
+2022,Vic,Non-Government,89.1,Victoria
+2022,Vic,Catholic,82.4,Victoria
+2022,Vic,Independent,97.0,Victoria
+2022,Vic,All affiliations,84.5,Victoria
+2022,Qld,Government,74.8,Queensland
+2022,Qld,Non-Government,94.6,Queensland
+2022,Qld,Catholic,87.4,Queensland
+2022,Qld,Independent,100.0,Queensland
+2022,Qld,All affiliations,82.2,Queensland
+2022,SA,Government,83.7,South Australia
+2022,SA,Non-Government,95.1,South Australia
+2022,SA,Catholic,89.0,South Australia
+2022,SA,Independent,100.0,South Australia
+2022,SA,All affiliations,88.3,South Australia
+2022,WA,Government,76.7,Western Australia
+2022,WA,Non-Government,86.2,Western Australia
+2022,WA,Catholic,79.5,Western Australia
+2022,WA,Independent,92.8,Western Australia
+2022,WA,All affiliations,80.5,Western Australia
+2022,Tas,Government,77.2,Tasmania
+2022,Tas,Non-Government,64.2,Tasmania
+2022,Tas,Catholic,56.1,Tasmania
+2022,Tas,Independent,76.8,Tasmania
+2022,Tas,All affiliations,72.3,Tasmania
+2022,NT,Government,56.2,Northern Territory
+2022,NT,Non-Government,50.8,Northern Territory
+2022,NT,Catholic,44.4,Northern Territory
+2022,NT,Independent,55.9,Northern Territory
+2022,NT,All affiliations,54.2,Northern Territory
+2022,ACT,Government,100.0,Australian Capital Territory
+2022,ACT,Non-Government,72.1,Australian Capital Territory
+2022,ACT,Catholic,66.6,Australian Capital Territory
+2022,ACT,Independent,81.8,Australian Capital Territory
+2022,ACT,All affiliations,87.9,Australian Capital Territory
+2021,NSW,Government,73.5,New South Wales
+2021,NSW,Non-Government,81.9,New South Wales
+2021,NSW,Catholic,78.1,New South Wales
+2021,NSW,Independent,87.8,New South Wales
+2021,NSW,All affiliations,77.1,New South Wales
+2021,Vic,Government,84.7,Victoria
+2021,Vic,Non-Government,91.0,Victoria
+2021,Vic,Catholic,84.1,Victoria
+2021,Vic,Independent,99.7,Victoria
+2021,Vic,All affiliations,87.5,Victoria
+2021,Qld,Government,79.3,Queensland
+2021,Qld,Non-Government,95.2,Queensland
+2021,Qld,Catholic,88.4,Queensland
+2021,Qld,Independent,100.0,Queensland
+2021,Qld,All affiliations,85.3,Queensland
+2021,SA,Government,87.6,South Australia
+2021,SA,Non-Government,96.4,South Australia
+2021,SA,Catholic,91.2,South Australia
+2021,SA,Independent,100.0,South Australia
+2021,SA,All affiliations,91.1,South Australia
+2021,WA,Government,81.7,Western Australia
+2021,WA,Non-Government,86.2,Western Australia
+2021,WA,Catholic,80.0,Western Australia
+2021,WA,Independent,92.2,Western Australia
+2021,WA,All affiliations,83.6,Western Australia
+2021,Tas,Government,82.0,Tasmania
+2021,Tas,Non-Government,65.7,Tasmania
+2021,Tas,Catholic,58.4,Tasmania
+2021,Tas,Independent,76.6,Tasmania
+2021,Tas,All affiliations,75.7,Tasmania
+2021,NT,Government,65.1,Northern Territory
+2021,NT,Non-Government,44.4,Northern Territory
+2021,NT,Catholic,44.4,Northern Territory
+2021,NT,Independent,44.4,Northern Territory
+2021,NT,All affiliations,56.8,Northern Territory
+2021,ACT,Government,100.0,Australian Capital Territory
+2021,ACT,Non-Government,71.6,Australian Capital Territory
+2021,ACT,Catholic,66.8,Australian Capital Territory
+2021,ACT,Independent,80.0,Australian Capital Territory
+2021,ACT,All affiliations,90.9,Australian Capital Territory
+2020,NSW,Government,75.7,New South Wales
+2020,NSW,Non-Government,82.1,New South Wales
+2020,NSW,Catholic,78.5,New South Wales
+2020,NSW,Independent,87.5,New South Wales
+2020,NSW,All affiliations,78.4,New South Wales
+2020,Vic,Government,85.1,Victoria
+2020,Vic,Non-Government,90.7,Victoria
+2020,Vic,Catholic,82.7,Victoria
+2020,Vic,Independent,100.0,Victoria
+2020,Vic,All affiliations,87.6,Victoria
+2020,Qld,Government,80.4,Queensland
+2020,Qld,Non-Government,93.1,Queensland
+2020,Qld,Catholic,88.7,Queensland
+2020,Qld,Independent,98.2,Queensland
+2020,Qld,All affiliations,85.3,Queensland
+2020,SA,Government,90.8,South Australia
+2020,SA,Non-Government,95.3,South Australia
+2020,SA,Catholic,88.7,South Australia
+2020,SA,Independent,100.0,South Australia
+2020,SA,All affiliations,92.7,South Australia
+2020,WA,Government,82.8,Western Australia
+2020,WA,Non-Government,85.4,Western Australia
+2020,WA,Catholic,81.7,Western Australia
+2020,WA,Independent,89.1,Western Australia
+2020,WA,All affiliations,83.9,Western Australia
+2020,Tas,Government,82.5,Tasmania
+2020,Tas,Non-Government,61.8,Tasmania
+2020,Tas,Catholic,52.5,Tasmania
+2020,Tas,Independent,76.7,Tasmania
+2020,Tas,All affiliations,74.9,Tasmania
+2020,NT,Government,65.4,Northern Territory
+2020,NT,Non-Government,45.7,Northern Territory
+2020,NT,Catholic,46.3,Northern Territory
+2020,NT,Independent,45.4,Northern Territory
+2020,NT,All affiliations,57.8,Northern Territory
+2020,ACT,Government,100.0,Australian Capital Territory
+2020,ACT,Non-Government,70.8,Australian Capital Territory
+2020,ACT,Catholic,65.2,Australian Capital Territory
+2020,ACT,Independent,81.5,Australian Capital Territory
+2020,ACT,All affiliations,91.9,Australian Capital Territory
+2019,NSW,Government,73.5,New South Wales
+2019,NSW,Non-Government,81.9,New South Wales
+2019,NSW,Catholic,78.2,New South Wales
+2019,NSW,Independent,87.9,New South Wales
+2019,NSW,All affiliations,77.1,New South Wales
+2019,Vic,Government,85.8,Victoria
+2019,Vic,Non-Government,89.4,Victoria
+2019,Vic,Catholic,82.1,Victoria
+2019,Vic,Independent,99.0,Victoria
+2019,Vic,All affiliations,87.4,Victoria
+2019,Qld,Government,87.9,Queensland
+2019,Qld,Non-Government,96.2,Queensland
+2019,Qld,Catholic,90.7,Queensland
+2019,Qld,Independent,100.0,Queensland
+2019,Qld,All affiliations,91.3,Queensland
+2019,SA,Government,91.7,South Australia
+2019,SA,Non-Government,95.9,South Australia
+2019,SA,Catholic,91.1,South Australia
+2019,SA,Independent,100.0,South Australia
+2019,SA,All affiliations,93.4,South Australia
+2019,WA,Government,83.4,Western Australia
+2019,WA,Non-Government,83.7,Western Australia
+2019,WA,Catholic,80.6,Western Australia
+2019,WA,Independent,86.7,Western Australia
+2019,WA,All affiliations,83.5,Western Australia
+2019,Tas,Government,82.1,Tasmania
+2019,Tas,Non-Government,64.2,Tasmania
+2019,Tas,Catholic,57.2,Tasmania
+2019,Tas,Independent,74.9,Tasmania
+2019,Tas,All affiliations,75.5,Tasmania
+2019,NT,Government,57.1,Northern Territory
+2019,NT,Non-Government,49.8,Northern Territory
+2019,NT,Catholic,48.2,Northern Territory
+2019,NT,Independent,51.1,Northern Territory
+2019,NT,All affiliations,54.3,Northern Territory
+2019,ACT,Government,100.0,Australian Capital Territory
+2019,ACT,Non-Government,71.8,Australian Capital Territory
+2019,ACT,Catholic,68.0,Australian Capital Territory
+2019,ACT,Independent,78.5,Australian Capital Territory
+2019,ACT,All affiliations,94.0,Australian Capital Territory
+2018,NSW,Government,74.4,New South Wales
+2018,NSW,Non-Government,82.4,New South Wales
+2018,NSW,Catholic,79.1,New South Wales
+2018,NSW,Independent,87.6,New South Wales
+2018,NSW,All affiliations,77.8,New South Wales
+2018,Vic,Government,87.9,Victoria
+2018,Vic,Non-Government,89.5,Victoria
+2018,Vic,Catholic,82.4,Victoria
+2018,Vic,Independent,99.0,Victoria
+2018,Vic,All affiliations,88.7,Victoria
+2018,Qld,Government,86.4,Queensland
+2018,Qld,Non-Government,93.5,Queensland
+2018,Qld,Catholic,90.4,Queensland
+2018,Qld,Independent,96.9,Queensland
+2018,Qld,All affiliations,89.2,Queensland
+2018,SA,Government,94.8,South Australia
+2018,SA,Non-Government,94.3,South Australia
+2018,SA,Catholic,88.1,South Australia
+2018,SA,Independent,100.0,South Australia
+2018,SA,All affiliations,94.6,South Australia
+2018,WA,Government,83.8,Western Australia
+2018,WA,Non-Government,82.6,Western Australia
+2018,WA,Catholic,80.0,Western Australia
+2018,WA,Independent,85.2,Western Australia
+2018,WA,All affiliations,83.3,Western Australia
+2018,Tas,Government,78.9,Tasmania
+2018,Tas,Non-Government,65.3,Tasmania
+2018,Tas,Catholic,58.4,Tasmania
+2018,Tas,Independent,75.5,Tasmania
+2018,Tas,All affiliations,74.0,Tasmania
+2018,NT,Government,57.7,Northern Territory
+2018,NT,Non-Government,43.9,Northern Territory
+2018,NT,Catholic,50.6,Northern Territory
+2018,NT,Independent,40.3,Northern Territory
+2018,NT,All affiliations,52.5,Northern Territory
+2018,ACT,Government,100.0,Australian Capital Territory
+2018,ACT,Non-Government,72.5,Australian Capital Territory
+2018,ACT,Catholic,68.7,Australian Capital Territory
+2018,ACT,Independent,79.9,Australian Capital Territory
+2018,ACT,All affiliations,92.8,Australian Capital Territory
+2017,NSW,Government,75.6,New South Wales
+2017,NSW,Non-Government,83.5,New South Wales
+2017,NSW,Catholic,80.5,New South Wales
+2017,NSW,Independent,88.4,New South Wales
+2017,NSW,All affiliations,78.9,New South Wales
+2017,Vic,Government,86.8,Victoria
+2017,Vic,Non-Government,90.7,Victoria
+2017,Vic,Catholic,84.7,Victoria
+2017,Vic,Independent,98.6,Victoria
+2017,Vic,All affiliations,88.5,Victoria
+2017,Qld,Government,85.8,Queensland
+2017,Qld,Non-Government,94.3,Queensland
+2017,Qld,Catholic,91.7,Queensland
+2017,Qld,Independent,97.2,Queensland
+2017,Qld,All affiliations,89.1,Queensland
+2017,SA,Government,96.0,South Australia
+2017,SA,Non-Government,92.9,South Australia
+2017,SA,Catholic,89.3,South Australia
+2017,SA,Independent,96.7,South Australia
+2017,SA,All affiliations,94.7,South Australia
+2017,WA,Government,82.7,Western Australia
+2017,WA,Non-Government,81.6,Western Australia
+2017,WA,Catholic,81.3,Western Australia
+2017,WA,Independent,81.9,Western Australia
+2017,WA,All affiliations,82.3,Western Australia
+2017,Tas,Government,75.1,Tasmania
+2017,Tas,Non-Government,64.5,Tasmania
+2017,Tas,Catholic,62.0,Tasmania
+2017,Tas,Independent,68.7,Tasmania
+2017,Tas,All affiliations,71.5,Tasmania
+2017,NT,Government,61.1,Northern Territory
+2017,NT,Non-Government,53.8,Northern Territory
+2017,NT,Catholic,59.0,Northern Territory
+2017,NT,Independent,51.0,Northern Territory
+2017,NT,All affiliations,58.6,Northern Territory
+2017,ACT,Government,100.0,Australian Capital Territory
+2017,ACT,Non-Government,72.6,Australian Capital Territory
+2017,ACT,Catholic,67.5,Australian Capital Territory
+2017,ACT,Independent,82.1,Australian Capital Territory
+2017,ACT,All affiliations,94.8,Australian Capital Territory
+2016,NSW,Government,74.3,New South Wales
+2016,NSW,Non-Government,84.4,New South Wales
+2016,NSW,Catholic,81.4,New South Wales
+2016,NSW,Independent,89.4,New South Wales
+2016,NSW,All affiliations,78.4,New South Wales
+2016,Vic,Government,87.4,Victoria
+2016,Vic,Non-Government,88.4,Victoria
+2016,Vic,Catholic,84.4,Victoria
+2016,Vic,Independent,93.7,Victoria
+2016,Vic,All affiliations,87.9,Victoria
+2016,Qld,Government,85.3,Queensland
+2016,Qld,Non-Government,93.9,Queensland
+2016,Qld,Catholic,91.0,Queensland
+2016,Qld,Independent,97.1,Queensland
+2016,Qld,All affiliations,88.6,Queensland
+2016,SA,Government,99.7,South Australia
+2016,SA,Non-Government,94.4,South Australia
+2016,SA,Catholic,91.6,South Australia
+2016,SA,Independent,97.2,South Australia
+2016,SA,All affiliations,97.5,South Australia
+2016,WA,Government,80.0,Western Australia
+2016,WA,Non-Government,80.6,Western Australia
+2016,WA,Catholic,81.6,Western Australia
+2016,WA,Independent,79.7,Western Australia
+2016,WA,All affiliations,80.3,Western Australia
+2016,Tas,Government,74.1,Tasmania
+2016,Tas,Non-Government,63.6,Tasmania
+2016,Tas,Catholic,58.6,Tasmania
+2016,Tas,Independent,71.5,Tasmania
+2016,Tas,All affiliations,70.4,Tasmania
+2016,NT,Government,57.9,Northern Territory
+2016,NT,Non-Government,54.3,Northern Territory
+2016,NT,Catholic,53.7,Northern Territory
+2016,NT,Independent,54.6,Northern Territory
+2016,NT,All affiliations,56.7,Northern Territory
+2016,ACT,Government,100.0,Australian Capital Territory
+2016,ACT,Non-Government,75.8,Australian Capital Territory
+2016,ACT,Catholic,73.4,Australian Capital Territory
+2016,ACT,Independent,80.3,Australian Capital Territory
+2016,ACT,All affiliations,94.0,Australian Capital Territory
+2015,NSW,Government,74.1,New South Wales
+2015,NSW,Non-Government,84.6,New South Wales
+2015,NSW,Catholic,81.8,New South Wales
+2015,NSW,Independent,89.2,New South Wales
+2015,NSW,All affiliations,78.2,New South Wales
+2015,Vic,Government,84.8,Victoria
+2015,Vic,Non-Government,88.6,Victoria
+2015,Vic,Catholic,83.7,Victoria
+2015,Vic,Independent,94.9,Victoria
+2015,Vic,All affiliations,86.4,Victoria
+2015,Qld,Government,84.8,Queensland
+2015,Qld,Non-Government,94.1,Queensland
+2015,Qld,Catholic,91.5,Queensland
+2015,Qld,Independent,96.9,Queensland
+2015,Qld,All affiliations,88.4,Queensland
+2015,SA,Government,96.2,South Australia
+2015,SA,Non-Government,95.0,South Australia
+2015,SA,Catholic,92.0,South Australia
+2015,SA,Independent,98.1,South Australia
+2015,SA,All affiliations,95.7,South Australia
+2015,WA,Government,83.3,Western Australia
+2015,WA,Non-Government,82.1,Western Australia
+2015,WA,Catholic,80.9,Western Australia
+2015,WA,Independent,83.3,Western Australia
+2015,WA,All affiliations,82.8,Western Australia
+2015,Tas,Government,74.1,Tasmania
+2015,Tas,Non-Government,66.9,Tasmania
+2015,Tas,Catholic,60.4,Tasmania
+2015,Tas,Independent,77.4,Tasmania
+2015,Tas,All affiliations,71.7,Tasmania
+2015,NT,Government,52.9,Northern Territory
+2015,NT,Non-Government,55.5,Northern Territory
+2015,NT,Catholic,54.8,Northern Territory
+2015,NT,Independent,55.8,Northern Territory
+2015,NT,All affiliations,53.7,Northern Territory
+2015,ACT,Government,100.0,Australian Capital Territory
+2015,ACT,Non-Government,74.9,Australian Capital Territory
+2015,ACT,Catholic,72.6,Australian Capital Territory
+2015,ACT,Independent,79.5,Australian Capital Territory
+2015,ACT,All affiliations,96.6,Australian Capital Territory
+2014,NSW,Government,74.0,New South Wales
+2014,NSW,Non-Government,84.4,New South Wales
+2014,NSW,Catholic,81.9,New South Wales
+2014,NSW,Independent,88.6,New South Wales
+2014,NSW,All affiliations,78.1,New South Wales
+2014,Vic,Government,82.5,Victoria
+2014,Vic,Non-Government,88.8,Victoria
+2014,Vic,Catholic,84.4,Victoria
+2014,Vic,Independent,94.5,Victoria
+2014,Vic,All affiliations,85.2,Victoria
+2014,Qld,Government,82.9,Queensland
+2014,Qld,Non-Government,93.9,Queensland
+2014,Qld,Catholic,92.0,Queensland
+2014,Qld,Independent,95.9,Queensland
+2014,Qld,All affiliations,87.1,Queensland
+2014,SA,Government,90.9,South Australia
+2014,SA,Non-Government,96.1,South Australia
+2014,SA,Catholic,94.6,South Australia
+2014,SA,Independent,97.7,South Australia
+2014,SA,All affiliations,93.0,South Australia
+2014,WA,Government,95.8,Western Australia
+2014,WA,Non-Government,82.3,Western Australia
+2014,WA,Catholic,80.2,Western Australia
+2014,WA,Independent,84.3,Western Australia
+2014,WA,All affiliations,89.3,Western Australia
+2014,Tas,Government,69.2,Tasmania
+2014,Tas,Non-Government,66.8,Tasmania
+2014,Tas,Catholic,61.8,Tasmania
+2014,Tas,Independent,74.3,Tasmania
+2014,Tas,All affiliations,68.4,Tasmania
+2014,NT,Government,61.3,Northern Territory
+2014,NT,Non-Government,56.0,Northern Territory
+2014,NT,Catholic,52.3,Northern Territory
+2014,NT,Independent,58.3,Northern Territory
+2014,NT,All affiliations,59.6,Northern Territory
+2014,ACT,Government,100.0,Australian Capital Territory
+2014,ACT,Non-Government,77.2,Australian Capital Territory
+2014,ACT,Catholic,73.3,Australian Capital Territory
+2014,ACT,Independent,84.4,Australian Capital Territory
+2014,ACT,All affiliations,94.6,Australian Capital Territory
+2013,NSW,Government,72.7,New South Wales
+2013,NSW,Non-Government,83.0,New South Wales
+2013,NSW,Catholic,80.4,New South Wales
+2013,NSW,Independent,87.5,New South Wales
+2013,NSW,All affiliations,76.7,New South Wales
+2013,Vic,Government,80.4,Victoria
+2013,Vic,Non-Government,88.3,Victoria
+2013,Vic,Catholic,82.7,Victoria
+2013,Vic,Independent,95.7,Victoria
+2013,Vic,All affiliations,83.7,Victoria
+2013,Qld,Government,80.2,Queensland
+2013,Qld,Non-Government,93.6,Queensland
+2013,Qld,Catholic,90.6,Queensland
+2013,Qld,Independent,96.8,Queensland
+2013,Qld,All affiliations,85.2,Queensland
+2013,SA,Government,87.4,South Australia
+2013,SA,Non-Government,95.4,South Australia
+2013,SA,Catholic,92.7,South Australia
+2013,SA,Independent,98.3,South Australia
+2013,SA,All affiliations,90.6,South Australia
+2013,WA,Government,82.1,Western Australia
+2013,WA,Non-Government,82.3,Western Australia
+2013,WA,Catholic,81.2,Western Australia
+2013,WA,Independent,83.3,Western Australia
+2013,WA,All affiliations,82.2,Western Australia
+2013,Tas,Government,69.8,Tasmania
+2013,Tas,Non-Government,66.3,Tasmania
+2013,Tas,Catholic,62.6,Tasmania
+2013,Tas,Independent,71.7,Tasmania
+2013,Tas,All affiliations,68.7,Tasmania
+2013,NT,Government,56.5,Northern Territory
+2013,NT,Non-Government,54.4,Northern Territory
+2013,NT,Catholic,47.8,Northern Territory
+2013,NT,Independent,59.0,Northern Territory
+2013,NT,All affiliations,55.8,Northern Territory
+2013,ACT,Government,100.0,Australian Capital Territory
+2013,ACT,Non-Government,78.3,Australian Capital Territory
+2013,ACT,Catholic,77.3,Australian Capital Territory
+2013,ACT,Independent,80.2,Australian Capital Territory
+2013,ACT,All affiliations,91.6,Australian Capital Territory
+2012,NSW,Government,70.5,New South Wales
+2012,NSW,Non-Government,82.3,New South Wales
+2012,NSW,Catholic,79.4,New South Wales
+2012,NSW,Independent,87.2,New South Wales
+2012,NSW,All affiliations,75.0,New South Wales
+2012,Vic,Government,77.2,Victoria
+2012,Vic,Non-Government,89.3,Victoria
+2012,Vic,Catholic,82.9,Victoria
+2012,Vic,Independent,97.7,Victoria
+2012,Vic,All affiliations,82.2,Victoria
+2012,Qld,Government,78.5,Queensland
+2012,Qld,Non-Government,92.7,Queensland
+2012,Qld,Catholic,89.2,Queensland
+2012,Qld,Independent,96.3,Queensland
+2012,Qld,All affiliations,83.7,Queensland
+2012,SA,Government,84.2,South Australia
+2012,SA,Non-Government,95.9,South Australia
+2012,SA,Catholic,90.7,South Australia
+2012,SA,Independent,100.0,South Australia
+2012,SA,All affiliations,88.8,South Australia
+2012,WA,Government,77.1,Western Australia
+2012,WA,Non-Government,82.9,Western Australia
+2012,WA,Catholic,80.6,Western Australia
+2012,WA,Independent,85.2,Western Australia
+2012,WA,All affiliations,79.5,Western Australia
+2012,Tas,Government,67.8,Tasmania
+2012,Tas,Non-Government,67.3,Tasmania
+2012,Tas,Catholic,61.0,Tasmania
+2012,Tas,Independent,76.2,Tasmania
+2012,Tas,All affiliations,67.6,Tasmania
+2012,NT,Government,62.1,Northern Territory
+2012,NT,Non-Government,42.8,Northern Territory
+2012,NT,Catholic,40.9,Northern Territory
+2012,NT,Independent,44.1,Northern Territory
+2012,NT,All affiliations,55.6,Northern Territory
+2012,ACT,Government,100.0,Australian Capital Territory
+2012,ACT,Non-Government,74.0,Australian Capital Territory
+2012,ACT,Catholic,72.7,Australian Capital Territory
+2012,ACT,Independent,76.6,Australian Capital Territory
+2012,ACT,All affiliations,89.8,Australian Capital Territory
+2011,NSW,Government,70.5,New South Wales
+2011,NSW,Non-Government,81.5,New South Wales
+2011,NSW,Catholic,78.5,New South Wales
+2011,NSW,Independent,86.8,New South Wales
+2011,NSW,All affiliations,74.6,New South Wales
+2011,Vic,Government,76.6,Victoria
+2011,Vic,Non-Government,90.0,Victoria
+2011,Vic,Catholic,81.3,Victoria
+2011,Vic,Independent,100.0,Victoria
+2011,Vic,All affiliations,82.0,Victoria
+2011,Qld,Government,76.4,Queensland
+2011,Qld,Non-Government,94.6,Queensland
+2011,Qld,Catholic,89.9,Queensland
+2011,Qld,Independent,99.5,Queensland
+2011,Qld,All affiliations,83.0,Queensland
+2011,SA,Government,81.3,South Australia
+2011,SA,Non-Government,94.2,South Australia
+2011,SA,Catholic,88.8,South Australia
+2011,SA,Independent,100.0,South Australia
+2011,SA,All affiliations,86.3,South Australia
+2011,WA,Government,74.8,Western Australia
+2011,WA,Non-Government,83.4,Western Australia
+2011,WA,Catholic,79.2,Western Australia
+2011,WA,Independent,87.6,Western Australia
+2011,WA,All affiliations,78.4,Western Australia
+2011,Tas,Government,69.6,Tasmania
+2011,Tas,Non-Government,70.2,Tasmania
+2011,Tas,Catholic,64.2,Tasmania
+2011,Tas,Independent,78.6,Tasmania
+2011,Tas,All affiliations,69.8,Tasmania
+2011,NT,Government,63.7,Northern Territory
+2011,NT,Non-Government,40.1,Northern Territory
+2011,NT,Catholic,39.2,Northern Territory
+2011,NT,Independent,40.9,Northern Territory
+2011,NT,All affiliations,55.3,Northern Territory
+2011,ACT,Government,100.0,Australian Capital Territory
+2011,ACT,Non-Government,77.7,Australian Capital Territory
+2011,ACT,Catholic,74.4,Australian Capital Territory
+2011,ACT,Independent,84.3,Australian Capital Territory
+2011,ACT,All affiliations,89.4,Australian Capital Territory

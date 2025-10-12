@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 420,
+  "title": { "text": "Student-Teacher Ratio by State (Grouped by Sector)", "fontSize": 18 },
+
+  "params": [
+    {
+      "name": "pYearBar",
+      "value": 2024,
+      "bind": { "input": "range", "min": 2011, "max": 2024, "step": 1, "name": "Year: " }
+    },
+    {
+      "name": "sectorSel",
+      "select": { "type": "point", "fields": ["affiliation"] },
+      "bind": "legend"
+    }
+  ],
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_st_ratio_2011_2024.csv"
+  },
+
+  "transform": [
+    { "filter": "toNumber(datum.year) == pYearBar" },
+    { "calculate": "toNumber(datum.ratio)", "as": "Ratio" }
+  ],
+
+  "mark": { "type": "bar" },
+
+  "encoding": {
+    "x": {
+      "field": "state_name",
+      "type": "nominal",
+      "title": "State/Territory",
+      "axis": { "labelAngle": 0 }
+    },
+    "xOffset": { "field": "affiliation" }, 
+    "y": {
+      "field": "Ratio",
+      "type": "quantitative",
+      "title": "Students per teacher (FTE)",
+      "axis": { "grid": false }
+    },
+    "color": {
+      "field": "affiliation",
+      "type": "nominal",
+      "title": "Sector",
+      "legend": { "orient": "top" }
+    },
+    "opacity": { "condition": { "param": "sectorSel", "value": 1 }, "value": 0.35 },
+    "tooltip": [
+      { "field": "state_name", "title": "State/Territory" },
+      { "field": "year", "title": "Year", "format": "d" },
+      { "field": "affiliation", "title": "Sector" },
+      { "field": "Ratio", "title": "Student-teacher ratio", "format": ".1f" }
+    ]
+  },
+
+  "config": {
+    "bar": { "cornerRadiusTopLeft": 2, "cornerRadiusTopRight": 2 }
+  }
+}

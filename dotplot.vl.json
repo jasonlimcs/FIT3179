@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/dotplot.csv"
+  },
+  "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 60
+  },
+  "encoding": {
+    "x": {
+      "field": "ratio",
+      "type": "quantitative",
+      "title": "Student-Teacher Ratio",
+      "scale": {
+        "zero": false
+      }
+    },
+    "y": {
+      "field": "arr",
+      "type": "quantitative",
+      "title": "Apparent Retention Rate (ARR)",
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State",
+      "legend": {
+        "orient": "right"
+      }
+    },
+    "shape": {
+      "field": "affiliation",
+      "type": "nominal",
+      "title": "Affiliation"
+    },
+    "tooltip": [
+      {
+        "field": "state",
+        "type": "nominal",
+        "title": "State"
+      },
+      {
+        "field": "affiliation",
+        "type": "nominal",
+        "title": "Affiliation"
+      },
+      {
+        "field": "year",
+        "type": "quantitative",
+        "title": "Year"
+      },
+      {
+        "field": "ratio",
+        "type": "quantitative",
+        "title": "Student-Teacher Ratio",
+        "format": ".2f"
+      },
+      {
+        "field": "arr",
+        "type": "quantitative",
+        "title": "ARR",
+        "format": ".2f"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}

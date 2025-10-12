@@ -43,6 +43,24 @@
             "select": { "type": "point", "fields": ["state"], "on": "mouseover", "clear": "mouseout" }
             }
         ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": 5,
+        "dy": -5,
+        "fontSize": 10,
+        "fontStyle": "italic",
+        "color": "#555",
+        "font": "sans-serif"
+      },
+      "encoding": {
+        "x": { "value": 200 },
+        "y": { "value": 220 },
+        "text": { "value": "ACT has low ARR and student-teacher ratio across all years" }
+      }
     }
   ],
 

@@ -29,7 +29,7 @@
       ],
       "encoding": {
         "y": { "field": "state_name", "type": "nominal", "sort": { "field": "Gap", "order": "descending" }},
-        "x": { "field": "ArrInd", "type": "quantitative", "title": "Capped ARR (%)" },
+        "x": { "field": "ArrInd", "type": "quantitative", "title": "Capped ARR (%)", "scale": { "zero": false} },
         "x2": { "field": "ArrNonInd" },
         "opacity": { "condition": { "param": "stateSelGap", "value": 1 }, "value": 0.35 },
         "tooltip": [

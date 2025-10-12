@@ -1,4 +1,4 @@
-year,state_name,Affiliation,Student to Teaching Staff Ratio
+year,state_name,affiliation,ratio
 2024,NSW,Government,12.7
 2024,NSW,Non-Government,11.1
 2024,NSW,Catholic,12.0
@@ -854,3 +854,4 @@ year,state_name,Affiliation,Student to Teaching Staff Ratio
 2006,Aust,Catholic,12.9
 2006,Aust,Independent,10.7
 2006,Aust,All Affiliations,12.2
+

@@ -1,0 +1,46 @@
+{
+  "width": 600,
+  "height": 420,
+  "title": {"text": "Student-Teacher Ratio by State", "fontSize": 18, "subtitle": "Lower is better (fewer students per teacher)"},
+  "params": [
+    {"name": "pYearDot", "value": 2024, "bind": {"input": "range", "min": 2011, "max": 2024, "step": 1, "name": "Year: "}},
+    {"name": "pAffil", "value": "All affiliations",
+      "bind": {"input": "select","options": ["All affiliations","Government","Non-Government","Catholic","Independent"],"name": "Sector: "}
+    }
+  ],
+  "data": {"url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_st_ratio_2006_2024_with_joinkey.csv"},
+  "transform": [
+    {"filter": "datum.year == toNumber(pYearDot)"},
+    {"filter": "pAffil == 'All affiliations' ? true : datum.affiliation == pAffil"},
+    {"calculate": "toNumber(datum.ratio)", "as": "Ratio"}
+  ],
+  "layer": [
+    {
+      "transform": [{"aggregate": [{"op":"mean","field":"Ratio","as":"MeanRatio"}]}],
+      "mark": {"type": "rule", "strokeDash": [4,3], "stroke": "#666", "opacity": 0.8},
+      "encoding": {"x": {"field": "MeanRatio", "type": "quantitative", "title": null}}
+    },
+    {
+      "mark": {"type": "point", "filled": true, "size": 110, "opacity": 0.9},
+      "encoding": {
+        "y": {"field": "state_name", "type": "nominal", "sort": "-x", "title": null},
+        "x": {"field": "Ratio", "type": "quantitative", "title": "Students per teacher (FTE)", "axis": {"grid": false}},
+        "color": {"value": "#1f77b4"},
+        "tooltip": [
+          {"field": "state_name", "title": "State/Territory"},
+          {"field": "year", "title": "Year", "format": "d"},
+          {"field": "Ratio", "title": "Student-teacher ratio", "format": ".1f"},
+          {"field": "affiliation", "title": "Sector"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "dx": 6, "align": "left", "fontSize": 11, "color": "#333"},
+      "encoding": {
+        "y": {"field": "state_name", "type": "nominal", "sort": "-x", "title": null},
+        "x": {"field": "Ratio", "type": "quantitative"},
+        "text": {"field": "Ratio", "type": "quantitative", "format": ".1f"}
+      }
+    }
+  ]
+}

@@ -10,7 +10,11 @@
     <script src="vega_lite_vis.js"></script>
     <title>Data Visualisation 2 </title>
 
-    <style>
+     <style>
+        * {
+            font-family: 'Oxygen', sans-serif;
+            line-height: 1.5;
+        }
         body {
             display: flex;
             flex-direction: column;
@@ -21,10 +25,11 @@
             text-align: center;
             background-color: #f0f0f0;
         }
+        .eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
 
-        #map {
+        /* #map {
             margin-top: 20px;
-        }
+        } */
 
         .page {
             width:1200px;
@@ -32,14 +37,49 @@
             padding: 70px;
             padding-top: 35px;
         }
+        h1 {
+            font-weight: 600;
+            font-size: 260%;
+            text-align: center;
+            color: black;
+        }
+
+        .header {
+                background: #e0e0e0;
+                border-radius: 16px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+                padding: 32px 0 24px 0;
+                margin-bottom: 32px;
+            }
+        
+        
     </style>
+
 </head>
 <body>
     <div class="page">
-        <h1>Geographic and Demographic Patterns in School Retention Across Australia</h1>
+        <div class="header">
+            <h1>Patterns in School Retention Across <span style="color: #2185b8">Australia</span></h1>
+            <p>The apparent retention rate is the proportion of a starting-year cohort (e.g., Year 7/8 or Year 10) that is enrolled in a later target year (e.g., Year 12) in a given year, calculated from enrolment counts (ABS).
+                This visualisation displays how school retention primarily in the secondary level varies across Australia, and why.
+                Using ABS and ACARA data, it explores how different factors could affect retention rate and areas of improvement.
+
+            </p>
+        </div>
+        <h2>Where Retention Is Strongest</h2>
+        <p>The chloropleth map below shows the Apparent Retention Rates of different states/territories in Australia from 2011 to 2024. 
+            The data shows that there is a 0.23% increase in overall ARR from 2011 to 2024 across all states, with Australian Capital Territory and South Australia having the highest ARR and Northern Territory having the lowest.
+            The ARR trend has started to decline in all states after 2020 possibly due to COVID-19 pandemic disruptions to schooling.
+        </p>
         <div id="map"></div>
+        <h2>ARR vs Student-Teacher Ratio</h2>
+        <p>One interesting trend is that aside from ACT, schools with lower ratios (around 9-11 students per teacher) often have higher retention rates (80-100%), while higher ratios (12-14) tend to correspond with lower ARR (below 70%). However, this isnt always the case as there are schools with high ratios that still achieve high ARR.
+             Another observation is that Independent Schools tend to have a lower student-teacher ratio compared to other school types while Government and Catholic schools have a higher ratio.</p>
+        <div id="dotplot"></div>
+        <h2>Indigenous vs Non-Indigenous</h2>
+        <p>The plot reveals a significant gap in the apparent retention rates (ARR) between Indigenous and Non-Indigenous students across Australian states in 2024. Non-Indigenous students consistently show much higher retention rates, particularly in states like New South Wales and Northern Territory. The gap is smallest in Tasmania and the Australian Capital Territory, but Indigenous students still face notable challenges in retention compared to their Non-Indigenous peers.</p>
         <div id="equity"></div>
-</div>
+    </div>
 
 </body>
 

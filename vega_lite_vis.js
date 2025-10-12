@@ -7,3 +7,8 @@ var vg_2 = "dumbbell.vl.json";
 vegaEmbed("#equity", vg_2).then(function(result) {
 	// Embedded dumbbell chart
 }).catch(console.error);
+
+var vg_3 = "dotplot.vl.json";
+vegaEmbed("#dotplot", vg_3).then(function(result) {
+    // Embedded dot plot
+}).catch(console.error);

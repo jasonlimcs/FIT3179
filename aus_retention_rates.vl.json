@@ -68,7 +68,11 @@
         "text": "Apparent Retention Rates (ARR) in Australia by State, 2011-2024",
         "anchor": "middle",
         "fontSize": 18,
-        "font": "sans-serif"
+        "font": "sans-serif",
+        "subtitle": "Use the filters below to explore the data based on cohort, sector, sex and aboriginal status.",
+        "subtitleFontSize": 12,
+        "subtitleColor": "#555",
+        "subtitlePadding": 6
       },
       "layer": [
         {
@@ -275,167 +279,6 @@
           "encoding": { "x": { "field": "YearNum", "type": "quantitative" } }
         }
       ]
-    },
-
-    {
-      "width": 600,
-      "height": 380,
-      "title": {
-        "text": "Student-Teacher Ratio vs Retention (selected year)",
-        "fontSize": 18
-      },
-      "data": {"url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv"},
-
-      "transform": [
-        { "filter": "datum.cohort == pCohort && datum.affiliation == pAffil && datum.sex == pSex" },
-        { "fold": ["arr_all","arr_indigenous","arr_non_indigenous"], "as": ["measure","arr_value"] },
-        { "filter": "datum.measure == pMeasure && toNumber(datum.year) == pYearScatter" },
-        { "calculate": "toNumber(datum.arr_value)", "as": "ARR" },
-        { "calculate": "toNumber(datum.year)", "as": "YearNum" },
-  { "calculate": "datum.state_short + '|' + datum.year", "as": "join_key" },
-        {
-          "lookup": "join_key",
-          "from": {
-            "data": {
-              "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_student_teacher_ratio_2006_2024_with_joinkey.csv"
-            },
-            "key": "join_key",
-            "fields": ["ratio"]
-          }
-        },
-        { "calculate": "toNumber(datum.ratio)", "as": "Ratio" }
-      ],
-      "layer": [
-        {
-          "mark": { "type": "point", "filled": true, "size": 120, "opacity": 0.9 },
-          "encoding": {
-            "x": { "field": "Ratio", "type": "quantitative", "title": "Student-teacher ratio (FTE students per FTE teacher)", "scale": { "zero": false, "nice": true } },
-            "y": { "field": "ARR", "type": "quantitative", "title": "Capped ARR (%)", "scale": { "zero": false, "nice": true } },
-            "color": { "field": "state_name", "type": "nominal", "title": "State" },
-            "opacity": { "condition": { "param": "stateSel2", "value": 1 }, "value": 0.4 },
-            "tooltip": [
-              { "field": "state_name", "title": "State/Territory" },
-              { "field": "YearNum", "title": "Year", "format": "d" },
-              { "field": "ARR", "title": "ARR (%)", "format": ".1f" },
-              { "field": "Ratio", "title": "Student-teacher ratio", "format": ".1f" },
-              { "field": "cohort", "title": "Cohort" },
-              { "field": "affiliation", "title": "Sector" },
-              { "field": "sex", "title": "Sex" }
-            ]
-          },
-          "params": [
-            {
-              "name": "stateSel2",
-              "select": { "type": "point", "fields": ["state_name"] },
-              "bind": "legend"
-            }
-          ]
-        },
-        {
-          "transform": [{ "regression": "ARR", "on": "Ratio" }],
-          "mark": { "type": "line", "stroke": "black", "strokeDash": [6,4], "opacity": 0.7 },
-          "encoding": {
-            "x": { "field": "Ratio", "type": "quantitative" },
-            "y": { "field": "ARR", "type": "quantitative" }
-          }
-        },
-        {
-          "transform": [{ "aggregate": [{"op":"mean","field":"Ratio","as":"MeanRatio"}], "groupby": [] }],
-          "mark": { "type": "rule", "stroke": "#666", "strokeDash": [3,3], "opacity": 0.8 },
-          "encoding": { "x": { "field": "MeanRatio", "type": "quantitative" } }
-        },
-        {
-          "transform": [{ "aggregate": [{"op":"mean","field":"ARR","as":"MeanARR"}], "groupby": [] }],
-          "mark": { "type": "rule", "stroke": "#666", "strokeDash": [3,3], "opacity": 0.8 },
-          "encoding": { "y": { "field": "MeanARR", "type": "quantitative" } }
-        }
-      ]
-    },
-
-    {
-      "title": {
-        "text": "Participation vs Retention by State (2011-2024)",
-        "fontSize": 18,
-        "subtitle": "Blue = Participation rate (ages 6-19), Red = Capped ARR",
-        "subtitleFontSize": 12
-      },
-      "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_2011_2024_long_with_joinkey.csv" },
-      "transform": [
-        { "filter": "datum.cohort == pCohort && datum.affiliation == pAffil && datum.sex == pSex" },
-        { "fold": ["arr_all","arr_indigenous","arr_non_indigenous"], "as": ["measure","arr_value"] },
-        { "filter": "datum.measure == pMeasure" },
-        { "calculate": "toNumber(datum.year)", "as": "YearNum" },
-        { "calculate": "toNumber(datum.arr_value)", "as": "ARR" },
-
-  { "calculate": "datum.state_short + '|' + datum.year", "as": "join_key" },
-        {
-          "lookup": "join_key",
-          "from": {
-            "data": {
-              "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_participation_rate_2011_2024.csv"
-            },
-            "key": "join_key",
-            "fields": ["participation_rate"]
-          }
-        },
-        { "calculate": "toNumber(datum.participation_rate)", "as": "PartRate" },
-
-        { "fold": ["PartRate","ARR"], "as": ["series","pct"] }
-      ],
-
-      "facet": {
-        "field": "state_name",
-        "type": "nominal",
-        "title": null,
-        "header": { "labelAngle": 0, "labelFontSize": 12, "labelFontWeight": "bold" }
-      },
-      "columns": 3,
-
-      "spec": {
-        "width": 200,
-        "height": 200,
-        "layer": [
-          {
-            "mark": { "type": "line", "strokeWidth": 1 },
-            "encoding": {
-              "x": { "field": "YearNum", "type": "quantitative", "axis": { "format": "d", "title": "Year" } },
-              "y": { "field": "pct", "type": "quantitative", "title": "Percent" },
-              "color": {
-                "field": "series",
-                "type": "nominal",
-                "title": null,
-                "scale": { "domain": ["PartRate","ARR"], "range": ["#1f77b4","#d62728"] },
-                "legend": { "orient": "top", "title": "Series" }
-              },
-              "opacity": { "value": 0.35 },
-              "tooltip": [
-                { "field": "state_name", "title": "State/Territory" },
-                { "field": "YearNum", "title": "Year", "format": "d" },
-                { "field": "series", "title": "Series",
-                  "type": "nominal" },
-                { "field": "pct", "title": "Value (%)", "format": ".1f" },
-                { "field": "cohort", "title": "Cohort" },
-                { "field": "affiliation", "title": "Sector" },
-                { "field": "sex", "title": "Sex" }
-              ]
-            }
-          },
-          {
-            "transform": [{ "filter": { "param": "yearBrush" } }],
-            "mark": { "type": "line", "strokeWidth": 3 },
-            "encoding": {
-              "x": { "field": "YearNum", "type": "quantitative" },
-              "y": { "field": "pct", "type": "quantitative" },
-              "color": {
-                "field": "series",
-                "type": "nominal",
-                "scale": { "domain": ["PartRate","ARR"], "range": ["#1f77b4","#d62728"] },
-                "legend": null
-              }
-            }
-          }
-        ]
-      }
     }
 
     

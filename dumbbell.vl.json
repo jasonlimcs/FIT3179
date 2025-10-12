@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 320,
+  "title": {
+    "text": "Indigenous vs Non-Indigenous ARR by State (2024)",
+    "fontSize": 18
+  },
+  "config": {
+    "axisX": { "grid": false }
+  },
+  "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_all_2024.csv" },
+  "transform": [
+    { "calculate": "toNumber(datum.arr_indigenous)", "as": "ArrInd" },
+    { "calculate": "toNumber(datum.arr_non_indigenous)", "as": "ArrNonInd" },
+    { "aggregate": [
+        { "op": "mean", "field": "ArrInd", "as": "ArrInd" },
+        { "op": "mean", "field": "ArrNonInd", "as": "ArrNonInd" }
+      ],
+      "groupby": ["state_name"]
+    },
+  { "calculate": "datum.ArrNonInd - datum.ArrInd", "as": "Gap" }
+  ],
+  "layer": [
+    {
+      "mark": { "type": "rule", "stroke": "#999", "strokeWidth": 3, "opacity": 0.6},
+      "params": [
+        { "name": "stateSelGap", "select": { "type": "point", "fields": ["state_name"] } }
+      ],
+      "encoding": {
+        "y": { "field": "state_name", "type": "nominal", "sort": { "field": "Gap", "order": "descending" }},
+        "x": { "field": "ArrInd", "type": "quantitative", "title": "Capped ARR (%)" },
+        "x2": { "field": "ArrNonInd" },
+        "opacity": { "condition": { "param": "stateSelGap", "value": 1 }, "value": 0.35 },
+        "tooltip": [
+          { "field": "state_name", "title": "State/Territory" },
+          { "field": "ArrInd", "title": "Indigenous ARR (%)", "format": ".1f" },
+          { "field": "ArrNonInd", "title": "Non-Indigenous ARR (%)", "format": ".1f" },
+          { "field": "Gap", "title": "Gap (pp)", "format": "+.1f" }
+        ]
+      }
+      
+    },
+
+    {
+      "transform": [
+        { "fold": ["ArrInd", "ArrNonInd"], "as": ["GroupKey", "ARRvalue"] },
+        { "calculate": "datum.GroupKey == 'ArrInd' ? 'Indigenous' : 'Non-Indigenous'", "as": "Group" }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 80 },
+      "encoding": {
+        "y": {
+          "field": "state_name",
+          "type": "nominal",
+          "sort": { "field": "Gap", "order": "descending" },
+          "title": null
+        },
+        "x": { "field": "ARRvalue", "type": "quantitative", "axis": { "grid": false } },
+        "color": {
+          "field": "Group",
+          "type": "nominal",
+          "title": "Group",
+          "scale": { "domain": ["Indigenous", "Non-Indigenous"], "range": ["#9467bd", "#2ca02c"] },
+          "legend": { "orient": "right" }
+        },
+        "opacity": { "condition": { "param": "stateSelGap", "value": 1 }, "value": 0.5 },
+        "tooltip": [
+          { "field": "state_name", "title": "State/Territory" },
+          { "field": "Group", "title": "Group" },
+          { "field": "ARRvalue", "title": "ARR (%)", "format": ".1f" },
+          { "field": "ArrInd", "title": "Indigenous ARR (%)", "format": ".1f" },
+          { "field": "ArrNonInd", "title": "Non-Indigenous ARR (%)", "format": ".1f" },
+          { "field": "Gap", "title": "Gap (pp)", "format": "+.1f" }
+        ]
+      }
+    },
+    {
+      "mark": { "type": "text", "dx": 20, "dy": 0, "baseline": "middle", "fontSize": 11, "color": "#2c3e50" },
+      "encoding": {
+        "y": { "field": "state_name", "type": "nominal", "sort": { "field": "Gap", "order": "descending" } },
+        "x": { "field": "ArrNonInd", "type": "quantitative" },
+        "text": { "field": "Gap", "type": "quantitative", "format": "+.1f" }
+      }
+    }
+    
+  ]
+}

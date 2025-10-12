@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
@@ -11,46 +16,101 @@
     <title>Data Visualisation 2 </title>
 
      <style>
-        * {
-            font-family: 'Oxygen', sans-serif;
-            line-height: 1.5;
+        :root{
+            --page-max: 1200px;
+            --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+            --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+            --bg: #f0f2f5; --card: #ffffff; --panel: #f7f8fa; --muted: #6b7280;
+            --ink: #111827; --accent: #2185b8; --border: #e5e7eb;
         }
+        * { box-sizing: border-box; }
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 105vh;
             margin: 0;
-            text-align: center;
-            background-color: #f0f0f0;
+            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            color: var(--ink);
+            line-height: 1.7;
+            background-color: var(--bg);
         }
         .eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
 
-        /* #map {
-            margin-top: 20px;
-        } */
-
         .page {
-            width:1200px;
-            background-color: white;
-            padding: 70px;
-            padding-top: 35px;
+            width: 100%;
+            max-width: var(--page-max);
+            background-color: var(--card);
+            padding: clamp(24px, 4vw, 56px);
+            margin: 0 auto;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.04);
         }
         h1 {
-            font-weight: 600;
-            font-size: 260%;
-            text-align: center;
-            color: black;
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 700;
+            font-size: clamp(28px, 4vw, 44px);
+            line-height: 1.15;
+            margin: 0 0 var(--space-3) 0;
         }
+        h2 { 
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 700;
+            font-size: clamp(20px, 2.6vw, 28px);
+            margin: 0 0 var(--space-3) 0;
+        }
+        p { 
+            font-size: 16px; 
+            color: #1f2937; 
+            margin: 0 0 var(--space-5) 0; 
+            max-width: 68ch;
+        }
+        .center { text-align: center; margin-left: auto; margin-right: auto; }
 
         .header {
-                background: #e0e0e0;
-                border-radius: 16px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-                padding: 32px 0 24px 0;
-                margin-bottom: 32px;
-            }
+            background: #e9ecef;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: var(--space-6);
+            margin-bottom: var(--space-7);
+            text-align: center;
+        }
+        .lead { font-size: 18px; color: #374151; max-width: 80ch; margin: 0 auto; }
+
+        /* Section layout */
+        section { margin: var(--space-7) 0; }
+        .section-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-8);
+            align-items: start;
+        }
+        .section-text { padding-top: var(--space-2); }
+        .section-text p + p { margin-top: var(--space-3); }
+        .section-vis { width: 100%; display: flex; justify-content: center; }
+        .vis-panel {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: var(--space-4);
+        }
+        .caption { font-size: 13px; color: var(--muted); margin-top: var(--space-2); }
+
+        /* Center embeds and controls */
+        .center-embed { display: flex; justify-content: center; }
+        .vega-embed { margin: 0 auto; }
+        #filters, .filters, #controls, .controls {
+            display: flex; justify-content: center; align-items: center;
+            gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-3);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px){
+            .section-grid { grid-template-columns: 1fr; }
+            .section-text { order: 1; }
+            .section-vis { order: 2; }
+        }
+        /* Center Vega-Lite bindings for map and widen text */
+        #map .vega-embed { margin: 0 auto; }
+        #map .vega-bindings { display: flex; justify-content: center; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+        #map .vega-bindings label { margin-right: var(--space-1); color: #374151; }
+        #map .vega-bindings select, #map .vega-bindings input[type="range"], #map .vega-bindings input[type="number"], #map .vega-bindings input[type="text"] { margin-right: var(--space-3); }
+        .wide { max-width: 90ch; }
         
         
     </style>
@@ -59,26 +119,49 @@
 <body>
     <div class="page">
         <div class="header">
-            <h1>Patterns in School Retention Across <span style="color: #2185b8">Australia</span></h1>
-            <p>The apparent retention rate is the proportion of a starting-year cohort (e.g., Year 7/8 or Year 10) that is enrolled in a later target year (e.g., Year 12) in a given year, calculated from enrolment counts (ABS).
-                This visualisation displays how school retention primarily in the secondary level varies across Australia, and why.
-                Using ABS and ACARA data, it explores how different factors could affect retention rate and areas of improvement.
-
-            </p>
+            <h1>Patterns in School Retention Across <span style="color: var(--accent)">Australia</span></h1>
+            <p class="lead">The apparent retention rate (ARR) estimates the share of a starting cohort (e.g., Year 7/8 or Year 10) that remains enrolled in a later target year (e.g., Year 12). Using ABS and ACARA data, this visualisation explores retention patterns (primarily secondary level) across Australia and factors that relate to them.</p>
         </div>
-        <h2>Where Retention Is Strongest</h2>
-        <p>The chloropleth map below shows the Apparent Retention Rates of different states/territories in Australia from 2011 to 2024. 
+
+        <!-- Section: Map (full width) -->
+        <section>
+            <h2 class="center">Where Retention Is Strongest</h2>
+            <p class="center wide">The chloropleth map below shows the Apparent Retention Rates of different states/territories in Australia from 2011 to 2024. 
             The data shows that there is a 0.23% increase in overall ARR from 2011 to 2024 across all states, with Australian Capital Territory and South Australia having the highest ARR and Northern Territory having the lowest.
-            The ARR trend has started to decline in all states after 2020 possibly due to COVID-19 pandemic disruptions to schooling.
-        </p>
-        <div id="map"></div>
-        <h2>ARR vs Student-Teacher Ratio</h2>
-        <p>One interesting trend is that aside from ACT, schools with lower ratios (around 9-11 students per teacher) often have higher retention rates (80-100%), while higher ratios (12-14) tend to correspond with lower ARR (below 70%). However, this isnt always the case as there are schools with high ratios that still achieve high ARR.
-             Another observation is that Independent Schools tend to have a lower student-teacher ratio compared to other school types while Government and Catholic schools have a higher ratio.</p>
-        <div id="dotplot"></div>
-        <h2>Indigenous vs Non-Indigenous</h2>
-        <p>The plot reveals a significant gap in the apparent retention rates (ARR) between Indigenous and Non-Indigenous students across Australian states in 2024. Non-Indigenous students consistently show much higher retention rates, particularly in states like New South Wales and Northern Territory. The gap is smallest in Tasmania and the Australian Capital Territory, but Indigenous students still face notable challenges in retention compared to their Non-Indigenous peers.</p>
-        <div id="equity"></div>
+            The ARR trend has started to decline in all states after 2020 possibly due to COVID-19 pandemic disruptions to schooling.</p>
+            <div class="center-embed">
+                <div id="map"></div>
+            </div>
+        </section>
+
+        <!-- Section: ARR vs Student-Teacher Ratio (text left, chart right) -->
+        <section>
+            <div class="section-grid">
+                <div class="section-text">
+                    <h2>ARR vs Student-Teacher Ratio</h2>
+                    <p>Aside from the ACT, schools with lower ratios (around 9-11 students per teacher) often have higher retention (80-100%), while higher ratios (12-14) tend to correspond with lower ARR (below 70%). However, some high-ratio schools still achieve strong retention.</p>
+                    <p>Independent schools generally exhibit lower student-teacher ratios, while Government and Catholic schools tend to be higher. <span style="font-weight: bold;">Hover the chart to compare by state.</span></p>
+                </div>
+                <div class="section-vis">
+                    <div id="dotplot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Equity (chart left, text right) -->
+        <section>
+            <div class="section-grid">
+                <div class="section-vis">
+                    <div id="equity"></div>
+
+                </div>
+                <div class="section-text">
+                    <h2>Indigenous and Non-Indigenous</h2>
+                    <p>In 2024, ARR remains notably lower for Indigenous students across most states. Gaps are smallest in Tasmania and the ACT, but there remain states with much larger differences, particularly in NSW and the NT.</p>
+                    <p>Understanding and addressing structural barriers such as access, resourcing, and community support are key to improving retention outcomes.</p>
+                </div>
+            </div>
+        </section>
     </div>
 
 </body>

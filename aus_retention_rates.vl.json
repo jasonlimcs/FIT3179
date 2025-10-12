@@ -45,17 +45,6 @@
         "labels": ["All", "Aboriginal & Torres Strait Islander", "Non-Indigenous"],
         "name": "Measure: "
       }
-    },
-    {
-      "name": "pYearScatter",
-      "value": 2024,
-      "bind": {
-        "input": "range",
-        "min": 2011,
-        "max": 2024,
-        "step": 1,
-        "name": "Select year: "
-      }
     }
     
   ],
@@ -63,7 +52,7 @@
   "vconcat": [
     {
       "width": 800,
-      "height": 600,
+      "height": 500,
       "title": {
         "text": "Apparent Retention Rates (ARR) in Australia by State, 2011-2024",
         "anchor": "middle",
@@ -140,7 +129,7 @@
 
     {
       "width": 800,
-      "height": 320,
+      "height": 200,
       "title": {
         "text": "State Retention Trends (2011-2024)",
         "fontSize": 18,

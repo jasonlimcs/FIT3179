@@ -1,4 +1,4 @@
-Year,State/Territory,Affiliation,ASGS Remoteness Classification,Male Count (FTE),Female Count (FTE),Total Student Count (FTE)
+year,state_name,affiliation,remoteness,male_fte,female_fte,students_fte
 2024,NSW,Government,Major City,310120.4,286107.0,596227.4
 2024,NSW,Government,Inner Regional,75393.2,69790.3,145183.5
 2024,NSW,Government,Outer Regional,18279.2,17189.4,35468.6
@@ -79,3 +79,4 @@ Year,State/Territory,Affiliation,ASGS Remoteness Classification,Male Count (FTE)
 2024,ACT,Non-Government,Outer Regional,0.0,0.0,0.0
 2024,ACT,Non-Government,Remote,0.0,0.0,0.0
 2024,ACT,Non-Government,Very Remote,0.0,0.0,0.0
+

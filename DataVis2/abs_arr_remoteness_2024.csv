@@ -1,0 +1,41 @@
+year,state_short,affiliation,arr_all,state_name,join_key
+2024,NSW,Government,68.4,New South Wales,NSW|2024|Government
+2024,NSW,Non-Government,83.0,New South Wales,NSW|2024|Non-Government
+2024,NSW,Catholic,78.9,New South Wales,NSW|2024|Catholic
+2024,NSW,Independent,88.8,New South Wales,NSW|2024|Independent
+2024,NSW,All affiliations,74.5,New South Wales,NSW|2024|All affiliations
+2024,Vic,Government,79.5,Victoria,Vic|2024|Government
+2024,Vic,Non-Government,90.9,Victoria,Vic|2024|Non-Government
+2024,Vic,Catholic,83.5,Victoria,Vic|2024|Catholic
+2024,Vic,Independent,99.7,Victoria,Vic|2024|Independent
+2024,Vic,All affiliations,84.4,Victoria,Vic|2024|All affiliations
+2024,Qld,Government,72.3,Queensland,Qld|2024|Government
+2024,Qld,Non-Government,94.9,Queensland,Qld|2024|Non-Government
+2024,Qld,Catholic,86.1,Queensland,Qld|2024|Catholic
+2024,Qld,Independent,100.0,Queensland,Qld|2024|Independent
+2024,Qld,All affiliations,80.8,Queensland,Qld|2024|All affiliations
+2024,SA,Government,80.0,South Australia,SA|2024|Government
+2024,SA,Non-Government,98.9,South Australia,SA|2024|Non-Government
+2024,SA,Catholic,93.2,South Australia,SA|2024|Catholic
+2024,SA,Independent,100.0,South Australia,SA|2024|Independent
+2024,SA,All affiliations,87.5,South Australia,SA|2024|All affiliations
+2024,WA,Government,77.1,Western Australia,WA|2024|Government
+2024,WA,Non-Government,89.6,Western Australia,WA|2024|Non-Government
+2024,WA,Catholic,81.0,Western Australia,WA|2024|Catholic
+2024,WA,Independent,98.0,Western Australia,WA|2024|Independent
+2024,WA,All affiliations,82.0,Western Australia,WA|2024|All affiliations
+2024,Tas,Government,70.8,Tasmania,Tas|2024|Government
+2024,Tas,Non-Government,65.0,Tasmania,Tas|2024|Non-Government
+2024,Tas,Catholic,58.8,Tasmania,Tas|2024|Catholic
+2024,Tas,Independent,74.6,Tasmania,Tas|2024|Independent
+2024,Tas,All affiliations,68.7,Tasmania,Tas|2024|All affiliations
+2024,NT,Government,55.6,Northern Territory,NT|2024|Government
+2024,NT,Non-Government,54.2,Northern Territory,NT|2024|Non-Government
+2024,NT,Catholic,49.8,Northern Territory,NT|2024|Catholic
+2024,NT,Independent,58.1,Northern Territory,NT|2024|Independent
+2024,NT,All affiliations,55.1,Northern Territory,NT|2024|All affiliations
+2024,ACT,Government,99.1,Australian Capital Territory,ACT|2024|Government
+2024,ACT,Non-Government,75.1,Australian Capital Territory,ACT|2024|Non-Government
+2024,ACT,Catholic,69.5,Australian Capital Territory,ACT|2024|Catholic
+2024,ACT,Independent,85.4,Australian Capital Territory,ACT|2024|Independent
+2024,ACT,All affiliations,87.8,Australian Capital Territory,ACT|2024|All affiliations

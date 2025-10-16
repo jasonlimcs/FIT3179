@@ -1,0 +1,81 @@
+Year,State/Territory,Affiliation,ASGS Remoteness Classification,Male Count (FTE),Female Count (FTE),Total Student Count (FTE)
+2024,NSW,Government,Major City,310120.4,286107.0,596227.4
+2024,NSW,Government,Inner Regional,75393.2,69790.3,145183.5
+2024,NSW,Government,Outer Regional,18279.2,17189.4,35468.6
+2024,NSW,Government,Remote,1370.7,1353.2,2723.9
+2024,NSW,Government,Very Remote,380.0,353.0,733.0
+2024,NSW,Non-Government,Major City,185352.7,186387.8,371740.5
+2024,NSW,Non-Government,Inner Regional,43939.4,45850.1,89789.4
+2024,NSW,Non-Government,Outer Regional,6057.7,6389.3,12447.0
+2024,NSW,Non-Government,Remote,347.0,321.8,668.8
+2024,NSW,Non-Government,Very Remote,86.0,116.0,202.0
+2024,Vic.,Government,Major City,268801.3,246651.7,515452.9
+2024,Vic.,Government,Inner Regional,62877.9,57683.5,120561.4
+2024,Vic.,Government,Outer Regional,13361.2,12504.6,25865.7
+2024,Vic.,Government,Remote,188.7,172.9,361.6
+2024,Vic.,Government,Very Remote,0.0,0.0,0.0
+2024,Vic.,Non-Government,Major City,150306.4,154510.7,304817.1
+2024,Vic.,Non-Government,Inner Regional,37230.4,37376.9,74607.3
+2024,Vic.,Non-Government,Outer Regional,4378.2,4588.1,8966.3
+2024,Vic.,Non-Government,Remote,15.0,25.0,40.0
+2024,Vic.,Non-Government,Very Remote,0.0,0.0,0.0
+2024,Qld,Government,Major City,190010.3,179224.9,369235.2
+2024,Qld,Government,Inner Regional,54385.4,50867.5,105252.9
+2024,Qld,Government,Outer Regional,39999.1,37428.1,77427.2
+2024,Qld,Government,Remote,3744.0,3586.0,7330.0
+2024,Qld,Government,Very Remote,3778.2,3493.9,7272.1
+2024,Qld,Non-Government,Major City,106691.1,104077.4,210768.5
+2024,Qld,Non-Government,Inner Regional,29212.4,29671.6,58884.0
+2024,Qld,Non-Government,Outer Regional,21204.2,21407.4,42611.6
+2024,Qld,Non-Government,Remote,1042.3,1027.0,2069.3
+2024,Qld,Non-Government,Very Remote,495.0,445.0,940.0
+2024,SA,Government,Major City,66794.0,61629.6,128423.6
+2024,SA,Government,Inner Regional,8257.2,7694.8,15952.0
+2024,SA,Government,Outer Regional,11926.4,11113.9,23040.3
+2024,SA,Government,Remote,2634.2,2388.8,5022.9
+2024,SA,Government,Very Remote,1044.7,1010.8,2055.5
+2024,SA,Non-Government,Major City,45652.2,46321.8,91973.9
+2024,SA,Non-Government,Inner Regional,3187.1,3152.3,6339.4
+2024,SA,Non-Government,Outer Regional,3768.1,3860.4,7628.5
+2024,SA,Non-Government,Remote,969.0,903.0,1872.0
+2024,SA,Non-Government,Very Remote,64.5,101.0,165.5
+2024,WA,Government,Major City,122725.0,113183.7,235908.7
+2024,WA,Government,Inner Regional,13099.4,12022.8,25122.2
+2024,WA,Government,Outer Regional,11234.1,10196.5,21430.6
+2024,WA,Government,Remote,6603.5,6220.1,12823.6
+2024,WA,Government,Very Remote,4048.8,3808.6,7857.4
+2024,WA,Non-Government,Major City,64824.6,65878.3,130702.9
+2024,WA,Non-Government,Inner Regional,6048.3,6025.1,12073.4
+2024,WA,Non-Government,Outer Regional,4472.0,5012.6,9484.6
+2024,WA,Non-Government,Remote,1130.5,1161.5,2292.0
+2024,WA,Non-Government,Very Remote,743.2,749.0,1492.2
+2024,Tas.,Government,Major City,0.0,0.0,0.0
+2024,Tas.,Government,Inner Regional,18788.0,17580.2,36368.2
+2024,Tas.,Government,Outer Regional,8296.7,7734.6,16031.3
+2024,Tas.,Government,Remote,257.4,243.3,500.7
+2024,Tas.,Government,Very Remote,142.5,124.0,266.5
+2024,Tas.,Non-Government,Major City,0.0,0.0,0.0
+2024,Tas.,Non-Government,Inner Regional,10425.4,10860.4,21285.8
+2024,Tas.,Non-Government,Outer Regional,2913.3,2904.3,5817.6
+2024,Tas.,Non-Government,Remote,58.0,58.0,116.0
+2024,Tas.,Non-Government,Very Remote,0.0,0.0,0.0
+2024,NT,Government,Major City,0.0,0.0,0.0
+2024,NT,Government,Inner Regional,0.0,0.0,0.0
+2024,NT,Government,Outer Regional,8782.7,8339.9,17122.6
+2024,NT,Government,Remote,2349.5,2207.8,4557.3
+2024,NT,Government,Very Remote,3640.1,3403.7,7043.8
+2024,NT,Non-Government,Major City,0.0,0.0,0.0
+2024,NT,Non-Government,Inner Regional,0.0,0.0,0.0
+2024,NT,Non-Government,Outer Regional,3584.2,3622.2,7206.4
+2024,NT,Non-Government,Remote,1729.0,1684.0,3413.0
+2024,NT,Non-Government,Very Remote,291.0,216.0,507.0
+2024,ACT,Government,Major City,23906.8,21934.5,45841.2
+2024,ACT,Government,Inner Regional,29.0,26.0,55.0
+2024,ACT,Government,Outer Regional,0.0,0.0,0.0
+2024,ACT,Government,Remote,0.0,0.0,0.0
+2024,ACT,Government,Very Remote,0.0,0.0,0.0
+2024,ACT,Non-Government,Major City,15644.2,15374.1,31018.2
+2024,ACT,Non-Government,Inner Regional,0.0,0.0,0.0
+2024,ACT,Non-Government,Outer Regional,0.0,0.0,0.0
+2024,ACT,Non-Government,Remote,0.0,0.0,0.0
+2024,ACT,Non-Government,Very Remote,0.0,0.0,0.0

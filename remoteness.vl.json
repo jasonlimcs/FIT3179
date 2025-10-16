@@ -1,28 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 760,
-  "height": 360,
-  "title": { "text": "ARR by ASGS Remoteness (Stacked by Affiliation) - 2024", "fontSize": 18 },
+  "width": 720,
+  "height": 340,
+  "title": { "text": "ARR by ASGS Remoteness (Weighted by Students FTE) - 2024", "fontSize": 18 },
 
   "data": {
     "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/remoteness.csv"
   },
 
-  "params": [
-    {
-      "name": "gender",
-      "value": "All",
-      "bind": { "input": "select", "name": "Gender:", "options": ["All", "Male", "Female"] }
-    }
-  ],
-
   "transform": [
-    { "filter": "toNumber(datum['year']) == 2024" },
+    { "filter": "toNumber(datum.year) == 2024" },
 
-    { "filter": "indexof(['Government', 'Non-Government'], datum['affiliation']) >= 0" },
-
-    { "calculate": "replace(datum['state_name'], '.', '')", "as": "state_short" },
-    { "calculate": "datum.state_short + '|' + datum['year'] + '|' + datum['affiliation']", "as": "join_key" },
+    { "calculate": "datum.state_name + '|' + datum.year + '|' + datum.affiliation", "as": "join_key" },
 
     {
       "lookup": "join_key",
@@ -36,75 +25,82 @@
     },
 
     { "calculate": "toNumber(datum.arr_all)", "as": "ARR_state_proxy" },
+    { "calculate": "toNumber(datum.students_fte)", "as": "StudentsFTE" },
 
-    { "calculate": "toNumber(datum['male_fte'])", "as": "MaleFTE" },
-    { "calculate": "toNumber(datum['female_fte'])", "as": "FemaleFTE" },
-    { "calculate": "toNumber(datum['students_fte'])", "as": "TotalFTE" },
-
-    {
-      "calculate": "gender == 'Male' ? datum.MaleFTE : (gender == 'Female' ? datum.FemaleFTE : datum.TotalFTE)",
-      "as": "SelectedFTE"
-    },
-
-    { "calculate": "datum.ARR_state_proxy * datum.SelectedFTE", "as": "wARR" },
-
+    { "calculate": "datum.ARR_state_proxy * datum.StudentsFTE", "as": "wARR" },
     {
       "aggregate": [
         { "op": "sum", "field": "wARR", "as": "sum_wARR" },
-        { "op": "sum", "field": "SelectedFTE", "as": "sum_SelectedFTE" }
-      ],
-      "groupby": ["remoteness", "affiliation"]
-    },
-
-    {
-      "joinaggregate": [
-        { "op": "sum", "field": "sum_SelectedFTE", "as": "total_SelectedFTE_remoteness" },
-        { "op": "sum", "field": "sum_wARR", "as": "total_wARR_remoteness" }
+        { "op": "sum", "field": "StudentsFTE", "as": "sum_StudentsFTE" }
       ],
       "groupby": ["remoteness"]
     },
+    { "calculate": "datum.sum_wARR / datum.sum_StudentsFTE", "as": "ARR_weighted" },
 
-    { "calculate": "datum.sum_wARR / datum.total_SelectedFTE_remoteness", "as": "segment_ARR" },
-    { "calculate": "datum.total_wARR_remoteness / datum.total_SelectedFTE_remoteness", "as": "ARR_weighted_remoteness" },
-    { "calculate": "datum.sum_SelectedFTE / datum.total_SelectedFTE_remoteness", "as": "AffilShare" }
+    {
+      "joinaggregate": [
+        { "op": "sum", "field": "sum_StudentsFTE", "as": "AllStudentsFTE" }
+      ]
+    },
+    { "calculate": "datum.sum_StudentsFTE / datum.AllStudentsFTE", "as": "PopShare" }
   ],
 
-  "mark": { "type": "bar" },
+  "layer": [
+    {
+      "transform": [
+        { "aggregate": [{ "op": "mean", "field": "ARR_weighted", "as": "NatAvg" }] }
+      ],
+      "mark": { "type": "rule", "strokeDash": [4,3], "stroke": "#666", "opacity": 0.8 },
+      "encoding": { "x": { "field": "NatAvg", "type": "quantitative" } }
+    },
 
-  "encoding": {
-    "y": {
-      "field": "remoteness",
-      "type": "nominal",
-      "title": "ASGS Remoteness",
-      "sort": ["Major City", "Inner Regional", "Outer Regional", "Remote", "Very Remote"]
+    {
+      "mark": { "type": "rule", "stroke": "#b0b0b0", "strokeWidth": 3, "opacity": 0.7 },
+      "encoding": {
+        "y": {
+          "field": "remoteness", "type": "nominal", "title": null,
+          "sort": ["Major Cities", "Inner Regional", "Outer Regional", "Remote", "Very Remote"]
+        },
+        "x": { "field": "ARR_weighted", "type": "quantitative"},
+        "x2": { "value": 0 },
+        "tooltip": [
+          { "field": "remoteness", "title": "ASGS remoteness" },
+          { "field": "ARR_weighted", "title": "ARR (weighted, %)", "format": ".1f" },
+          { "field": "PopShare", "title": "Population share", "format": ".1%" },
+          { "field": "sum_StudentsFTE", "title": "Students (FTE)", "format": "," }
+        ]
+      }
     },
-    "x": {
-      "field": "segment_ARR",
-      "type": "quantitative",
-      "title": "ARR (%)",
-      "stack": "zero",
-      "axis": { "grid": false, "format": ".1f" }
+
+    {
+      "mark": { "type": "point", "filled": true, "stroke": "#333", "strokeWidth": 0.5 },
+      "encoding": {
+        "y": {
+          "field": "remoteness", "type": "nominal", "title": null,
+          "sort": ["Major Cities", "Inner Regional", "Outer Regional", "Remote", "Very Remote"]
+        },
+        "x": { "field": "ARR_weighted", "type": "quantitative", "title": "Capped ARR (%)", "axis": { "grid": false } },
+        "size": { "field": "PopShare", "type": "quantitative", "title": "Population share", "scale": { "range": [80, 600] } },
+        "color": { "value": "#1976d2" }
+      }
     },
-    "color": {
-      "field": "affiliation",
-      "type": "nominal",
-      "title": "Affiliation",
-      "scale": { "scheme": "tableau10" },
-      "sort": ["Government", "Catholic", "Independent"]
-    },
-    "tooltip": [
-      { "field": "remoteness", "title": "ASGS Remoteness" },
-      { "field": "affiliation", "title": "Affiliation" },
-      { "field": "segment_ARR", "title": "Affiliation contribution (pp)", "format": ".1f" },
-      { "field": "ARR_weighted_remoteness", "title": "Total ARR (weighted, %)", "format": ".1f" },
-      { "field": "sum_SelectedFTE", "title": "Students (FTE)", "format": "," },
-      { "field": "AffilShare", "title": "Affiliation share", "format": ".1%" }
-    ]
-  },
+
+    {
+      "mark": { "type": "text", "dx": 6, "align": "left", "fontSize": 11, "color": "#333" },
+      "encoding": {
+        "y": {
+          "field": "remoteness", "type": "nominal",
+          "sort": ["Major Cities", "Inner Regional", "Outer Regional", "Remote", "Very Remote"]
+        },
+        "x": { "field": "ARR_weighted", "type": "quantitative" },
+        "text": { "field": "ARR_weighted", "type": "quantitative", "format": ".1f" }
+      }
+    }
+  ],
 
   "config": {
     "axisY": { "labelPadding": 6 },
-    "legend": { "orient": "right" },
-    "bar": { "cornerRadiusEnd": 2 }
+    "legend": { "orient": "right" }
   }
 }
+

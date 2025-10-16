@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 760,
+  "height": 360,
+  "title": { "text": "ARR by ASGS Remoteness (Stacked by Affiliation) - 2024", "fontSize": 18 },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/remoteness.csv"
+  },
+
+  "params": [
+    {
+      "name": "gender",
+      "value": "All",
+      "bind": { "input": "select", "name": "Gender:", "options": ["All", "Male", "Female"] }
+    }
+  ],
+
+  "transform": [
+    { "filter": "toNumber(datum['year']) == 2024" },
+
+    { "filter": "indexof(['Government', 'Non-Government'], datum['affiliation']) >= 0" },
+
+    { "calculate": "replace(datum['state_name'], '.', '')", "as": "state_short" },
+    { "calculate": "datum.state_short + '|' + datum['year'] + '|' + datum['affiliation']", "as": "join_key" },
+
+    {
+      "lookup": "join_key",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_remoteness_2024.csv"
+        },
+        "key": "join_key",
+        "fields": ["arr_all"]
+      }
+    },
+
+    { "calculate": "toNumber(datum.arr_all)", "as": "ARR_state_proxy" },
+
+    { "calculate": "toNumber(datum['male_fte'])", "as": "MaleFTE" },
+    { "calculate": "toNumber(datum['female_fte'])", "as": "FemaleFTE" },
+    { "calculate": "toNumber(datum['students_fte'])", "as": "TotalFTE" },
+
+    {
+      "calculate": "gender == 'Male' ? datum.MaleFTE : (gender == 'Female' ? datum.FemaleFTE : datum.TotalFTE)",
+      "as": "SelectedFTE"
+    },
+
+    { "calculate": "datum.ARR_state_proxy * datum.SelectedFTE", "as": "wARR" },
+
+    {
+      "aggregate": [
+        { "op": "sum", "field": "wARR", "as": "sum_wARR" },
+        { "op": "sum", "field": "SelectedFTE", "as": "sum_SelectedFTE" }
+      ],
+      "groupby": ["remoteness", "affiliation"]
+    },
+
+    {
+      "joinaggregate": [
+        { "op": "sum", "field": "sum_SelectedFTE", "as": "total_SelectedFTE_remoteness" },
+        { "op": "sum", "field": "sum_wARR", "as": "total_wARR_remoteness" }
+      ],
+      "groupby": ["remoteness"]
+    },
+
+    { "calculate": "datum.sum_wARR / datum.total_SelectedFTE_remoteness", "as": "segment_ARR" },
+    { "calculate": "datum.total_wARR_remoteness / datum.total_SelectedFTE_remoteness", "as": "ARR_weighted_remoteness" },
+    { "calculate": "datum.sum_SelectedFTE / datum.total_SelectedFTE_remoteness", "as": "AffilShare" }
+  ],
+
+  "mark": { "type": "bar" },
+
+  "encoding": {
+    "y": {
+      "field": "remoteness",
+      "type": "nominal",
+      "title": "ASGS Remoteness",
+      "sort": ["Major City", "Inner Regional", "Outer Regional", "Remote", "Very Remote"]
+    },
+    "x": {
+      "field": "segment_ARR",
+      "type": "quantitative",
+      "title": "ARR (%)",
+      "stack": "zero",
+      "axis": { "grid": false, "format": ".1f" }
+    },
+    "color": {
+      "field": "affiliation",
+      "type": "nominal",
+      "title": "Affiliation",
+      "scale": { "scheme": "tableau10" },
+      "sort": ["Government", "Catholic", "Independent"]
+    },
+    "tooltip": [
+      { "field": "remoteness", "title": "ASGS Remoteness" },
+      { "field": "affiliation", "title": "Affiliation" },
+      { "field": "segment_ARR", "title": "Affiliation contribution (pp)", "format": ".1f" },
+      { "field": "ARR_weighted_remoteness", "title": "Total ARR (weighted, %)", "format": ".1f" },
+      { "field": "sum_SelectedFTE", "title": "Students (FTE)", "format": "," },
+      { "field": "AffilShare", "title": "Affiliation share", "format": ".1%" }
+    ]
+  },
+
+  "config": {
+    "axisY": { "labelPadding": 6 },
+    "legend": { "orient": "right" },
+    "bar": { "cornerRadiusEnd": 2 }
+  }
+}

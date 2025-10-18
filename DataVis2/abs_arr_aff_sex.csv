@@ -1,0 +1,1681 @@
+,year,state_name,affiliation,sex,arr_all,join_key
+3,2024,NSW,Government,Male,65.8,NSW|2024|Government|Male
+8,2024,NSW,Government,Female,71.1,NSW|2024|Government|Female
+13,2024,NSW,Government,Persons,68.4,NSW|2024|Government|Persons
+18,2024,NSW,Non-Government,Male,78.8,NSW|2024|Non-Government|Male
+23,2024,NSW,Non-Government,Female,87.2,NSW|2024|Non-Government|Female
+28,2024,NSW,Non-Government,Persons,83.0,NSW|2024|Non-Government|Persons
+33,2024,NSW,Catholic,Male,74.4,NSW|2024|Catholic|Male
+38,2024,NSW,Catholic,Female,83.5,NSW|2024|Catholic|Female
+43,2024,NSW,Catholic,Persons,78.9,NSW|2024|Catholic|Persons
+48,2024,NSW,Independent,Male,85.0,NSW|2024|Independent|Male
+53,2024,NSW,Independent,Female,92.6,NSW|2024|Independent|Female
+58,2024,NSW,Independent,Persons,88.8,NSW|2024|Independent|Persons
+63,2024,NSW,All affiliations,Male,71.2,NSW|2024|All affiliations|Male
+68,2024,NSW,All affiliations,Female,77.8,NSW|2024|All affiliations|Female
+73,2024,NSW,All affiliations,Persons,74.5,NSW|2024|All affiliations|Persons
+78,2024,Vic,Government,Male,75.5,Vic|2024|Government|Male
+83,2024,Vic,Government,Female,83.9,Vic|2024|Government|Female
+88,2024,Vic,Government,Persons,79.5,Vic|2024|Government|Persons
+93,2024,Vic,Non-Government,Male,87.7,Vic|2024|Non-Government|Male
+98,2024,Vic,Non-Government,Female,94.0,Vic|2024|Non-Government|Female
+103,2024,Vic,Non-Government,Persons,90.9,Vic|2024|Non-Government|Persons
+108,2024,Vic,Catholic,Male,80.3,Vic|2024|Catholic|Male
+113,2024,Vic,Catholic,Female,86.6,Vic|2024|Catholic|Female
+118,2024,Vic,Catholic,Persons,83.5,Vic|2024|Catholic|Persons
+123,2024,Vic,Independent,Male,96.5,Vic|2024|Independent|Male
+128,2024,Vic,Independent,Female,100.0,Vic|2024|Independent|Female
+133,2024,Vic,Independent,Persons,99.7,Vic|2024|Independent|Persons
+138,2024,Vic,All affiliations,Male,80.6,Vic|2024|All affiliations|Male
+143,2024,Vic,All affiliations,Female,88.4,Vic|2024|All affiliations|Female
+148,2024,Vic,All affiliations,Persons,84.4,Vic|2024|All affiliations|Persons
+153,2024,Qld,Government,Male,68.6,Qld|2024|Government|Male
+158,2024,Qld,Government,Female,76.3,Qld|2024|Government|Female
+163,2024,Qld,Government,Persons,72.3,Qld|2024|Government|Persons
+168,2024,Qld,Non-Government,Male,93.5,Qld|2024|Non-Government|Male
+173,2024,Qld,Non-Government,Female,96.4,Qld|2024|Non-Government|Female
+178,2024,Qld,Non-Government,Persons,94.9,Qld|2024|Non-Government|Persons
+183,2024,Qld,Catholic,Male,84.3,Qld|2024|Catholic|Male
+188,2024,Qld,Catholic,Female,88.0,Qld|2024|Catholic|Female
+193,2024,Qld,Catholic,Persons,86.1,Qld|2024|Catholic|Persons
+198,2024,Qld,Independent,Male,100.0,Qld|2024|Independent|Male
+203,2024,Qld,Independent,Female,100.0,Qld|2024|Independent|Female
+208,2024,Qld,Independent,Persons,100.0,Qld|2024|Independent|Persons
+213,2024,Qld,All affiliations,Male,77.8,Qld|2024|All affiliations|Male
+218,2024,Qld,All affiliations,Female,83.9,Qld|2024|All affiliations|Female
+223,2024,Qld,All affiliations,Persons,80.8,Qld|2024|All affiliations|Persons
+228,2024,SA,Government,Male,75.8,SA|2024|Government|Male
+233,2024,SA,Government,Female,84.5,SA|2024|Government|Female
+238,2024,SA,Government,Persons,80.0,SA|2024|Government|Persons
+243,2024,SA,Non-Government,Male,95.3,SA|2024|Non-Government|Male
+248,2024,SA,Non-Government,Female,100.0,SA|2024|Non-Government|Female
+253,2024,SA,Non-Government,Persons,98.9,SA|2024|Non-Government|Persons
+258,2024,SA,Catholic,Male,90.1,SA|2024|Catholic|Male
+263,2024,SA,Catholic,Female,96.1,SA|2024|Catholic|Female
+268,2024,SA,Catholic,Persons,93.2,SA|2024|Catholic|Persons
+273,2024,SA,Independent,Male,99.7,SA|2024|Independent|Male
+278,2024,SA,Independent,Female,100.0,SA|2024|Independent|Female
+283,2024,SA,Independent,Persons,100.0,SA|2024|Independent|Persons
+288,2024,SA,All affiliations,Male,83.2,SA|2024|All affiliations|Male
+293,2024,SA,All affiliations,Female,91.7,SA|2024|All affiliations|Female
+298,2024,SA,All affiliations,Persons,87.5,SA|2024|All affiliations|Persons
+303,2024,WA,Government,Male,74.8,WA|2024|Government|Male
+308,2024,WA,Government,Female,79.6,WA|2024|Government|Female
+313,2024,WA,Government,Persons,77.1,WA|2024|Government|Persons
+318,2024,WA,Non-Government,Male,85.9,WA|2024|Non-Government|Male
+323,2024,WA,Non-Government,Female,93.4,WA|2024|Non-Government|Female
+328,2024,WA,Non-Government,Persons,89.6,WA|2024|Non-Government|Persons
+333,2024,WA,Catholic,Male,77.9,WA|2024|Catholic|Male
+338,2024,WA,Catholic,Female,84.2,WA|2024|Catholic|Female
+343,2024,WA,Catholic,Persons,81.0,WA|2024|Catholic|Persons
+348,2024,WA,Independent,Male,93.9,WA|2024|Independent|Male
+353,2024,WA,Independent,Female,100.0,WA|2024|Independent|Female
+358,2024,WA,Independent,Persons,98.0,WA|2024|Independent|Persons
+363,2024,WA,All affiliations,Male,79.0,WA|2024|All affiliations|Male
+368,2024,WA,All affiliations,Female,85.1,WA|2024|All affiliations|Female
+373,2024,WA,All affiliations,Persons,82.0,WA|2024|All affiliations|Persons
+378,2024,Tas,Government,Male,65.7,Tas|2024|Government|Male
+383,2024,Tas,Government,Female,76.3,Tas|2024|Government|Female
+388,2024,Tas,Government,Persons,70.8,Tas|2024|Government|Persons
+393,2024,Tas,Non-Government,Male,59.7,Tas|2024|Non-Government|Male
+398,2024,Tas,Non-Government,Female,70.6,Tas|2024|Non-Government|Female
+403,2024,Tas,Non-Government,Persons,65.0,Tas|2024|Non-Government|Persons
+408,2024,Tas,Catholic,Male,53.6,Tas|2024|Catholic|Male
+413,2024,Tas,Catholic,Female,64.0,Tas|2024|Catholic|Female
+418,2024,Tas,Catholic,Persons,58.8,Tas|2024|Catholic|Persons
+423,2024,Tas,Independent,Male,68.6,Tas|2024|Independent|Male
+428,2024,Tas,Independent,Female,81.5,Tas|2024|Independent|Female
+433,2024,Tas,Independent,Persons,74.6,Tas|2024|Independent|Persons
+438,2024,Tas,All affiliations,Male,63.5,Tas|2024|All affiliations|Male
+443,2024,Tas,All affiliations,Female,74.2,Tas|2024|All affiliations|Female
+448,2024,Tas,All affiliations,Persons,68.7,Tas|2024|All affiliations|Persons
+453,2024,NT,Government,Male,48.4,NT|2024|Government|Male
+458,2024,NT,Government,Female,63.0,NT|2024|Government|Female
+463,2024,NT,Government,Persons,55.6,NT|2024|Government|Persons
+468,2024,NT,Non-Government,Male,51.3,NT|2024|Non-Government|Male
+473,2024,NT,Non-Government,Female,57.1,NT|2024|Non-Government|Female
+478,2024,NT,Non-Government,Persons,54.2,NT|2024|Non-Government|Persons
+483,2024,NT,Catholic,Male,49.0,NT|2024|Catholic|Male
+488,2024,NT,Catholic,Female,50.6,NT|2024|Catholic|Female
+493,2024,NT,Catholic,Persons,49.8,NT|2024|Catholic|Persons
+498,2024,NT,Independent,Male,53.3,NT|2024|Independent|Male
+503,2024,NT,Independent,Female,62.7,NT|2024|Independent|Female
+508,2024,NT,Independent,Persons,58.1,NT|2024|Independent|Persons
+513,2024,NT,All affiliations,Male,49.4,NT|2024|All affiliations|Male
+518,2024,NT,All affiliations,Female,60.9,NT|2024|All affiliations|Female
+523,2024,NT,All affiliations,Persons,55.1,NT|2024|All affiliations|Persons
+528,2024,ACT,Government,Male,91.7,ACT|2024|Government|Male
+533,2024,ACT,Government,Female,100.0,ACT|2024|Government|Female
+538,2024,ACT,Government,Persons,99.1,ACT|2024|Government|Persons
+543,2024,ACT,Non-Government,Male,77.3,ACT|2024|Non-Government|Male
+548,2024,ACT,Non-Government,Female,72.9,ACT|2024|Non-Government|Female
+553,2024,ACT,Non-Government,Persons,75.1,ACT|2024|Non-Government|Persons
+558,2024,ACT,Catholic,Male,73.3,ACT|2024|Catholic|Male
+563,2024,ACT,Catholic,Female,65.3,ACT|2024|Catholic|Female
+568,2024,ACT,Catholic,Persons,69.5,ACT|2024|Catholic|Persons
+573,2024,ACT,Independent,Male,86.0,ACT|2024|Independent|Male
+578,2024,ACT,Independent,Female,84.9,ACT|2024|Independent|Female
+583,2024,ACT,Independent,Persons,85.4,ACT|2024|Independent|Persons
+588,2024,ACT,All affiliations,Male,85.2,ACT|2024|All affiliations|Male
+593,2024,ACT,All affiliations,Female,90.7,ACT|2024|All affiliations|Female
+598,2024,ACT,All affiliations,Persons,87.8,ACT|2024|All affiliations|Persons
+603,2023,NSW,Government,Male,65.1,NSW|2023|Government|Male
+608,2023,NSW,Government,Female,71.6,NSW|2023|Government|Female
+613,2023,NSW,Government,Persons,68.3,NSW|2023|Government|Persons
+618,2023,NSW,Non-Government,Male,77.8,NSW|2023|Non-Government|Male
+623,2023,NSW,Non-Government,Female,86.7,NSW|2023|Non-Government|Female
+628,2023,NSW,Non-Government,Persons,82.2,NSW|2023|Non-Government|Persons
+633,2023,NSW,Catholic,Male,73.2,NSW|2023|Catholic|Male
+638,2023,NSW,Catholic,Female,83.0,NSW|2023|Catholic|Female
+643,2023,NSW,Catholic,Persons,78.1,NSW|2023|Catholic|Persons
+648,2023,NSW,Independent,Male,84.3,NSW|2023|Independent|Male
+653,2023,NSW,Independent,Female,92.1,NSW|2023|Independent|Female
+658,2023,NSW,Independent,Persons,88.1,NSW|2023|Independent|Persons
+663,2023,NSW,All affiliations,Male,70.4,NSW|2023|All affiliations|Male
+668,2023,NSW,All affiliations,Female,78.0,NSW|2023|All affiliations|Female
+673,2023,NSW,All affiliations,Persons,74.2,NSW|2023|All affiliations|Persons
+678,2023,Vic,Government,Male,73.4,Vic|2023|Government|Male
+683,2023,Vic,Government,Female,82.9,Vic|2023|Government|Female
+688,2023,Vic,Government,Persons,78.0,Vic|2023|Government|Persons
+693,2023,Vic,Non-Government,Male,84.7,Vic|2023|Non-Government|Male
+698,2023,Vic,Non-Government,Female,92.7,Vic|2023|Non-Government|Female
+703,2023,Vic,Non-Government,Persons,88.7,Vic|2023|Non-Government|Persons
+708,2023,Vic,Catholic,Male,77.1,Vic|2023|Catholic|Male
+713,2023,Vic,Catholic,Female,86.5,Vic|2023|Catholic|Female
+718,2023,Vic,Catholic,Persons,81.8,Vic|2023|Catholic|Persons
+723,2023,Vic,Independent,Male,93.8,Vic|2023|Independent|Male
+728,2023,Vic,Independent,Female,100.0,Vic|2023|Independent|Female
+733,2023,Vic,Independent,Persons,97.0,Vic|2023|Independent|Persons
+738,2023,Vic,All affiliations,Male,78.2,Vic|2023|All affiliations|Male
+743,2023,Vic,All affiliations,Female,87.3,Vic|2023|All affiliations|Female
+748,2023,Vic,All affiliations,Persons,82.6,Vic|2023|All affiliations|Persons
+753,2023,Qld,Government,Male,68.7,Qld|2023|Government|Male
+758,2023,Qld,Government,Female,77.7,Qld|2023|Government|Female
+763,2023,Qld,Government,Persons,73.0,Qld|2023|Government|Persons
+768,2023,Qld,Non-Government,Male,92.5,Qld|2023|Non-Government|Male
+773,2023,Qld,Non-Government,Female,96.2,Qld|2023|Non-Government|Female
+778,2023,Qld,Non-Government,Persons,94.3,Qld|2023|Non-Government|Persons
+783,2023,Qld,Catholic,Male,84.5,Qld|2023|Catholic|Male
+788,2023,Qld,Catholic,Female,89.2,Qld|2023|Catholic|Female
+793,2023,Qld,Catholic,Persons,86.8,Qld|2023|Catholic|Persons
+798,2023,Qld,Independent,Male,100.0,Qld|2023|Independent|Male
+803,2023,Qld,Independent,Female,100.0,Qld|2023|Independent|Female
+808,2023,Qld,Independent,Persons,100.0,Qld|2023|Independent|Persons
+813,2023,Qld,All affiliations,Male,77.3,Qld|2023|All affiliations|Male
+818,2023,Qld,All affiliations,Female,84.7,Qld|2023|All affiliations|Female
+823,2023,Qld,All affiliations,Persons,80.9,Qld|2023|All affiliations|Persons
+828,2023,SA,Government,Male,73.4,SA|2023|Government|Male
+833,2023,SA,Government,Female,83.9,SA|2023|Government|Female
+838,2023,SA,Government,Persons,78.4,SA|2023|Government|Persons
+843,2023,SA,Non-Government,Male,94.3,SA|2023|Non-Government|Male
+848,2023,SA,Non-Government,Female,100.0,SA|2023|Non-Government|Female
+853,2023,SA,Non-Government,Persons,98.6,SA|2023|Non-Government|Persons
+858,2023,SA,Catholic,Male,94.1,SA|2023|Catholic|Male
+863,2023,SA,Catholic,Female,98.0,SA|2023|Catholic|Female
+868,2023,SA,Catholic,Persons,96.1,SA|2023|Catholic|Persons
+873,2023,SA,Independent,Male,94.5,SA|2023|Independent|Male
+878,2023,SA,Independent,Female,100.0,SA|2023|Independent|Female
+883,2023,SA,Independent,Persons,100.0,SA|2023|Independent|Persons
+888,2023,SA,All affiliations,Male,81.4,SA|2023|All affiliations|Male
+893,2023,SA,All affiliations,Female,91.5,SA|2023|All affiliations|Female
+898,2023,SA,All affiliations,Persons,86.3,SA|2023|All affiliations|Persons
+903,2023,WA,Government,Male,71.4,WA|2023|Government|Male
+908,2023,WA,Government,Female,79.2,WA|2023|Government|Female
+913,2023,WA,Government,Persons,75.2,WA|2023|Government|Persons
+918,2023,WA,Non-Government,Male,85.0,WA|2023|Non-Government|Male
+923,2023,WA,Non-Government,Female,89.5,WA|2023|Non-Government|Female
+928,2023,WA,Non-Government,Persons,87.2,WA|2023|Non-Government|Persons
+933,2023,WA,Catholic,Male,78.0,WA|2023|Catholic|Male
+938,2023,WA,Catholic,Female,81.4,WA|2023|Catholic|Female
+943,2023,WA,Catholic,Persons,79.7,WA|2023|Catholic|Persons
+948,2023,WA,Independent,Male,91.8,WA|2023|Independent|Male
+953,2023,WA,Independent,Female,97.7,WA|2023|Independent|Female
+958,2023,WA,Independent,Persons,94.7,WA|2023|Independent|Persons
+963,2023,WA,All affiliations,Male,76.7,WA|2023|All affiliations|Male
+968,2023,WA,All affiliations,Female,83.3,WA|2023|All affiliations|Female
+973,2023,WA,All affiliations,Persons,80.0,WA|2023|All affiliations|Persons
+978,2023,Tas,Government,Male,65.1,Tas|2023|Government|Male
+983,2023,Tas,Government,Female,77.6,Tas|2023|Government|Female
+988,2023,Tas,Government,Persons,71.044921875,Tas|2023|Government|Persons
+993,2023,Tas,Non-Government,Male,62.1,Tas|2023|Non-Government|Male
+998,2023,Tas,Non-Government,Female,67.2,Tas|2023|Non-Government|Female
+1003,2023,Tas,Non-Government,Persons,64.7,Tas|2023|Non-Government|Persons
+1008,2023,Tas,Catholic,Male,51.6,Tas|2023|Catholic|Male
+1013,2023,Tas,Catholic,Female,60.7,Tas|2023|Catholic|Female
+1018,2023,Tas,Catholic,Persons,56.3,Tas|2023|Catholic|Persons
+1023,2023,Tas,Independent,Male,76.4,Tas|2023|Independent|Male
+1028,2023,Tas,Independent,Female,77.3,Tas|2023|Independent|Female
+1033,2023,Tas,Independent,Persons,76.8,Tas|2023|Independent|Persons
+1038,2023,Tas,All affiliations,Male,64.0,Tas|2023|All affiliations|Male
+1043,2023,Tas,All affiliations,Female,73.7,Tas|2023|All affiliations|Female
+1048,2023,Tas,All affiliations,Persons,68.7,Tas|2023|All affiliations|Persons
+1053,2023,NT,Government,Male,52.4,NT|2023|Government|Male
+1058,2023,NT,Government,Female,58.3,NT|2023|Government|Female
+1063,2023,NT,Government,Persons,55.3,NT|2023|Government|Persons
+1068,2023,NT,Non-Government,Male,39.9,NT|2023|Non-Government|Male
+1073,2023,NT,Non-Government,Female,51.4,NT|2023|Non-Government|Female
+1078,2023,NT,Non-Government,Persons,45.5,NT|2023|Non-Government|Persons
+1083,2023,NT,Catholic,Male,38.5,NT|2023|Catholic|Male
+1088,2023,NT,Catholic,Female,56.0,NT|2023|Catholic|Female
+1093,2023,NT,Catholic,Persons,46.5,NT|2023|Catholic|Persons
+1098,2023,NT,Independent,Male,41.0,NT|2023|Independent|Male
+1103,2023,NT,Independent,Female,48.6,NT|2023|Independent|Female
+1108,2023,NT,Independent,Persons,44.9,NT|2023|Independent|Persons
+1113,2023,NT,All affiliations,Male,47.8,NT|2023|All affiliations|Male
+1118,2023,NT,All affiliations,Female,55.8,NT|2023|All affiliations|Female
+1123,2023,NT,All affiliations,Persons,51.7,NT|2023|All affiliations|Persons
+1128,2023,ACT,Government,Male,93.0,ACT|2023|Government|Male
+1133,2023,ACT,Government,Female,100.0,ACT|2023|Government|Female
+1138,2023,ACT,Government,Persons,100.0,ACT|2023|Government|Persons
+1143,2023,ACT,Non-Government,Male,78.8,ACT|2023|Non-Government|Male
+1148,2023,ACT,Non-Government,Female,72.2,ACT|2023|Non-Government|Female
+1153,2023,ACT,Non-Government,Persons,75.5,ACT|2023|Non-Government|Persons
+1158,2023,ACT,Catholic,Male,77.4,ACT|2023|Catholic|Male
+1163,2023,ACT,Catholic,Female,67.0,ACT|2023|Catholic|Female
+1168,2023,ACT,Catholic,Persons,72.4,ACT|2023|Catholic|Persons
+1173,2023,ACT,Independent,Male,81.5,ACT|2023|Independent|Male
+1178,2023,ACT,Independent,Female,80.4,ACT|2023|Independent|Female
+1183,2023,ACT,Independent,Persons,80.9,ACT|2023|Independent|Persons
+1188,2023,ACT,All affiliations,Male,86.6,ACT|2023|All affiliations|Male
+1193,2023,ACT,All affiliations,Female,91.9,ACT|2023|All affiliations|Female
+1198,2023,ACT,All affiliations,Persons,89.2,ACT|2023|All affiliations|Persons
+1203,2022,NSW,Government,Male,66.4,NSW|2022|Government|Male
+1208,2022,NSW,Government,Female,74.8,NSW|2022|Government|Female
+1213,2022,NSW,Government,Persons,70.5,NSW|2022|Government|Persons
+1218,2022,NSW,Non-Government,Male,78.2,NSW|2022|Non-Government|Male
+1223,2022,NSW,Non-Government,Female,86.3,NSW|2022|Non-Government|Female
+1228,2022,NSW,Non-Government,Persons,82.2,NSW|2022|Non-Government|Persons
+1233,2022,NSW,Catholic,Male,73.7,NSW|2022|Catholic|Male
+1238,2022,NSW,Catholic,Female,83.5,NSW|2022|Catholic|Female
+1243,2022,NSW,Catholic,Persons,78.5,NSW|2022|Catholic|Persons
+1248,2022,NSW,Independent,Male,85.0,NSW|2022|Independent|Male
+1253,2022,NSW,Independent,Female,90.2,NSW|2022|Independent|Female
+1258,2022,NSW,Independent,Persons,87.6,NSW|2022|Independent|Persons
+1263,2022,NSW,All affiliations,Male,71.4,NSW|2022|All affiliations|Male
+1268,2022,NSW,All affiliations,Female,79.7,NSW|2022|All affiliations|Female
+1273,2022,NSW,All affiliations,Persons,75.5,NSW|2022|All affiliations|Persons
+1278,2022,Vic,Government,Male,75.3,Vic|2022|Government|Male
+1283,2022,Vic,Government,Female,87.0,Vic|2022|Government|Female
+1288,2022,Vic,Government,Persons,80.9,Vic|2022|Government|Persons
+1293,2022,Vic,Non-Government,Male,85.2,Vic|2022|Non-Government|Male
+1298,2022,Vic,Non-Government,Female,92.9,Vic|2022|Non-Government|Female
+1303,2022,Vic,Non-Government,Persons,89.1,Vic|2022|Non-Government|Persons
+1308,2022,Vic,Catholic,Male,78.2,Vic|2022|Catholic|Male
+1313,2022,Vic,Catholic,Female,86.7,Vic|2022|Catholic|Female
+1318,2022,Vic,Catholic,Persons,82.4,Vic|2022|Catholic|Persons
+1323,2022,Vic,Independent,Male,93.7,Vic|2022|Independent|Male
+1328,2022,Vic,Independent,Female,100.0,Vic|2022|Independent|Female
+1333,2022,Vic,Independent,Persons,97.0,Vic|2022|Independent|Persons
+1338,2022,Vic,All affiliations,Male,79.6,Vic|2022|All affiliations|Male
+1343,2022,Vic,All affiliations,Female,89.7,Vic|2022|All affiliations|Female
+1348,2022,Vic,All affiliations,Persons,84.5,Vic|2022|All affiliations|Persons
+1353,2022,Qld,Government,Male,70.2,Qld|2022|Government|Male
+1358,2022,Qld,Government,Female,79.8,Qld|2022|Government|Female
+1363,2022,Qld,Government,Persons,74.8,Qld|2022|Government|Persons
+1368,2022,Qld,Non-Government,Male,93.3,Qld|2022|Non-Government|Male
+1373,2022,Qld,Non-Government,Female,95.9,Qld|2022|Non-Government|Female
+1378,2022,Qld,Non-Government,Persons,94.6,Qld|2022|Non-Government|Persons
+1383,2022,Qld,Catholic,Male,84.8,Qld|2022|Catholic|Male
+1388,2022,Qld,Catholic,Female,90.0,Qld|2022|Catholic|Female
+1393,2022,Qld,Catholic,Persons,87.4,Qld|2022|Catholic|Persons
+1398,2022,Qld,Independent,Male,100.0,Qld|2022|Independent|Male
+1403,2022,Qld,Independent,Female,100.0,Qld|2022|Independent|Female
+1408,2022,Qld,Independent,Persons,100.0,Qld|2022|Independent|Persons
+1413,2022,Qld,All affiliations,Male,78.7,Qld|2022|All affiliations|Male
+1418,2022,Qld,All affiliations,Female,86.0,Qld|2022|All affiliations|Female
+1423,2022,Qld,All affiliations,Persons,82.2,Qld|2022|All affiliations|Persons
+1428,2022,SA,Government,Male,78.9,SA|2022|Government|Male
+1433,2022,SA,Government,Female,88.7,SA|2022|Government|Female
+1438,2022,SA,Government,Persons,83.7,SA|2022|Government|Persons
+1443,2022,SA,Non-Government,Male,90.0,SA|2022|Non-Government|Male
+1448,2022,SA,Non-Government,Female,100.0,SA|2022|Non-Government|Female
+1453,2022,SA,Non-Government,Persons,95.1,SA|2022|Non-Government|Persons
+1458,2022,SA,Catholic,Male,86.2,SA|2022|Catholic|Male
+1463,2022,SA,Catholic,Female,91.7,SA|2022|Catholic|Female
+1468,2022,SA,Catholic,Persons,89.0,SA|2022|Catholic|Persons
+1473,2022,SA,Independent,Male,93.1,SA|2022|Independent|Male
+1478,2022,SA,Independent,Female,100.0,SA|2022|Independent|Female
+1483,2022,SA,Independent,Persons,100.0,SA|2022|Independent|Persons
+1488,2022,SA,All affiliations,Male,83.3,SA|2022|All affiliations|Male
+1493,2022,SA,All affiliations,Female,93.4,SA|2022|All affiliations|Female
+1498,2022,SA,All affiliations,Persons,88.3,SA|2022|All affiliations|Persons
+1503,2022,WA,Government,Male,73.0,WA|2022|Government|Male
+1508,2022,WA,Government,Female,80.7,WA|2022|Government|Female
+1513,2022,WA,Government,Persons,76.7,WA|2022|Government|Persons
+1518,2022,WA,Non-Government,Male,83.5,WA|2022|Non-Government|Male
+1523,2022,WA,Non-Government,Female,89.0,WA|2022|Non-Government|Female
+1528,2022,WA,Non-Government,Persons,86.2,WA|2022|Non-Government|Persons
+1533,2022,WA,Catholic,Male,75.2,WA|2022|Catholic|Male
+1538,2022,WA,Catholic,Female,84.0,WA|2022|Catholic|Female
+1543,2022,WA,Catholic,Persons,79.5,WA|2022|Catholic|Persons
+1548,2022,WA,Independent,Male,92.0,WA|2022|Independent|Male
+1553,2022,WA,Independent,Female,93.7,WA|2022|Independent|Female
+1558,2022,WA,Independent,Persons,92.8,WA|2022|Independent|Persons
+1563,2022,WA,All affiliations,Male,77.2,WA|2022|All affiliations|Male
+1568,2022,WA,All affiliations,Female,84.1,WA|2022|All affiliations|Female
+1573,2022,WA,All affiliations,Persons,80.5,WA|2022|All affiliations|Persons
+1578,2022,Tas,Government,Male,69.2,Tas|2022|Government|Male
+1583,2022,Tas,Government,Female,85.9,Tas|2022|Government|Female
+1588,2022,Tas,Government,Persons,77.2,Tas|2022|Government|Persons
+1593,2022,Tas,Non-Government,Male,61.4,Tas|2022|Non-Government|Male
+1598,2022,Tas,Non-Government,Female,67.1,Tas|2022|Non-Government|Female
+1603,2022,Tas,Non-Government,Persons,64.2,Tas|2022|Non-Government|Persons
+1608,2022,Tas,Catholic,Male,51.0,Tas|2022|Catholic|Male
+1613,2022,Tas,Catholic,Female,61.3,Tas|2022|Catholic|Female
+1618,2022,Tas,Catholic,Persons,56.1,Tas|2022|Catholic|Persons
+1623,2022,Tas,Independent,Male,77.4,Tas|2022|Independent|Male
+1628,2022,Tas,Independent,Female,76.1,Tas|2022|Independent|Female
+1633,2022,Tas,Independent,Persons,76.8,Tas|2022|Independent|Persons
+1638,2022,Tas,All affiliations,Male,66.3,Tas|2022|All affiliations|Male
+1643,2022,Tas,All affiliations,Female,78.7,Tas|2022|All affiliations|Female
+1648,2022,Tas,All affiliations,Persons,72.3,Tas|2022|All affiliations|Persons
+1653,2022,NT,Government,Male,49.6,NT|2022|Government|Male
+1658,2022,NT,Government,Female,63.7,NT|2022|Government|Female
+1663,2022,NT,Government,Persons,56.2,NT|2022|Government|Persons
+1668,2022,NT,Non-Government,Male,51.7,NT|2022|Non-Government|Male
+1673,2022,NT,Non-Government,Female,49.9,NT|2022|Non-Government|Female
+1678,2022,NT,Non-Government,Persons,50.8,NT|2022|Non-Government|Persons
+1683,2022,NT,Catholic,Male,44.4,NT|2022|Catholic|Male
+1688,2022,NT,Catholic,Female,44.4,NT|2022|Catholic|Female
+1693,2022,NT,Catholic,Persons,44.4,NT|2022|Catholic|Persons
+1698,2022,NT,Independent,Male,57.3,NT|2022|Independent|Male
+1703,2022,NT,Independent,Female,54.5,NT|2022|Independent|Female
+1708,2022,NT,Independent,Persons,55.9,NT|2022|Independent|Persons
+1713,2022,NT,All affiliations,Male,50.3,NT|2022|All affiliations|Male
+1718,2022,NT,All affiliations,Female,58.4,NT|2022|All affiliations|Female
+1723,2022,NT,All affiliations,Persons,54.2,NT|2022|All affiliations|Persons
+1728,2022,ACT,Government,Male,95.4,ACT|2022|Government|Male
+1733,2022,ACT,Government,Female,100.0,ACT|2022|Government|Female
+1738,2022,ACT,Government,Persons,100.0,ACT|2022|Government|Persons
+1743,2022,ACT,Non-Government,Male,71.0,ACT|2022|Non-Government|Male
+1748,2022,ACT,Non-Government,Female,73.2,ACT|2022|Non-Government|Female
+1753,2022,ACT,Non-Government,Persons,72.1,ACT|2022|Non-Government|Persons
+1758,2022,ACT,Catholic,Male,65.6,ACT|2022|Catholic|Male
+1763,2022,ACT,Catholic,Female,67.8,ACT|2022|Catholic|Female
+1768,2022,ACT,Catholic,Persons,66.6,ACT|2022|Catholic|Persons
+1773,2022,ACT,Independent,Male,81.9,ACT|2022|Independent|Male
+1778,2022,ACT,Independent,Female,81.7,ACT|2022|Independent|Female
+1783,2022,ACT,Independent,Persons,81.8,ACT|2022|Independent|Persons
+1788,2022,ACT,All affiliations,Male,83.7,ACT|2022|All affiliations|Male
+1793,2022,ACT,All affiliations,Female,92.4,ACT|2022|All affiliations|Female
+1798,2022,ACT,All affiliations,Persons,87.9,ACT|2022|All affiliations|Persons
+1803,2021,NSW,Government,Male,68.6,NSW|2021|Government|Male
+1808,2021,NSW,Government,Female,78.8,NSW|2021|Government|Female
+1813,2021,NSW,Government,Persons,73.5,NSW|2021|Government|Persons
+1818,2021,NSW,Non-Government,Male,77.4,NSW|2021|Non-Government|Male
+1823,2021,NSW,Non-Government,Female,86.6,NSW|2021|Non-Government|Female
+1828,2021,NSW,Non-Government,Persons,81.9,NSW|2021|Non-Government|Persons
+1833,2021,NSW,Catholic,Male,72.9,NSW|2021|Catholic|Male
+1838,2021,NSW,Catholic,Female,83.6,NSW|2021|Catholic|Female
+1843,2021,NSW,Catholic,Persons,78.1,NSW|2021|Catholic|Persons
+1848,2021,NSW,Independent,Male,84.4,NSW|2021|Independent|Male
+1853,2021,NSW,Independent,Female,91.2,NSW|2021|Independent|Female
+1858,2021,NSW,Independent,Persons,87.8,NSW|2021|Independent|Persons
+1863,2021,NSW,All affiliations,Male,72.3,NSW|2021|All affiliations|Male
+1868,2021,NSW,All affiliations,Female,82.1,NSW|2021|All affiliations|Female
+1873,2021,NSW,All affiliations,Persons,77.1,NSW|2021|All affiliations|Persons
+1878,2021,Vic,Government,Male,78.5,Vic|2021|Government|Male
+1883,2021,Vic,Government,Female,91.3,Vic|2021|Government|Female
+1888,2021,Vic,Government,Persons,84.7,Vic|2021|Government|Persons
+1893,2021,Vic,Non-Government,Male,87.6,Vic|2021|Non-Government|Male
+1898,2021,Vic,Non-Government,Female,94.4,Vic|2021|Non-Government|Female
+1903,2021,Vic,Non-Government,Persons,91.0,Vic|2021|Non-Government|Persons
+1908,2021,Vic,Catholic,Male,80.1,Vic|2021|Catholic|Male
+1913,2021,Vic,Catholic,Female,88.0,Vic|2021|Catholic|Female
+1918,2021,Vic,Catholic,Persons,84.1,Vic|2021|Catholic|Persons
+1923,2021,Vic,Independent,Male,97.0,Vic|2021|Independent|Male
+1928,2021,Vic,Independent,Female,100.0,Vic|2021|Independent|Female
+1933,2021,Vic,Independent,Persons,99.7,Vic|2021|Independent|Persons
+1938,2021,Vic,All affiliations,Male,82.4,Vic|2021|All affiliations|Male
+1943,2021,Vic,All affiliations,Female,92.7,Vic|2021|All affiliations|Female
+1948,2021,Vic,All affiliations,Persons,87.5,Vic|2021|All affiliations|Persons
+1953,2021,Qld,Government,Male,74.5,Qld|2021|Government|Male
+1958,2021,Qld,Government,Female,84.5,Qld|2021|Government|Female
+1963,2021,Qld,Government,Persons,79.3,Qld|2021|Government|Persons
+1968,2021,Qld,Non-Government,Male,95.0,Qld|2021|Non-Government|Male
+1973,2021,Qld,Non-Government,Female,95.4,Qld|2021|Non-Government|Female
+1978,2021,Qld,Non-Government,Persons,95.2,Qld|2021|Non-Government|Persons
+1983,2021,Qld,Catholic,Male,85.5,Qld|2021|Catholic|Male
+1988,2021,Qld,Catholic,Female,91.4,Qld|2021|Catholic|Female
+1993,2021,Qld,Catholic,Persons,88.4,Qld|2021|Catholic|Persons
+1998,2021,Qld,Independent,Male,100.0,Qld|2021|Independent|Male
+2003,2021,Qld,Independent,Female,99.8,Qld|2021|Independent|Female
+2008,2021,Qld,Independent,Persons,100.0,Qld|2021|Independent|Persons
+2013,2021,Qld,All affiliations,Male,82.1,Qld|2021|All affiliations|Male
+2018,2021,Qld,All affiliations,Female,88.7,Qld|2021|All affiliations|Female
+2023,2021,Qld,All affiliations,Persons,85.3,Qld|2021|All affiliations|Persons
+2028,2021,SA,Government,Male,81.6,SA|2021|Government|Male
+2033,2021,SA,Government,Female,94.2,SA|2021|Government|Female
+2038,2021,SA,Government,Persons,87.6,SA|2021|Government|Persons
+2043,2021,SA,Non-Government,Male,94.4,SA|2021|Non-Government|Male
+2048,2021,SA,Non-Government,Female,98.5,SA|2021|Non-Government|Female
+2053,2021,SA,Non-Government,Persons,96.4,SA|2021|Non-Government|Persons
+2058,2021,SA,Catholic,Male,89.9,SA|2021|Catholic|Male
+2063,2021,SA,Catholic,Female,92.5,SA|2021|Catholic|Female
+2068,2021,SA,Catholic,Persons,91.2,SA|2021|Catholic|Persons
+2073,2021,SA,Independent,Male,98.5,SA|2021|Independent|Male
+2078,2021,SA,Independent,Female,100.0,SA|2021|Independent|Female
+2083,2021,SA,Independent,Persons,100.0,SA|2021|Independent|Persons
+2088,2021,SA,All affiliations,Male,86.6,SA|2021|All affiliations|Male
+2093,2021,SA,All affiliations,Female,96.0,SA|2021|All affiliations|Female
+2098,2021,SA,All affiliations,Persons,91.1,SA|2021|All affiliations|Persons
+2103,2021,WA,Government,Male,78.2,WA|2021|Government|Male
+2108,2021,WA,Government,Female,85.5,WA|2021|Government|Female
+2113,2021,WA,Government,Persons,81.7,WA|2021|Government|Persons
+2118,2021,WA,Non-Government,Male,83.9,WA|2021|Non-Government|Male
+2123,2021,WA,Non-Government,Female,88.5,WA|2021|Non-Government|Female
+2128,2021,WA,Non-Government,Persons,86.2,WA|2021|Non-Government|Persons
+2133,2021,WA,Catholic,Male,77.6,WA|2021|Catholic|Male
+2138,2021,WA,Catholic,Female,82.5,WA|2021|Catholic|Female
+2143,2021,WA,Catholic,Persons,80.0,WA|2021|Catholic|Persons
+2148,2021,WA,Independent,Male,89.8,WA|2021|Independent|Male
+2153,2021,WA,Independent,Female,94.6,WA|2021|Independent|Female
+2158,2021,WA,Independent,Persons,92.2,WA|2021|Independent|Persons
+2163,2021,WA,All affiliations,Male,80.5,WA|2021|All affiliations|Male
+2168,2021,WA,All affiliations,Female,86.8,WA|2021|All affiliations|Female
+2173,2021,WA,All affiliations,Persons,83.6,WA|2021|All affiliations|Persons
+2178,2021,Tas,Government,Male,72.4,Tas|2021|Government|Male
+2183,2021,Tas,Government,Female,92.6,Tas|2021|Government|Female
+2188,2021,Tas,Government,Persons,82.0,Tas|2021|Government|Persons
+2193,2021,Tas,Non-Government,Male,63.0,Tas|2021|Non-Government|Male
+2198,2021,Tas,Non-Government,Female,68.4,Tas|2021|Non-Government|Female
+2203,2021,Tas,Non-Government,Persons,65.7,Tas|2021|Non-Government|Persons
+2208,2021,Tas,Catholic,Male,53.9,Tas|2021|Catholic|Male
+2213,2021,Tas,Catholic,Female,62.9,Tas|2021|Catholic|Female
+2218,2021,Tas,Catholic,Persons,58.4,Tas|2021|Catholic|Persons
+2223,2021,Tas,Independent,Male,76.8,Tas|2021|Independent|Male
+2228,2021,Tas,Independent,Female,76.5,Tas|2021|Independent|Female
+2233,2021,Tas,Independent,Persons,76.6,Tas|2021|Independent|Persons
+2238,2021,Tas,All affiliations,Male,68.9,Tas|2021|All affiliations|Male
+2243,2021,Tas,All affiliations,Female,82.9,Tas|2021|All affiliations|Female
+2248,2021,Tas,All affiliations,Persons,75.7,Tas|2021|All affiliations|Persons
+2253,2021,NT,Government,Male,60.0,NT|2021|Government|Male
+2258,2021,NT,Government,Female,70.6,NT|2021|Government|Female
+2263,2021,NT,Government,Persons,65.1,NT|2021|Government|Persons
+2268,2021,NT,Non-Government,Male,42.3,NT|2021|Non-Government|Male
+2273,2021,NT,Non-Government,Female,46.5,NT|2021|Non-Government|Female
+2278,2021,NT,Non-Government,Persons,44.4,NT|2021|Non-Government|Persons
+2283,2021,NT,Catholic,Male,40.3,NT|2021|Catholic|Male
+2288,2021,NT,Catholic,Female,48.5,NT|2021|Catholic|Female
+2293,2021,NT,Catholic,Persons,44.4,NT|2021|Catholic|Persons
+2298,2021,NT,Independent,Male,43.9,NT|2021|Independent|Male
+2303,2021,NT,Independent,Female,44.9,NT|2021|Independent|Female
+2308,2021,NT,Independent,Persons,44.4,NT|2021|Independent|Persons
+2313,2021,NT,All affiliations,Male,53.1,NT|2021|All affiliations|Male
+2318,2021,NT,All affiliations,Female,60.6,NT|2021|All affiliations|Female
+2323,2021,NT,All affiliations,Persons,56.8,NT|2021|All affiliations|Persons
+2328,2021,ACT,Government,Male,100.0,ACT|2021|Government|Male
+2333,2021,ACT,Government,Female,100.0,ACT|2021|Government|Female
+2338,2021,ACT,Government,Persons,100.0,ACT|2021|Government|Persons
+2343,2021,ACT,Non-Government,Male,68.6,ACT|2021|Non-Government|Male
+2348,2021,ACT,Non-Government,Female,74.8,ACT|2021|Non-Government|Female
+2353,2021,ACT,Non-Government,Persons,71.6,ACT|2021|Non-Government|Persons
+2358,2021,ACT,Catholic,Male,66.0,ACT|2021|Catholic|Male
+2363,2021,ACT,Catholic,Female,67.6,ACT|2021|Catholic|Female
+2368,2021,ACT,Catholic,Persons,66.8,ACT|2021|Catholic|Persons
+2373,2021,ACT,Independent,Male,73.4375,ACT|2021|Independent|Male
+2378,2021,ACT,Independent,Female,86.4,ACT|2021|Independent|Female
+2383,2021,ACT,Independent,Persons,80.0,ACT|2021|Independent|Persons
+2388,2021,ACT,All affiliations,Male,86.0,ACT|2021|All affiliations|Male
+2393,2021,ACT,All affiliations,Female,96.1,ACT|2021|All affiliations|Female
+2398,2021,ACT,All affiliations,Persons,90.9,ACT|2021|All affiliations|Persons
+2403,2020,NSW,Government,Male,71.1,NSW|2020|Government|Male
+2408,2020,NSW,Government,Female,80.4,NSW|2020|Government|Female
+2413,2020,NSW,Government,Persons,75.7,NSW|2020|Government|Persons
+2418,2020,NSW,Non-Government,Male,77.9,NSW|2020|Non-Government|Male
+2423,2020,NSW,Non-Government,Female,86.3,NSW|2020|Non-Government|Female
+2428,2020,NSW,Non-Government,Persons,82.1,NSW|2020|Non-Government|Persons
+2433,2020,NSW,Catholic,Male,73.7,NSW|2020|Catholic|Male
+2438,2020,NSW,Catholic,Female,83.4,NSW|2020|Catholic|Female
+2443,2020,NSW,Catholic,Persons,78.5,NSW|2020|Catholic|Persons
+2448,2020,NSW,Independent,Male,84.3,NSW|2020|Independent|Male
+2453,2020,NSW,Independent,Female,90.8,NSW|2020|Independent|Female
+2458,2020,NSW,Independent,Persons,87.5,NSW|2020|Independent|Persons
+2463,2020,NSW,All affiliations,Male,74.0,NSW|2020|All affiliations|Male
+2468,2020,NSW,All affiliations,Female,83.0,NSW|2020|All affiliations|Female
+2473,2020,NSW,All affiliations,Persons,78.4,NSW|2020|All affiliations|Persons
+2478,2020,Vic,Government,Male,79.3,Vic|2020|Government|Male
+2483,2020,Vic,Government,Female,91.4,Vic|2020|Government|Female
+2488,2020,Vic,Government,Persons,85.1,Vic|2020|Government|Persons
+2493,2020,Vic,Non-Government,Male,87.0,Vic|2020|Non-Government|Male
+2498,2020,Vic,Non-Government,Female,94.4,Vic|2020|Non-Government|Female
+2503,2020,Vic,Non-Government,Persons,90.7,Vic|2020|Non-Government|Persons
+2508,2020,Vic,Catholic,Male,78.6,Vic|2020|Catholic|Male
+2513,2020,Vic,Catholic,Female,86.7,Vic|2020|Catholic|Female
+2518,2020,Vic,Catholic,Persons,82.7,Vic|2020|Catholic|Persons
+2523,2020,Vic,Independent,Male,97.6,Vic|2020|Independent|Male
+2528,2020,Vic,Independent,Female,100.0,Vic|2020|Independent|Female
+2533,2020,Vic,Independent,Persons,100.0,Vic|2020|Independent|Persons
+2538,2020,Vic,All affiliations,Male,82.6,Vic|2020|All affiliations|Male
+2543,2020,Vic,All affiliations,Female,92.8,Vic|2020|All affiliations|Female
+2548,2020,Vic,All affiliations,Persons,87.6,Vic|2020|All affiliations|Persons
+2553,2020,Qld,Government,Male,75.4,Qld|2020|Government|Male
+2558,2020,Qld,Government,Female,85.7,Qld|2020|Government|Female
+2563,2020,Qld,Government,Persons,80.4,Qld|2020|Government|Persons
+2568,2020,Qld,Non-Government,Male,92.4,Qld|2020|Non-Government|Male
+2573,2020,Qld,Non-Government,Female,93.9,Qld|2020|Non-Government|Female
+2578,2020,Qld,Non-Government,Persons,93.1,Qld|2020|Non-Government|Persons
+2583,2020,Qld,Catholic,Male,87.3,Qld|2020|Catholic|Male
+2588,2020,Qld,Catholic,Female,90.1,Qld|2020|Catholic|Female
+2593,2020,Qld,Catholic,Persons,88.7,Qld|2020|Catholic|Persons
+2598,2020,Qld,Independent,Male,98.3,Qld|2020|Independent|Male
+2603,2020,Qld,Independent,Female,98.1,Qld|2020|Independent|Female
+2608,2020,Qld,Independent,Persons,98.2,Qld|2020|Independent|Persons
+2613,2020,Qld,All affiliations,Male,81.9,Qld|2020|All affiliations|Male
+2618,2020,Qld,All affiliations,Female,88.9,Qld|2020|All affiliations|Female
+2623,2020,Qld,All affiliations,Persons,85.3,Qld|2020|All affiliations|Persons
+2628,2020,SA,Government,Male,84.7,SA|2020|Government|Male
+2633,2020,SA,Government,Female,97.5,SA|2020|Government|Female
+2638,2020,SA,Government,Persons,90.8,SA|2020|Government|Persons
+2643,2020,SA,Non-Government,Male,91.7,SA|2020|Non-Government|Male
+2648,2020,SA,Non-Government,Female,98.9,SA|2020|Non-Government|Female
+2653,2020,SA,Non-Government,Persons,95.3,SA|2020|Non-Government|Persons
+2658,2020,SA,Catholic,Male,86.7,SA|2020|Catholic|Male
+2663,2020,SA,Catholic,Female,90.6,SA|2020|Catholic|Female
+2668,2020,SA,Catholic,Persons,88.7,SA|2020|Catholic|Persons
+2673,2020,SA,Independent,Male,96.3,SA|2020|Independent|Male
+2678,2020,SA,Independent,Female,100.0,SA|2020|Independent|Female
+2683,2020,SA,Independent,Persons,100.0,SA|2020|Independent|Persons
+2688,2020,SA,All affiliations,Male,87.5,SA|2020|All affiliations|Male
+2693,2020,SA,All affiliations,Female,98.1,SA|2020|All affiliations|Female
+2698,2020,SA,All affiliations,Persons,92.7,SA|2020|All affiliations|Persons
+2703,2020,WA,Government,Male,79.3,WA|2020|Government|Male
+2708,2020,WA,Government,Female,86.5,WA|2020|Government|Female
+2713,2020,WA,Government,Persons,82.8,WA|2020|Government|Persons
+2718,2020,WA,Non-Government,Male,81.9,WA|2020|Non-Government|Male
+2723,2020,WA,Non-Government,Female,89.0,WA|2020|Non-Government|Female
+2728,2020,WA,Non-Government,Persons,85.4,WA|2020|Non-Government|Persons
+2733,2020,WA,Catholic,Male,78.4,WA|2020|Catholic|Male
+2738,2020,WA,Catholic,Female,84.9,WA|2020|Catholic|Female
+2743,2020,WA,Catholic,Persons,81.7,WA|2020|Catholic|Persons
+2748,2020,WA,Independent,Male,85.2,WA|2020|Independent|Male
+2753,2020,WA,Independent,Female,93.0,WA|2020|Independent|Female
+2758,2020,WA,Independent,Persons,89.1,WA|2020|Independent|Persons
+2763,2020,WA,All affiliations,Male,80.4,WA|2020|All affiliations|Male
+2768,2020,WA,All affiliations,Female,87.6,WA|2020|All affiliations|Female
+2773,2020,WA,All affiliations,Persons,83.9,WA|2020|All affiliations|Persons
+2778,2020,Tas,Government,Male,76.3,Tas|2020|Government|Male
+2783,2020,Tas,Government,Female,89.0,Tas|2020|Government|Female
+2788,2020,Tas,Government,Persons,82.5,Tas|2020|Government|Persons
+2793,2020,Tas,Non-Government,Male,57.3,Tas|2020|Non-Government|Male
+2798,2020,Tas,Non-Government,Female,66.3,Tas|2020|Non-Government|Female
+2803,2020,Tas,Non-Government,Persons,61.8,Tas|2020|Non-Government|Persons
+2808,2020,Tas,Catholic,Male,48.5,Tas|2020|Catholic|Male
+2813,2020,Tas,Catholic,Female,56.3,Tas|2020|Catholic|Female
+2818,2020,Tas,Catholic,Persons,52.5,Tas|2020|Catholic|Persons
+2823,2020,Tas,Independent,Male,70.5,Tas|2020|Independent|Male
+2828,2020,Tas,Independent,Female,83.4,Tas|2020|Independent|Female
+2833,2020,Tas,Independent,Persons,76.7,Tas|2020|Independent|Persons
+2838,2020,Tas,All affiliations,Male,69.5,Tas|2020|All affiliations|Male
+2843,2020,Tas,All affiliations,Female,80.5,Tas|2020|All affiliations|Female
+2848,2020,Tas,All affiliations,Persons,74.9,Tas|2020|All affiliations|Persons
+2853,2020,NT,Government,Male,58.6,NT|2020|Government|Male
+2858,2020,NT,Government,Female,73.0,NT|2020|Government|Female
+2863,2020,NT,Government,Persons,65.4,NT|2020|Government|Persons
+2868,2020,NT,Non-Government,Male,46.3,NT|2020|Non-Government|Male
+2873,2020,NT,Non-Government,Female,45.2,NT|2020|Non-Government|Female
+2878,2020,NT,Non-Government,Persons,45.7,NT|2020|Non-Government|Persons
+2883,2020,NT,Catholic,Male,50.0,NT|2020|Catholic|Male
+2888,2020,NT,Catholic,Female,42.8,NT|2020|Catholic|Female
+2893,2020,NT,Catholic,Persons,46.3,NT|2020|Catholic|Persons
+2898,2020,NT,Independent,Male,43.6,NT|2020|Independent|Male
+2903,2020,NT,Independent,Female,47.0,NT|2020|Independent|Female
+2908,2020,NT,Independent,Persons,45.4,NT|2020|Independent|Persons
+2913,2020,NT,All affiliations,Male,54.1,NT|2020|All affiliations|Male
+2918,2020,NT,All affiliations,Female,61.6,NT|2020|All affiliations|Female
+2923,2020,NT,All affiliations,Persons,57.8,NT|2020|All affiliations|Persons
+2928,2020,ACT,Government,Male,100.0,ACT|2020|Government|Male
+2933,2020,ACT,Government,Female,100.0,ACT|2020|Government|Female
+2938,2020,ACT,Government,Persons,100.0,ACT|2020|Government|Persons
+2943,2020,ACT,Non-Government,Male,70.2,ACT|2020|Non-Government|Male
+2948,2020,ACT,Non-Government,Female,71.5,ACT|2020|Non-Government|Female
+2953,2020,ACT,Non-Government,Persons,70.8,ACT|2020|Non-Government|Persons
+2958,2020,ACT,Catholic,Male,68.1,ACT|2020|Catholic|Male
+2963,2020,ACT,Catholic,Female,62.0,ACT|2020|Catholic|Female
+2968,2020,ACT,Catholic,Persons,65.2,ACT|2020|Catholic|Persons
+2973,2020,ACT,Independent,Male,74.5,ACT|2020|Independent|Male
+2978,2020,ACT,Independent,Female,88.3,ACT|2020|Independent|Female
+2983,2020,ACT,Independent,Persons,81.5,ACT|2020|Independent|Persons
+2988,2020,ACT,All affiliations,Male,89.3,ACT|2020|All affiliations|Male
+2993,2020,ACT,All affiliations,Female,94.7,ACT|2020|All affiliations|Female
+2998,2020,ACT,All affiliations,Persons,91.9,ACT|2020|All affiliations|Persons
+3003,2019,NSW,Government,Male,67.7,NSW|2019|Government|Male
+3008,2019,NSW,Government,Female,79.4,NSW|2019|Government|Female
+3013,2019,NSW,Government,Persons,73.5,NSW|2019|Government|Persons
+3018,2019,NSW,Non-Government,Male,77.9,NSW|2019|Non-Government|Male
+3023,2019,NSW,Non-Government,Female,86.0,NSW|2019|Non-Government|Female
+3028,2019,NSW,Non-Government,Persons,81.9,NSW|2019|Non-Government|Persons
+3033,2019,NSW,Catholic,Male,73.5,NSW|2019|Catholic|Male
+3038,2019,NSW,Catholic,Female,83.0,NSW|2019|Catholic|Female
+3043,2019,NSW,Catholic,Persons,78.2,NSW|2019|Catholic|Persons
+3048,2019,NSW,Independent,Male,84.9,NSW|2019|Independent|Male
+3053,2019,NSW,Independent,Female,91.0,NSW|2019|Independent|Female
+3058,2019,NSW,Independent,Persons,87.9,NSW|2019|Independent|Persons
+3063,2019,NSW,All affiliations,Male,72.1,NSW|2019|All affiliations|Male
+3068,2019,NSW,All affiliations,Female,82.2,NSW|2019|All affiliations|Female
+3073,2019,NSW,All affiliations,Persons,77.1,NSW|2019|All affiliations|Persons
+3078,2019,Vic,Government,Male,79.7,Vic|2019|Government|Male
+3083,2019,Vic,Government,Female,92.4,Vic|2019|Government|Female
+3088,2019,Vic,Government,Persons,85.8,Vic|2019|Government|Persons
+3093,2019,Vic,Non-Government,Male,85.6,Vic|2019|Non-Government|Male
+3098,2019,Vic,Non-Government,Female,93.2,Vic|2019|Non-Government|Female
+3103,2019,Vic,Non-Government,Persons,89.4,Vic|2019|Non-Government|Persons
+3108,2019,Vic,Catholic,Male,77.5,Vic|2019|Catholic|Male
+3113,2019,Vic,Catholic,Female,86.6,Vic|2019|Catholic|Female
+3118,2019,Vic,Catholic,Persons,82.1,Vic|2019|Catholic|Persons
+3123,2019,Vic,Independent,Male,96.3,Vic|2019|Independent|Male
+3128,2019,Vic,Independent,Female,100.0,Vic|2019|Independent|Female
+3133,2019,Vic,Independent,Persons,99.0,Vic|2019|Independent|Persons
+3138,2019,Vic,All affiliations,Male,82.3,Vic|2019|All affiliations|Male
+3143,2019,Vic,All affiliations,Female,92.7,Vic|2019|All affiliations|Female
+3148,2019,Vic,All affiliations,Persons,87.4,Vic|2019|All affiliations|Persons
+3153,2019,Qld,Government,Male,83.5,Qld|2019|Government|Male
+3158,2019,Qld,Government,Female,93.0,Qld|2019|Government|Female
+3163,2019,Qld,Government,Persons,87.9,Qld|2019|Government|Persons
+3168,2019,Qld,Non-Government,Male,95.8,Qld|2019|Non-Government|Male
+3173,2019,Qld,Non-Government,Female,96.6,Qld|2019|Non-Government|Female
+3178,2019,Qld,Non-Government,Persons,96.2,Qld|2019|Non-Government|Persons
+3183,2019,Qld,Catholic,Male,89.8,Qld|2019|Catholic|Male
+3188,2019,Qld,Catholic,Female,91.7,Qld|2019|Catholic|Female
+3193,2019,Qld,Catholic,Persons,90.7,Qld|2019|Catholic|Persons
+3198,2019,Qld,Independent,Male,100.0,Qld|2019|Independent|Male
+3203,2019,Qld,Independent,Female,100.0,Qld|2019|Independent|Female
+3208,2019,Qld,Independent,Persons,100.0,Qld|2019|Independent|Persons
+3213,2019,Qld,All affiliations,Male,88.5,Qld|2019|All affiliations|Male
+3218,2019,Qld,All affiliations,Female,94.5,Qld|2019|All affiliations|Female
+3223,2019,Qld,All affiliations,Persons,91.3,Qld|2019|All affiliations|Persons
+3228,2019,SA,Government,Male,84.0,SA|2019|Government|Male
+3233,2019,SA,Government,Female,99.7,SA|2019|Government|Female
+3238,2019,SA,Government,Persons,91.7,SA|2019|Government|Persons
+3243,2019,SA,Non-Government,Male,93.6,SA|2019|Non-Government|Male
+3248,2019,SA,Non-Government,Female,98.1,SA|2019|Non-Government|Female
+3253,2019,SA,Non-Government,Persons,95.9,SA|2019|Non-Government|Persons
+3258,2019,SA,Catholic,Male,91.1,SA|2019|Catholic|Male
+3263,2019,SA,Catholic,Female,91.1,SA|2019|Catholic|Female
+3268,2019,SA,Catholic,Persons,91.1,SA|2019|Catholic|Persons
+3273,2019,SA,Independent,Male,95.9,SA|2019|Independent|Male
+3278,2019,SA,Independent,Female,100.0,SA|2019|Independent|Female
+3283,2019,SA,Independent,Persons,100.0,SA|2019|Independent|Persons
+3288,2019,SA,All affiliations,Male,87.9,SA|2019|All affiliations|Male
+3293,2019,SA,All affiliations,Female,99.0,SA|2019|All affiliations|Female
+3298,2019,SA,All affiliations,Persons,93.4,SA|2019|All affiliations|Persons
+3303,2019,WA,Government,Male,79.8,WA|2019|Government|Male
+3308,2019,WA,Government,Female,87.2,WA|2019|Government|Female
+3313,2019,WA,Government,Persons,83.4,WA|2019|Government|Persons
+3318,2019,WA,Non-Government,Male,81.1,WA|2019|Non-Government|Male
+3323,2019,WA,Non-Government,Female,86.3,WA|2019|Non-Government|Female
+3328,2019,WA,Non-Government,Persons,83.7,WA|2019|Non-Government|Persons
+3333,2019,WA,Catholic,Male,78.5,WA|2019|Catholic|Male
+3338,2019,WA,Catholic,Female,82.8,WA|2019|Catholic|Female
+3343,2019,WA,Catholic,Persons,80.6,WA|2019|Catholic|Persons
+3348,2019,WA,Independent,Male,83.6,WA|2019|Independent|Male
+3353,2019,WA,Independent,Female,89.9,WA|2019|Independent|Female
+3358,2019,WA,Independent,Persons,86.7,WA|2019|Independent|Persons
+3363,2019,WA,All affiliations,Male,80.4,WA|2019|All affiliations|Male
+3368,2019,WA,All affiliations,Female,86.8,WA|2019|All affiliations|Female
+3373,2019,WA,All affiliations,Persons,83.5,WA|2019|All affiliations|Persons
+3378,2019,Tas,Government,Male,75.8,Tas|2019|Government|Male
+3383,2019,Tas,Government,Female,88.9,Tas|2019|Government|Female
+3388,2019,Tas,Government,Persons,82.1,Tas|2019|Government|Persons
+3393,2019,Tas,Non-Government,Male,62.2,Tas|2019|Non-Government|Male
+3398,2019,Tas,Non-Government,Female,66.1,Tas|2019|Non-Government|Female
+3403,2019,Tas,Non-Government,Persons,64.2,Tas|2019|Non-Government|Persons
+3408,2019,Tas,Catholic,Male,51.7,Tas|2019|Catholic|Male
+3413,2019,Tas,Catholic,Female,62.3,Tas|2019|Catholic|Female
+3418,2019,Tas,Catholic,Persons,57.2,Tas|2019|Catholic|Persons
+3423,2019,Tas,Independent,Male,77.8,Tas|2019|Independent|Male
+3428,2019,Tas,Independent,Female,72.1,Tas|2019|Independent|Female
+3433,2019,Tas,Independent,Persons,74.9,Tas|2019|Independent|Persons
+3438,2019,Tas,All affiliations,Male,70.9,Tas|2019|All affiliations|Male
+3443,2019,Tas,All affiliations,Female,80.2,Tas|2019|All affiliations|Female
+3448,2019,Tas,All affiliations,Persons,75.5,Tas|2019|All affiliations|Persons
+3453,2019,NT,Government,Male,49.5,NT|2019|Government|Male
+3458,2019,NT,Government,Female,65.7,NT|2019|Government|Female
+3463,2019,NT,Government,Persons,57.1,NT|2019|Government|Persons
+3468,2019,NT,Non-Government,Male,53.5,NT|2019|Non-Government|Male
+3473,2019,NT,Non-Government,Female,46.3,NT|2019|Non-Government|Female
+3478,2019,NT,Non-Government,Persons,49.8,NT|2019|Non-Government|Persons
+3483,2019,NT,Catholic,Male,57.8,NT|2019|Catholic|Male
+3488,2019,NT,Catholic,Female,38.6,NT|2019|Catholic|Female
+3493,2019,NT,Catholic,Persons,48.2,NT|2019|Catholic|Persons
+3498,2019,NT,Independent,Male,50.3,NT|2019|Independent|Male
+3503,2019,NT,Independent,Female,51.9,NT|2019|Independent|Female
+3508,2019,NT,Independent,Persons,51.1,NT|2019|Independent|Persons
+3513,2019,NT,All affiliations,Male,51.0,NT|2019|All affiliations|Male
+3518,2019,NT,All affiliations,Female,57.8,NT|2019|All affiliations|Female
+3523,2019,NT,All affiliations,Persons,54.3,NT|2019|All affiliations|Persons
+3528,2019,ACT,Government,Male,100.0,ACT|2019|Government|Male
+3533,2019,ACT,Government,Female,100.0,ACT|2019|Government|Female
+3538,2019,ACT,Government,Persons,100.0,ACT|2019|Government|Persons
+3543,2019,ACT,Non-Government,Male,70.6,ACT|2019|Non-Government|Male
+3548,2019,ACT,Non-Government,Female,73.1,ACT|2019|Non-Government|Female
+3553,2019,ACT,Non-Government,Persons,71.8,ACT|2019|Non-Government|Persons
+3558,2019,ACT,Catholic,Male,67.8,ACT|2019|Catholic|Male
+3563,2019,ACT,Catholic,Female,68.2,ACT|2019|Catholic|Female
+3568,2019,ACT,Catholic,Persons,68.0,ACT|2019|Catholic|Persons
+3573,2019,ACT,Independent,Male,75.5,ACT|2019|Independent|Male
+3578,2019,ACT,Independent,Female,81.4,ACT|2019|Independent|Female
+3583,2019,ACT,Independent,Persons,78.5,ACT|2019|Independent|Persons
+3588,2019,ACT,All affiliations,Male,89.8,ACT|2019|All affiliations|Male
+3593,2019,ACT,All affiliations,Female,98.4,ACT|2019|All affiliations|Female
+3598,2019,ACT,All affiliations,Persons,94.0,ACT|2019|All affiliations|Persons
+3603,2018,NSW,Government,Male,69.0,NSW|2018|Government|Male
+3608,2018,NSW,Government,Female,80.1,NSW|2018|Government|Female
+3613,2018,NSW,Government,Persons,74.4,NSW|2018|Government|Persons
+3618,2018,NSW,Non-Government,Male,79.2,NSW|2018|Non-Government|Male
+3623,2018,NSW,Non-Government,Female,85.8,NSW|2018|Non-Government|Female
+3628,2018,NSW,Non-Government,Persons,82.4,NSW|2018|Non-Government|Persons
+3633,2018,NSW,Catholic,Male,74.8,NSW|2018|Catholic|Male
+3638,2018,NSW,Catholic,Female,83.7,NSW|2018|Catholic|Female
+3643,2018,NSW,Catholic,Persons,79.1,NSW|2018|Catholic|Persons
+3648,2018,NSW,Independent,Male,86.1,NSW|2018|Independent|Male
+3653,2018,NSW,Independent,Female,89.2,NSW|2018|Independent|Female
+3658,2018,NSW,Independent,Persons,87.6,NSW|2018|Independent|Persons
+3663,2018,NSW,All affiliations,Male,73.3,NSW|2018|All affiliations|Male
+3668,2018,NSW,All affiliations,Female,82.5,NSW|2018|All affiliations|Female
+3673,2018,NSW,All affiliations,Persons,77.8,NSW|2018|All affiliations|Persons
+3678,2018,Vic,Government,Male,82.3,Vic|2018|Government|Male
+3683,2018,Vic,Government,Female,94.2,Vic|2018|Government|Female
+3688,2018,Vic,Government,Persons,87.9,Vic|2018|Government|Persons
+3693,2018,Vic,Non-Government,Male,86.2,Vic|2018|Non-Government|Male
+3698,2018,Vic,Non-Government,Female,92.7,Vic|2018|Non-Government|Female
+3703,2018,Vic,Non-Government,Persons,89.5,Vic|2018|Non-Government|Persons
+3708,2018,Vic,Catholic,Male,78.7,Vic|2018|Catholic|Male
+3713,2018,Vic,Catholic,Female,86.0,Vic|2018|Catholic|Female
+3718,2018,Vic,Catholic,Persons,82.4,Vic|2018|Catholic|Persons
+3723,2018,Vic,Independent,Male,96.1,Vic|2018|Independent|Male
+3728,2018,Vic,Independent,Female,100.0,Vic|2018|Independent|Female
+3733,2018,Vic,Independent,Persons,99.0,Vic|2018|Independent|Persons
+3738,2018,Vic,All affiliations,Male,84.0,Vic|2018|All affiliations|Male
+3743,2018,Vic,All affiliations,Female,93.5,Vic|2018|All affiliations|Female
+3748,2018,Vic,All affiliations,Persons,88.7,Vic|2018|All affiliations|Persons
+3753,2018,Qld,Government,Male,82.9,Qld|2018|Government|Male
+3758,2018,Qld,Government,Female,90.2,Qld|2018|Government|Female
+3763,2018,Qld,Government,Persons,86.4,Qld|2018|Government|Persons
+3768,2018,Qld,Non-Government,Male,92.6,Qld|2018|Non-Government|Male
+3773,2018,Qld,Non-Government,Female,94.4,Qld|2018|Non-Government|Female
+3778,2018,Qld,Non-Government,Persons,93.5,Qld|2018|Non-Government|Persons
+3783,2018,Qld,Catholic,Male,89.3,Qld|2018|Catholic|Male
+3788,2018,Qld,Catholic,Female,91.6,Qld|2018|Catholic|Female
+3793,2018,Qld,Catholic,Persons,90.4,Qld|2018|Catholic|Persons
+3798,2018,Qld,Independent,Male,96.4,Qld|2018|Independent|Male
+3803,2018,Qld,Independent,Female,97.4,Qld|2018|Independent|Female
+3808,2018,Qld,Independent,Persons,96.9,Qld|2018|Independent|Persons
+3813,2018,Qld,All affiliations,Male,86.6,Qld|2018|All affiliations|Male
+3818,2018,Qld,All affiliations,Female,91.9,Qld|2018|All affiliations|Female
+3823,2018,Qld,All affiliations,Persons,89.2,Qld|2018|All affiliations|Persons
+3828,2018,SA,Government,Male,87.8,SA|2018|Government|Male
+3833,2018,SA,Government,Female,100.0,SA|2018|Government|Female
+3838,2018,SA,Government,Persons,94.8,SA|2018|Government|Persons
+3843,2018,SA,Non-Government,Male,90.7,SA|2018|Non-Government|Male
+3848,2018,SA,Non-Government,Female,97.9,SA|2018|Non-Government|Female
+3853,2018,SA,Non-Government,Persons,94.3,SA|2018|Non-Government|Persons
+3858,2018,SA,Catholic,Male,86.4,SA|2018|Catholic|Male
+3863,2018,SA,Catholic,Female,89.7,SA|2018|Catholic|Female
+3868,2018,SA,Catholic,Persons,88.1,SA|2018|Catholic|Persons
+3873,2018,SA,Independent,Male,94.6,SA|2018|Independent|Male
+3878,2018,SA,Independent,Female,100.0,SA|2018|Independent|Female
+3883,2018,SA,Independent,Persons,100.0,SA|2018|Independent|Persons
+3888,2018,SA,All affiliations,Male,89.0,SA|2018|All affiliations|Male
+3893,2018,SA,All affiliations,Female,100.0,SA|2018|All affiliations|Female
+3898,2018,SA,All affiliations,Persons,94.6,SA|2018|All affiliations|Persons
+3903,2018,WA,Government,Male,81.4,WA|2018|Government|Male
+3908,2018,WA,Government,Female,86.6,WA|2018|Government|Female
+3913,2018,WA,Government,Persons,83.8,WA|2018|Government|Persons
+3918,2018,WA,Non-Government,Male,80.6,WA|2018|Non-Government|Male
+3923,2018,WA,Non-Government,Female,84.7,WA|2018|Non-Government|Female
+3928,2018,WA,Non-Government,Persons,82.6,WA|2018|Non-Government|Persons
+3933,2018,WA,Catholic,Male,78.4,WA|2018|Catholic|Male
+3938,2018,WA,Catholic,Female,81.5,WA|2018|Catholic|Female
+3943,2018,WA,Catholic,Persons,80.0,WA|2018|Catholic|Persons
+3948,2018,WA,Independent,Male,82.8,WA|2018|Independent|Male
+3953,2018,WA,Independent,Female,87.6,WA|2018|Independent|Female
+3958,2018,WA,Independent,Persons,85.2,WA|2018|Independent|Persons
+3963,2018,WA,All affiliations,Male,81.1,WA|2018|All affiliations|Male
+3968,2018,WA,All affiliations,Female,85.7,WA|2018|All affiliations|Female
+3973,2018,WA,All affiliations,Persons,83.3,WA|2018|All affiliations|Persons
+3978,2018,Tas,Government,Male,74.7,Tas|2018|Government|Male
+3983,2018,Tas,Government,Female,83.5,Tas|2018|Government|Female
+3988,2018,Tas,Government,Persons,78.9,Tas|2018|Government|Persons
+3993,2018,Tas,Non-Government,Male,60.9,Tas|2018|Non-Government|Male
+3998,2018,Tas,Non-Government,Female,70.0,Tas|2018|Non-Government|Female
+4003,2018,Tas,Non-Government,Persons,65.3,Tas|2018|Non-Government|Persons
+4008,2018,Tas,Catholic,Male,53.0,Tas|2018|Catholic|Male
+4013,2018,Tas,Catholic,Female,63.9,Tas|2018|Catholic|Female
+4018,2018,Tas,Catholic,Persons,58.4,Tas|2018|Catholic|Persons
+4023,2018,Tas,Independent,Male,72.0,Tas|2018|Independent|Male
+4028,2018,Tas,Independent,Female,79.7,Tas|2018|Independent|Female
+4033,2018,Tas,Independent,Persons,75.5,Tas|2018|Independent|Persons
+4038,2018,Tas,All affiliations,Male,69.8,Tas|2018|All affiliations|Male
+4043,2018,Tas,All affiliations,Female,78.7,Tas|2018|All affiliations|Female
+4048,2018,Tas,All affiliations,Persons,74.0,Tas|2018|All affiliations|Persons
+4053,2018,NT,Government,Male,52.8,NT|2018|Government|Male
+4058,2018,NT,Government,Female,63.1,NT|2018|Government|Female
+4063,2018,NT,Government,Persons,57.7,NT|2018|Government|Persons
+4068,2018,NT,Non-Government,Male,46.4,NT|2018|Non-Government|Male
+4073,2018,NT,Non-Government,Female,41.5,NT|2018|Non-Government|Female
+4078,2018,NT,Non-Government,Persons,43.9,NT|2018|Non-Government|Persons
+4083,2018,NT,Catholic,Male,53.2,NT|2018|Catholic|Male
+4088,2018,NT,Catholic,Female,48.1,NT|2018|Catholic|Female
+4093,2018,NT,Catholic,Persons,50.6,NT|2018|Catholic|Persons
+4098,2018,NT,Independent,Male,42.8,NT|2018|Independent|Male
+4103,2018,NT,Independent,Female,37.9,NT|2018|Independent|Female
+4108,2018,NT,Independent,Persons,40.3,NT|2018|Independent|Persons
+4113,2018,NT,All affiliations,Male,50.4,NT|2018|All affiliations|Male
+4118,2018,NT,All affiliations,Female,54.6,NT|2018|All affiliations|Female
+4123,2018,NT,All affiliations,Persons,52.5,NT|2018|All affiliations|Persons
+4128,2018,ACT,Government,Male,100.0,ACT|2018|Government|Male
+4133,2018,ACT,Government,Female,100.0,ACT|2018|Government|Female
+4138,2018,ACT,Government,Persons,100.0,ACT|2018|Government|Persons
+4143,2018,ACT,Non-Government,Male,74.1,ACT|2018|Non-Government|Male
+4148,2018,ACT,Non-Government,Female,70.9,ACT|2018|Non-Government|Female
+4153,2018,ACT,Non-Government,Persons,72.5,ACT|2018|Non-Government|Persons
+4158,2018,ACT,Catholic,Male,71.1,ACT|2018|Catholic|Male
+4163,2018,ACT,Catholic,Female,66.3,ACT|2018|Catholic|Female
+4168,2018,ACT,Catholic,Persons,68.7,ACT|2018|Catholic|Persons
+4173,2018,ACT,Independent,Male,79.9,ACT|2018|Independent|Male
+4178,2018,ACT,Independent,Female,79.9,ACT|2018|Independent|Female
+4183,2018,ACT,Independent,Persons,79.9,ACT|2018|Independent|Persons
+4188,2018,ACT,All affiliations,Male,90.6,ACT|2018|All affiliations|Male
+4193,2018,ACT,All affiliations,Female,95.1,ACT|2018|All affiliations|Female
+4198,2018,ACT,All affiliations,Persons,92.8,ACT|2018|All affiliations|Persons
+4203,2017,NSW,Government,Male,70.1,NSW|2017|Government|Male
+4208,2017,NSW,Government,Female,81.3,NSW|2017|Government|Female
+4213,2017,NSW,Government,Persons,75.6,NSW|2017|Government|Persons
+4218,2017,NSW,Non-Government,Male,80.7,NSW|2017|Non-Government|Male
+4223,2017,NSW,Non-Government,Female,86.4,NSW|2017|Non-Government|Female
+4228,2017,NSW,Non-Government,Persons,83.5,NSW|2017|Non-Government|Persons
+4233,2017,NSW,Catholic,Male,77.0,NSW|2017|Catholic|Male
+4238,2017,NSW,Catholic,Female,84.2,NSW|2017|Catholic|Female
+4243,2017,NSW,Catholic,Persons,80.5,NSW|2017|Catholic|Persons
+4248,2017,NSW,Independent,Male,86.9,NSW|2017|Independent|Male
+4253,2017,NSW,Independent,Female,90.1,NSW|2017|Independent|Female
+4258,2017,NSW,Independent,Persons,88.4,NSW|2017|Independent|Persons
+4263,2017,NSW,All affiliations,Male,74.5,NSW|2017|All affiliations|Male
+4268,2017,NSW,All affiliations,Female,83.4,NSW|2017|All affiliations|Female
+4273,2017,NSW,All affiliations,Persons,78.9,NSW|2017|All affiliations|Persons
+4278,2017,Vic,Government,Male,81.7,Vic|2017|Government|Male
+4283,2017,Vic,Government,Female,92.2,Vic|2017|Government|Female
+4288,2017,Vic,Government,Persons,86.8,Vic|2017|Government|Persons
+4293,2017,Vic,Non-Government,Male,87.7,Vic|2017|Non-Government|Male
+4298,2017,Vic,Non-Government,Female,93.7,Vic|2017|Non-Government|Female
+4303,2017,Vic,Non-Government,Persons,90.7,Vic|2017|Non-Government|Persons
+4308,2017,Vic,Catholic,Male,81.7,Vic|2017|Catholic|Male
+4313,2017,Vic,Catholic,Female,87.6,Vic|2017|Catholic|Female
+4318,2017,Vic,Catholic,Persons,84.7,Vic|2017|Catholic|Persons
+4323,2017,Vic,Independent,Male,95.6,Vic|2017|Independent|Male
+4328,2017,Vic,Independent,Female,100.0,Vic|2017|Independent|Female
+4333,2017,Vic,Independent,Persons,98.6,Vic|2017|Independent|Persons
+4338,2017,Vic,All affiliations,Male,84.3,Vic|2017|All affiliations|Male
+4343,2017,Vic,All affiliations,Female,92.9,Vic|2017|All affiliations|Female
+4348,2017,Vic,All affiliations,Persons,88.5,Vic|2017|All affiliations|Persons
+4353,2017,Qld,Government,Male,82.7,Qld|2017|Government|Male
+4358,2017,Qld,Government,Female,89.1,Qld|2017|Government|Female
+4363,2017,Qld,Government,Persons,85.8,Qld|2017|Government|Persons
+4368,2017,Qld,Non-Government,Male,94.3,Qld|2017|Non-Government|Male
+4373,2017,Qld,Non-Government,Female,94.3,Qld|2017|Non-Government|Female
+4378,2017,Qld,Non-Government,Persons,94.3,Qld|2017|Non-Government|Persons
+4383,2017,Qld,Catholic,Male,90.5,Qld|2017|Catholic|Male
+4388,2017,Qld,Catholic,Female,92.8,Qld|2017|Catholic|Female
+4393,2017,Qld,Catholic,Persons,91.7,Qld|2017|Catholic|Persons
+4398,2017,Qld,Independent,Male,98.5,Qld|2017|Independent|Male
+4403,2017,Qld,Independent,Female,95.9,Qld|2017|Independent|Female
+4408,2017,Qld,Independent,Persons,97.2,Qld|2017|Independent|Persons
+4413,2017,Qld,All affiliations,Male,87.2,Qld|2017|All affiliations|Male
+4418,2017,Qld,All affiliations,Female,91.2,Qld|2017|All affiliations|Female
+4423,2017,Qld,All affiliations,Persons,89.1,Qld|2017|All affiliations|Persons
+4428,2017,SA,Government,Male,90.5,SA|2017|Government|Male
+4433,2017,SA,Government,Female,100.0,SA|2017|Government|Female
+4438,2017,SA,Government,Persons,96.0,SA|2017|Government|Persons
+4443,2017,SA,Non-Government,Male,90.2,SA|2017|Non-Government|Male
+4448,2017,SA,Non-Government,Female,95.7,SA|2017|Non-Government|Female
+4453,2017,SA,Non-Government,Persons,92.9,SA|2017|Non-Government|Persons
+4458,2017,SA,Catholic,Male,87.4,SA|2017|Catholic|Male
+4463,2017,SA,Catholic,Female,91.1,SA|2017|Catholic|Female
+4468,2017,SA,Catholic,Persons,89.3,SA|2017|Catholic|Persons
+4473,2017,SA,Independent,Male,93.0,SA|2017|Independent|Male
+4478,2017,SA,Independent,Female,100.0,SA|2017|Independent|Female
+4483,2017,SA,Independent,Persons,96.7,SA|2017|Independent|Persons
+4488,2017,SA,All affiliations,Male,90.4,SA|2017|All affiliations|Male
+4493,2017,SA,All affiliations,Female,99.3,SA|2017|All affiliations|Female
+4498,2017,SA,All affiliations,Persons,94.7,SA|2017|All affiliations|Persons
+4503,2017,WA,Government,Male,79.4,WA|2017|Government|Male
+4508,2017,WA,Government,Female,86.4,WA|2017|Government|Female
+4513,2017,WA,Government,Persons,82.7,WA|2017|Government|Persons
+4518,2017,WA,Non-Government,Male,79.3,WA|2017|Non-Government|Male
+4523,2017,WA,Non-Government,Female,83.9,WA|2017|Non-Government|Female
+4528,2017,WA,Non-Government,Persons,81.6,WA|2017|Non-Government|Persons
+4533,2017,WA,Catholic,Male,79.0,WA|2017|Catholic|Male
+4538,2017,WA,Catholic,Female,83.4,WA|2017|Catholic|Female
+4543,2017,WA,Catholic,Persons,81.3,WA|2017|Catholic|Persons
+4548,2017,WA,Independent,Male,79.6,WA|2017|Independent|Male
+4553,2017,WA,Independent,Female,84.3,WA|2017|Independent|Female
+4558,2017,WA,Independent,Persons,81.9,WA|2017|Independent|Persons
+4563,2017,WA,All affiliations,Male,79.3,WA|2017|All affiliations|Male
+4568,2017,WA,All affiliations,Female,85.3,WA|2017|All affiliations|Female
+4573,2017,WA,All affiliations,Persons,82.3,WA|2017|All affiliations|Persons
+4578,2017,Tas,Government,Male,72.6,Tas|2017|Government|Male
+4583,2017,Tas,Government,Female,77.7,Tas|2017|Government|Female
+4588,2017,Tas,Government,Persons,75.1,Tas|2017|Government|Persons
+4593,2017,Tas,Non-Government,Male,61.6,Tas|2017|Non-Government|Male
+4598,2017,Tas,Non-Government,Female,67.5,Tas|2017|Non-Government|Female
+4603,2017,Tas,Non-Government,Persons,64.5,Tas|2017|Non-Government|Persons
+4608,2017,Tas,Catholic,Male,56.3,Tas|2017|Catholic|Male
+4613,2017,Tas,Catholic,Female,67.7,Tas|2017|Catholic|Female
+4618,2017,Tas,Catholic,Persons,62.0,Tas|2017|Catholic|Persons
+4623,2017,Tas,Independent,Male,70.2,Tas|2017|Independent|Male
+4628,2017,Tas,Independent,Female,67.3,Tas|2017|Independent|Female
+4633,2017,Tas,Independent,Persons,68.7,Tas|2017|Independent|Persons
+4638,2017,Tas,All affiliations,Male,68.9,Tas|2017|All affiliations|Male
+4643,2017,Tas,All affiliations,Female,74.2,Tas|2017|All affiliations|Female
+4648,2017,Tas,All affiliations,Persons,71.5,Tas|2017|All affiliations|Persons
+4653,2017,NT,Government,Male,57.8,NT|2017|Government|Male
+4658,2017,NT,Government,Female,64.7,NT|2017|Government|Female
+4663,2017,NT,Government,Persons,61.1,NT|2017|Government|Persons
+4668,2017,NT,Non-Government,Male,56.6,NT|2017|Non-Government|Male
+4673,2017,NT,Non-Government,Female,51.1,NT|2017|Non-Government|Female
+4678,2017,NT,Non-Government,Persons,53.8,NT|2017|Non-Government|Persons
+4683,2017,NT,Catholic,Male,71.3,NT|2017|Catholic|Male
+4688,2017,NT,Catholic,Female,48.8,NT|2017|Catholic|Female
+4693,2017,NT,Catholic,Persons,59.0,NT|2017|Catholic|Persons
+4698,2017,NT,Independent,Male,49.6,NT|2017|Independent|Male
+4703,2017,NT,Independent,Female,52.5,NT|2017|Independent|Female
+4708,2017,NT,Independent,Persons,51.0,NT|2017|Independent|Persons
+4713,2017,NT,All affiliations,Male,57.4,NT|2017|All affiliations|Male
+4718,2017,NT,All affiliations,Female,59.8,NT|2017|All affiliations|Female
+4723,2017,NT,All affiliations,Persons,58.6,NT|2017|All affiliations|Persons
+4728,2017,ACT,Government,Male,100.0,ACT|2017|Government|Male
+4733,2017,ACT,Government,Female,100.0,ACT|2017|Government|Female
+4738,2017,ACT,Government,Persons,100.0,ACT|2017|Government|Persons
+4743,2017,ACT,Non-Government,Male,73.9,ACT|2017|Non-Government|Male
+4748,2017,ACT,Non-Government,Female,71.3,ACT|2017|Non-Government|Female
+4753,2017,ACT,Non-Government,Persons,72.6,ACT|2017|Non-Government|Persons
+4758,2017,ACT,Catholic,Male,70.9,ACT|2017|Catholic|Male
+4763,2017,ACT,Catholic,Female,64.1,ACT|2017|Catholic|Female
+4768,2017,ACT,Catholic,Persons,67.5,ACT|2017|Catholic|Persons
+4773,2017,ACT,Independent,Male,79.4,ACT|2017|Independent|Male
+4778,2017,ACT,Independent,Female,84.8,ACT|2017|Independent|Female
+4783,2017,ACT,Independent,Persons,82.1,ACT|2017|Independent|Persons
+4788,2017,ACT,All affiliations,Male,92.1,ACT|2017|All affiliations|Male
+4793,2017,ACT,All affiliations,Female,97.5,ACT|2017|All affiliations|Female
+4798,2017,ACT,All affiliations,Persons,94.8,ACT|2017|All affiliations|Persons
+4803,2016,NSW,Government,Male,69.3,NSW|2016|Government|Male
+4808,2016,NSW,Government,Female,79.5,NSW|2016|Government|Female
+4813,2016,NSW,Government,Persons,74.3,NSW|2016|Government|Persons
+4818,2016,NSW,Non-Government,Male,81.7,NSW|2016|Non-Government|Male
+4823,2016,NSW,Non-Government,Female,87.2,NSW|2016|Non-Government|Female
+4828,2016,NSW,Non-Government,Persons,84.4,NSW|2016|Non-Government|Persons
+4833,2016,NSW,Catholic,Male,78.0,NSW|2016|Catholic|Male
+4838,2016,NSW,Catholic,Female,84.9,NSW|2016|Catholic|Female
+4843,2016,NSW,Catholic,Persons,81.4,NSW|2016|Catholic|Persons
+4848,2016,NSW,Independent,Male,87.9,NSW|2016|Independent|Male
+4853,2016,NSW,Independent,Female,90.9,NSW|2016|Independent|Female
+4858,2016,NSW,Independent,Persons,89.4,NSW|2016|Independent|Persons
+4863,2016,NSW,All affiliations,Male,74.3,NSW|2016|All affiliations|Male
+4868,2016,NSW,All affiliations,Female,82.6,NSW|2016|All affiliations|Female
+4873,2016,NSW,All affiliations,Persons,78.4,NSW|2016|All affiliations|Persons
+4878,2016,Vic,Government,Male,82.5,Vic|2016|Government|Male
+4883,2016,Vic,Government,Female,92.8,Vic|2016|Government|Female
+4888,2016,Vic,Government,Persons,87.4,Vic|2016|Government|Persons
+4893,2016,Vic,Non-Government,Male,85.2,Vic|2016|Non-Government|Male
+4898,2016,Vic,Non-Government,Female,91.6,Vic|2016|Non-Government|Female
+4903,2016,Vic,Non-Government,Persons,88.4,Vic|2016|Non-Government|Persons
+4908,2016,Vic,Catholic,Male,81.9,Vic|2016|Catholic|Male
+4913,2016,Vic,Catholic,Female,86.9,Vic|2016|Catholic|Female
+4918,2016,Vic,Catholic,Persons,84.4,Vic|2016|Catholic|Persons
+4923,2016,Vic,Independent,Male,89.6,Vic|2016|Independent|Male
+4928,2016,Vic,Independent,Female,97.7,Vic|2016|Independent|Female
+4933,2016,Vic,Independent,Persons,93.7,Vic|2016|Independent|Persons
+4938,2016,Vic,All affiliations,Male,83.7,Vic|2016|All affiliations|Male
+4943,2016,Vic,All affiliations,Female,92.3,Vic|2016|All affiliations|Female
+4948,2016,Vic,All affiliations,Persons,87.9,Vic|2016|All affiliations|Persons
+4953,2016,Qld,Government,Male,82.5,Qld|2016|Government|Male
+4958,2016,Qld,Government,Female,88.2,Qld|2016|Government|Female
+4963,2016,Qld,Government,Persons,85.3,Qld|2016|Government|Persons
+4968,2016,Qld,Non-Government,Male,93.8,Qld|2016|Non-Government|Male
+4973,2016,Qld,Non-Government,Female,94.1,Qld|2016|Non-Government|Female
+4978,2016,Qld,Non-Government,Persons,93.9,Qld|2016|Non-Government|Persons
+4983,2016,Qld,Catholic,Male,89.8,Qld|2016|Catholic|Male
+4988,2016,Qld,Catholic,Female,92.3,Qld|2016|Catholic|Female
+4993,2016,Qld,Catholic,Persons,91.0,Qld|2016|Catholic|Persons
+4998,2016,Qld,Independent,Male,98.3,Qld|2016|Independent|Male
+5003,2016,Qld,Independent,Female,96.0,Qld|2016|Independent|Female
+5008,2016,Qld,Independent,Persons,97.1,Qld|2016|Independent|Persons
+5013,2016,Qld,All affiliations,Male,86.8,Qld|2016|All affiliations|Male
+5018,2016,Qld,All affiliations,Female,90.6,Qld|2016|All affiliations|Female
+5023,2016,Qld,All affiliations,Persons,88.6,Qld|2016|All affiliations|Persons
+5028,2016,SA,Government,Male,94.0,SA|2016|Government|Male
+5033,2016,SA,Government,Female,100.0,SA|2016|Government|Female
+5038,2016,SA,Government,Persons,99.7,SA|2016|Government|Persons
+5043,2016,SA,Non-Government,Male,93.0,SA|2016|Non-Government|Male
+5048,2016,SA,Non-Government,Female,95.7,SA|2016|Non-Government|Female
+5053,2016,SA,Non-Government,Persons,94.4,SA|2016|Non-Government|Persons
+5058,2016,SA,Catholic,Male,90.4,SA|2016|Catholic|Male
+5063,2016,SA,Catholic,Female,92.8,SA|2016|Catholic|Female
+5068,2016,SA,Catholic,Persons,91.6,SA|2016|Catholic|Persons
+5073,2016,SA,Independent,Male,95.7,SA|2016|Independent|Male
+5078,2016,SA,Independent,Female,98.7,SA|2016|Independent|Female
+5083,2016,SA,Independent,Persons,97.2,SA|2016|Independent|Persons
+5088,2016,SA,All affiliations,Male,93.6,SA|2016|All affiliations|Male
+5093,2016,SA,All affiliations,Female,100.0,SA|2016|All affiliations|Female
+5098,2016,SA,All affiliations,Persons,97.5,SA|2016|All affiliations|Persons
+5103,2016,WA,Government,Male,77.7,WA|2016|Government|Male
+5108,2016,WA,Government,Female,82.6,WA|2016|Government|Female
+5113,2016,WA,Government,Persons,80.0,WA|2016|Government|Persons
+5118,2016,WA,Non-Government,Male,77.9,WA|2016|Non-Government|Male
+5123,2016,WA,Non-Government,Female,83.4,WA|2016|Non-Government|Female
+5128,2016,WA,Non-Government,Persons,80.6,WA|2016|Non-Government|Persons
+5133,2016,WA,Catholic,Male,79.9,WA|2016|Catholic|Male
+5138,2016,WA,Catholic,Female,83.2,WA|2016|Catholic|Female
+5143,2016,WA,Catholic,Persons,81.6,WA|2016|Catholic|Persons
+5148,2016,WA,Independent,Male,76.1,WA|2016|Independent|Male
+5153,2016,WA,Independent,Female,83.5,WA|2016|Independent|Female
+5158,2016,WA,Independent,Persons,79.7,WA|2016|Independent|Persons
+5163,2016,WA,All affiliations,Male,77.8,WA|2016|All affiliations|Male
+5168,2016,WA,All affiliations,Female,82.9,WA|2016|All affiliations|Female
+5173,2016,WA,All affiliations,Persons,80.3,WA|2016|All affiliations|Persons
+5178,2016,Tas,Government,Male,72.0,Tas|2016|Government|Male
+5183,2016,Tas,Government,Female,76.4,Tas|2016|Government|Female
+5188,2016,Tas,Government,Persons,74.1,Tas|2016|Government|Persons
+5193,2016,Tas,Non-Government,Male,60.6,Tas|2016|Non-Government|Male
+5198,2016,Tas,Non-Government,Female,66.7,Tas|2016|Non-Government|Female
+5203,2016,Tas,Non-Government,Persons,63.6,Tas|2016|Non-Government|Persons
+5208,2016,Tas,Catholic,Male,55.5,Tas|2016|Catholic|Male
+5213,2016,Tas,Catholic,Female,61.6,Tas|2016|Catholic|Female
+5218,2016,Tas,Catholic,Persons,58.6,Tas|2016|Catholic|Persons
+5223,2016,Tas,Independent,Male,68.1,Tas|2016|Independent|Male
+5228,2016,Tas,Independent,Female,75.1,Tas|2016|Independent|Female
+5233,2016,Tas,Independent,Persons,71.5,Tas|2016|Independent|Persons
+5238,2016,Tas,All affiliations,Male,68.0,Tas|2016|All affiliations|Male
+5243,2016,Tas,All affiliations,Female,72.9,Tas|2016|All affiliations|Female
+5248,2016,Tas,All affiliations,Persons,70.4,Tas|2016|All affiliations|Persons
+5253,2016,NT,Government,Male,50.8,NT|2016|Government|Male
+5258,2016,NT,Government,Female,66.9,NT|2016|Government|Female
+5263,2016,NT,Government,Persons,57.9,NT|2016|Government|Persons
+5268,2016,NT,Non-Government,Male,53.3,NT|2016|Non-Government|Male
+5273,2016,NT,Non-Government,Female,55.2,NT|2016|Non-Government|Female
+5278,2016,NT,Non-Government,Persons,54.3,NT|2016|Non-Government|Persons
+5283,2016,NT,Catholic,Male,54.8,NT|2016|Catholic|Male
+5288,2016,NT,Catholic,Female,52.7,NT|2016|Catholic|Female
+5293,2016,NT,Catholic,Persons,53.7,NT|2016|Catholic|Persons
+5298,2016,NT,Independent,Male,52.5,NT|2016|Independent|Male
+5303,2016,NT,Independent,Female,56.5,NT|2016|Independent|Female
+5308,2016,NT,Independent,Persons,54.6,NT|2016|Independent|Persons
+5313,2016,NT,All affiliations,Male,51.6,NT|2016|All affiliations|Male
+5318,2016,NT,All affiliations,Female,62.5,NT|2016|All affiliations|Female
+5323,2016,NT,All affiliations,Persons,56.7,NT|2016|All affiliations|Persons
+5328,2016,ACT,Government,Male,100.0,ACT|2016|Government|Male
+5333,2016,ACT,Government,Female,100.0,ACT|2016|Government|Female
+5338,2016,ACT,Government,Persons,100.0,ACT|2016|Government|Persons
+5343,2016,ACT,Non-Government,Male,78.1,ACT|2016|Non-Government|Male
+5348,2016,ACT,Non-Government,Female,73.6,ACT|2016|Non-Government|Female
+5353,2016,ACT,Non-Government,Persons,75.8,ACT|2016|Non-Government|Persons
+5358,2016,ACT,Catholic,Male,76.7,ACT|2016|Catholic|Male
+5363,2016,ACT,Catholic,Female,70.2,ACT|2016|Catholic|Female
+5368,2016,ACT,Catholic,Persons,73.4,ACT|2016|Catholic|Persons
+5373,2016,ACT,Independent,Male,80.9,ACT|2016|Independent|Male
+5378,2016,ACT,Independent,Female,79.7,ACT|2016|Independent|Female
+5383,2016,ACT,Independent,Persons,80.3,ACT|2016|Independent|Persons
+5388,2016,ACT,All affiliations,Male,92.3,ACT|2016|All affiliations|Male
+5393,2016,ACT,All affiliations,Female,95.7,ACT|2016|All affiliations|Female
+5398,2016,ACT,All affiliations,Persons,94.0,ACT|2016|All affiliations|Persons
+5403,2015,NSW,Government,Male,69.7,NSW|2015|Government|Male
+5408,2015,NSW,Government,Female,78.7,NSW|2015|Government|Female
+5413,2015,NSW,Government,Persons,74.1,NSW|2015|Government|Persons
+5418,2015,NSW,Non-Government,Male,82.0,NSW|2015|Non-Government|Male
+5423,2015,NSW,Non-Government,Female,87.2,NSW|2015|Non-Government|Female
+5428,2015,NSW,Non-Government,Persons,84.6,NSW|2015|Non-Government|Persons
+5433,2015,NSW,Catholic,Male,78.9,NSW|2015|Catholic|Male
+5438,2015,NSW,Catholic,Female,84.8,NSW|2015|Catholic|Female
+5443,2015,NSW,Catholic,Persons,81.8,NSW|2015|Catholic|Persons
+5448,2015,NSW,Independent,Male,87.1,NSW|2015|Independent|Male
+5453,2015,NSW,Independent,Female,91.3,NSW|2015|Independent|Female
+5458,2015,NSW,Independent,Persons,89.2,NSW|2015|Independent|Persons
+5463,2015,NSW,All affiliations,Male,74.6,NSW|2015|All affiliations|Male
+5468,2015,NSW,All affiliations,Female,82.1,NSW|2015|All affiliations|Female
+5473,2015,NSW,All affiliations,Persons,78.2,NSW|2015|All affiliations|Persons
+5478,2015,Vic,Government,Male,80.1,Vic|2015|Government|Male
+5483,2015,Vic,Government,Female,90.0,Vic|2015|Government|Female
+5488,2015,Vic,Government,Persons,84.8,Vic|2015|Government|Persons
+5493,2015,Vic,Non-Government,Male,85.7,Vic|2015|Non-Government|Male
+5498,2015,Vic,Non-Government,Female,91.3,Vic|2015|Non-Government|Female
+5503,2015,Vic,Non-Government,Persons,88.6,Vic|2015|Non-Government|Persons
+5508,2015,Vic,Catholic,Male,80.9,Vic|2015|Catholic|Male
+5513,2015,Vic,Catholic,Female,86.3,Vic|2015|Catholic|Female
+5518,2015,Vic,Catholic,Persons,83.7,Vic|2015|Catholic|Persons
+5523,2015,Vic,Independent,Male,91.8,Vic|2015|Independent|Male
+5528,2015,Vic,Independent,Female,98.0,Vic|2015|Independent|Female
+5533,2015,Vic,Independent,Persons,94.9,Vic|2015|Independent|Persons
+5538,2015,Vic,All affiliations,Male,82.4,Vic|2015|All affiliations|Male
+5543,2015,Vic,All affiliations,Female,90.6,Vic|2015|All affiliations|Female
+5548,2015,Vic,All affiliations,Persons,86.4,Vic|2015|All affiliations|Persons
+5553,2015,Qld,Government,Male,82.3,Qld|2015|Government|Male
+5558,2015,Qld,Government,Female,87.5,Qld|2015|Government|Female
+5563,2015,Qld,Government,Persons,84.8,Qld|2015|Government|Persons
+5568,2015,Qld,Non-Government,Male,94.7,Qld|2015|Non-Government|Male
+5573,2015,Qld,Non-Government,Female,93.6,Qld|2015|Non-Government|Female
+5578,2015,Qld,Non-Government,Persons,94.1,Qld|2015|Non-Government|Persons
+5583,2015,Qld,Catholic,Male,91.4,Qld|2015|Catholic|Male
+5588,2015,Qld,Catholic,Female,91.6,Qld|2015|Catholic|Female
+5593,2015,Qld,Catholic,Persons,91.5,Qld|2015|Catholic|Persons
+5598,2015,Qld,Independent,Male,98.3,Qld|2015|Independent|Male
+5603,2015,Qld,Independent,Female,95.6,Qld|2015|Independent|Female
+5608,2015,Qld,Independent,Persons,96.9,Qld|2015|Independent|Persons
+5613,2015,Qld,All affiliations,Male,87.0,Qld|2015|All affiliations|Male
+5618,2015,Qld,All affiliations,Female,89.9,Qld|2015|All affiliations|Female
+5623,2015,Qld,All affiliations,Persons,88.4,Qld|2015|All affiliations|Persons
+5628,2015,SA,Government,Male,90.8,SA|2015|Government|Male
+5633,2015,SA,Government,Female,100.0,SA|2015|Government|Female
+5638,2015,SA,Government,Persons,96.2,SA|2015|Government|Persons
+5643,2015,SA,Non-Government,Male,92.9,SA|2015|Non-Government|Male
+5648,2015,SA,Non-Government,Female,97.0,SA|2015|Non-Government|Female
+5653,2015,SA,Non-Government,Persons,95.0,SA|2015|Non-Government|Persons
+5658,2015,SA,Catholic,Male,91.3,SA|2015|Catholic|Male
+5663,2015,SA,Catholic,Female,92.6,SA|2015|Catholic|Female
+5668,2015,SA,Catholic,Persons,92.0,SA|2015|Catholic|Persons
+5673,2015,SA,Independent,Male,94.5,SA|2015|Independent|Male
+5678,2015,SA,Independent,Female,100.0,SA|2015|Independent|Female
+5683,2015,SA,Independent,Persons,98.1,SA|2015|Independent|Persons
+5688,2015,SA,All affiliations,Male,91.6,SA|2015|All affiliations|Male
+5693,2015,SA,All affiliations,Female,99.9,SA|2015|All affiliations|Female
+5698,2015,SA,All affiliations,Persons,95.7,SA|2015|All affiliations|Persons
+5703,2015,WA,Government,Male,78.9,WA|2015|Government|Male
+5708,2015,WA,Government,Female,88.3,WA|2015|Government|Female
+5713,2015,WA,Government,Persons,83.3,WA|2015|Government|Persons
+5718,2015,WA,Non-Government,Male,80.0,WA|2015|Non-Government|Male
+5723,2015,WA,Non-Government,Female,84.3,WA|2015|Non-Government|Female
+5728,2015,WA,Non-Government,Persons,82.1,WA|2015|Non-Government|Persons
+5733,2015,WA,Catholic,Male,78.3,WA|2015|Catholic|Male
+5738,2015,WA,Catholic,Female,83.5,WA|2015|Catholic|Female
+5743,2015,WA,Catholic,Persons,80.9,WA|2015|Catholic|Persons
+5748,2015,WA,Independent,Male,81.6,WA|2015|Independent|Male
+5753,2015,WA,Independent,Female,85.0,WA|2015|Independent|Female
+5758,2015,WA,Independent,Persons,83.3,WA|2015|Independent|Persons
+5763,2015,WA,All affiliations,Male,79.4,WA|2015|All affiliations|Male
+5768,2015,WA,All affiliations,Female,86.5,WA|2015|All affiliations|Female
+5773,2015,WA,All affiliations,Persons,82.8,WA|2015|All affiliations|Persons
+5778,2015,Tas,Government,Male,70.6,Tas|2015|Government|Male
+5783,2015,Tas,Government,Female,77.8,Tas|2015|Government|Female
+5788,2015,Tas,Government,Persons,74.1,Tas|2015|Government|Persons
+5793,2015,Tas,Non-Government,Male,62.7,Tas|2015|Non-Government|Male
+5798,2015,Tas,Non-Government,Female,71.1,Tas|2015|Non-Government|Female
+5803,2015,Tas,Non-Government,Persons,66.9,Tas|2015|Non-Government|Persons
+5808,2015,Tas,Catholic,Male,54.4,Tas|2015|Catholic|Male
+5813,2015,Tas,Catholic,Female,66.2,Tas|2015|Catholic|Female
+5818,2015,Tas,Catholic,Persons,60.4,Tas|2015|Catholic|Persons
+5823,2015,Tas,Independent,Male,75.5,Tas|2015|Independent|Male
+5828,2015,Tas,Independent,Female,79.2,Tas|2015|Independent|Female
+5833,2015,Tas,Independent,Persons,77.4,Tas|2015|Independent|Persons
+5838,2015,Tas,All affiliations,Male,68.0,Tas|2015|All affiliations|Male
+5843,2015,Tas,All affiliations,Female,75.5,Tas|2015|All affiliations|Female
+5848,2015,Tas,All affiliations,Persons,71.7,Tas|2015|All affiliations|Persons
+5853,2015,NT,Government,Male,47.2,NT|2015|Government|Male
+5858,2015,NT,Government,Female,59.2,NT|2015|Government|Female
+5863,2015,NT,Government,Persons,52.9,NT|2015|Government|Persons
+5868,2015,NT,Non-Government,Male,56.2,NT|2015|Non-Government|Male
+5873,2015,NT,Non-Government,Female,54.7,NT|2015|Non-Government|Female
+5878,2015,NT,Non-Government,Persons,55.5,NT|2015|Non-Government|Persons
+5883,2015,NT,Catholic,Male,58.3,NT|2015|Catholic|Male
+5888,2015,NT,Catholic,Female,51.1,NT|2015|Catholic|Female
+5893,2015,NT,Catholic,Persons,54.8,NT|2015|Catholic|Persons
+5898,2015,NT,Independent,Male,55.0,NT|2015|Independent|Male
+5903,2015,NT,Independent,Female,56.6,NT|2015|Independent|Female
+5908,2015,NT,Independent,Persons,55.8,NT|2015|Independent|Persons
+5913,2015,NT,All affiliations,Male,50.2,NT|2015|All affiliations|Male
+5918,2015,NT,All affiliations,Female,57.6,NT|2015|All affiliations|Female
+5923,2015,NT,All affiliations,Persons,53.7,NT|2015|All affiliations|Persons
+5928,2015,ACT,Government,Male,100.0,ACT|2015|Government|Male
+5933,2015,ACT,Government,Female,100.0,ACT|2015|Government|Female
+5938,2015,ACT,Government,Persons,100.0,ACT|2015|Government|Persons
+5943,2015,ACT,Non-Government,Male,78.8,ACT|2015|Non-Government|Male
+5948,2015,ACT,Non-Government,Female,71.1,ACT|2015|Non-Government|Female
+5953,2015,ACT,Non-Government,Persons,74.9,ACT|2015|Non-Government|Persons
+5958,2015,ACT,Catholic,Male,77.2,ACT|2015|Catholic|Male
+5963,2015,ACT,Catholic,Female,68.1,ACT|2015|Catholic|Female
+5968,2015,ACT,Catholic,Persons,72.6,ACT|2015|Catholic|Persons
+5973,2015,ACT,Independent,Male,82.0,ACT|2015|Independent|Male
+5978,2015,ACT,Independent,Female,77.1,ACT|2015|Independent|Female
+5983,2015,ACT,Independent,Persons,79.5,ACT|2015|Independent|Persons
+5988,2015,ACT,All affiliations,Male,94.0,ACT|2015|All affiliations|Male
+5993,2015,ACT,All affiliations,Female,99.2,ACT|2015|All affiliations|Female
+5998,2015,ACT,All affiliations,Persons,96.6,ACT|2015|All affiliations|Persons
+6003,2014,NSW,Government,Male,69.2,NSW|2014|Government|Male
+6008,2014,NSW,Government,Female,79.1,NSW|2014|Government|Female
+6013,2014,NSW,Government,Persons,74.0,NSW|2014|Government|Persons
+6018,2014,NSW,Non-Government,Male,82.0,NSW|2014|Non-Government|Male
+6023,2014,NSW,Non-Government,Female,86.9,NSW|2014|Non-Government|Female
+6028,2014,NSW,Non-Government,Persons,84.4,NSW|2014|Non-Government|Persons
+6033,2014,NSW,Catholic,Male,79.2,NSW|2014|Catholic|Male
+6038,2014,NSW,Catholic,Female,84.6,NSW|2014|Catholic|Female
+6043,2014,NSW,Catholic,Persons,81.9,NSW|2014|Catholic|Persons
+6048,2014,NSW,Independent,Male,86.5,NSW|2014|Independent|Male
+6053,2014,NSW,Independent,Female,90.8,NSW|2014|Independent|Female
+6058,2014,NSW,Independent,Persons,88.6,NSW|2014|Independent|Persons
+6063,2014,NSW,All affiliations,Male,74.1,NSW|2014|All affiliations|Male
+6068,2014,NSW,All affiliations,Female,82.2,NSW|2014|All affiliations|Female
+6073,2014,NSW,All affiliations,Persons,78.1,NSW|2014|All affiliations|Persons
+6078,2014,Vic,Government,Male,78.0,Vic|2014|Government|Male
+6083,2014,Vic,Government,Female,87.6,Vic|2014|Government|Female
+6088,2014,Vic,Government,Persons,82.5,Vic|2014|Government|Persons
+6093,2014,Vic,Non-Government,Male,85.5,Vic|2014|Non-Government|Male
+6098,2014,Vic,Non-Government,Female,92.0,Vic|2014|Non-Government|Female
+6103,2014,Vic,Non-Government,Persons,88.8,Vic|2014|Non-Government|Persons
+6108,2014,Vic,Catholic,Male,80.8,Vic|2014|Catholic|Male
+6113,2014,Vic,Catholic,Female,88.0,Vic|2014|Catholic|Female
+6118,2014,Vic,Catholic,Persons,84.4,Vic|2014|Catholic|Persons
+6123,2014,Vic,Independent,Male,91.6,Vic|2014|Independent|Male
+6128,2014,Vic,Independent,Female,97.4,Vic|2014|Independent|Female
+6133,2014,Vic,Independent,Persons,94.5,Vic|2014|Independent|Persons
+6138,2014,Vic,All affiliations,Male,81.1,Vic|2014|All affiliations|Male
+6143,2014,Vic,All affiliations,Female,89.6,Vic|2014|All affiliations|Female
+6148,2014,Vic,All affiliations,Persons,85.2,Vic|2014|All affiliations|Persons
+6153,2014,Qld,Government,Male,79.5,Qld|2014|Government|Male
+6158,2014,Qld,Government,Female,86.5,Qld|2014|Government|Female
+6163,2014,Qld,Government,Persons,82.9,Qld|2014|Government|Persons
+6168,2014,Qld,Non-Government,Male,93.7,Qld|2014|Non-Government|Male
+6173,2014,Qld,Non-Government,Female,94.0,Qld|2014|Non-Government|Female
+6178,2014,Qld,Non-Government,Persons,93.9,Qld|2014|Non-Government|Persons
+6183,2014,Qld,Catholic,Male,91.6,Qld|2014|Catholic|Male
+6188,2014,Qld,Catholic,Female,92.4,Qld|2014|Catholic|Female
+6193,2014,Qld,Catholic,Persons,92.0,Qld|2014|Catholic|Persons
+6198,2014,Qld,Independent,Male,96.1,Qld|2014|Independent|Male
+6203,2014,Qld,Independent,Female,95.7,Qld|2014|Independent|Female
+6208,2014,Qld,Independent,Persons,95.9,Qld|2014|Independent|Persons
+6213,2014,Qld,All affiliations,Male,84.9,Qld|2014|All affiliations|Male
+6218,2014,Qld,All affiliations,Female,89.4,Qld|2014|All affiliations|Female
+6223,2014,Qld,All affiliations,Persons,87.1,Qld|2014|All affiliations|Persons
+6228,2014,SA,Government,Male,84.9,SA|2014|Government|Male
+6233,2014,SA,Government,Female,97.6,SA|2014|Government|Female
+6238,2014,SA,Government,Persons,90.9,SA|2014|Government|Persons
+6243,2014,SA,Non-Government,Male,92.7,SA|2014|Non-Government|Male
+6248,2014,SA,Non-Government,Female,99.4,SA|2014|Non-Government|Female
+6253,2014,SA,Non-Government,Persons,96.1,SA|2014|Non-Government|Persons
+6258,2014,SA,Catholic,Male,91.7,SA|2014|Catholic|Male
+6263,2014,SA,Catholic,Female,97.4,SA|2014|Catholic|Female
+6268,2014,SA,Catholic,Persons,94.6,SA|2014|Catholic|Persons
+6273,2014,SA,Independent,Male,93.7,SA|2014|Independent|Male
+6278,2014,SA,Independent,Female,100.0,SA|2014|Independent|Female
+6283,2014,SA,Independent,Persons,97.7,SA|2014|Independent|Persons
+6288,2014,SA,All affiliations,Male,88.0,SA|2014|All affiliations|Male
+6293,2014,SA,All affiliations,Female,98.4,SA|2014|All affiliations|Female
+6298,2014,SA,All affiliations,Persons,93.0,SA|2014|All affiliations|Persons
+6303,2014,WA,Government,Male,90.9,WA|2014|Government|Male
+6308,2014,WA,Government,Female,100.0,WA|2014|Government|Female
+6313,2014,WA,Government,Persons,95.8,WA|2014|Government|Persons
+6318,2014,WA,Non-Government,Male,80.2,WA|2014|Non-Government|Male
+6323,2014,WA,Non-Government,Female,84.4,WA|2014|Non-Government|Female
+6328,2014,WA,Non-Government,Persons,82.3,WA|2014|Non-Government|Persons
+6333,2014,WA,Catholic,Male,77.4,WA|2014|Catholic|Male
+6338,2014,WA,Catholic,Female,83.2,WA|2014|Catholic|Female
+6343,2014,WA,Catholic,Persons,80.2,WA|2014|Catholic|Persons
+6348,2014,WA,Independent,Male,83.1,WA|2014|Independent|Male
+6353,2014,WA,Independent,Female,85.6,WA|2014|Independent|Female
+6358,2014,WA,Independent,Persons,84.3,WA|2014|Independent|Persons
+6363,2014,WA,All affiliations,Male,85.9,WA|2014|All affiliations|Male
+6368,2014,WA,All affiliations,Female,93.1,WA|2014|All affiliations|Female
+6373,2014,WA,All affiliations,Persons,89.3,WA|2014|All affiliations|Persons
+6378,2014,Tas,Government,Male,65.0,Tas|2014|Government|Male
+6383,2014,Tas,Government,Female,73.9,Tas|2014|Government|Female
+6388,2014,Tas,Government,Persons,69.2,Tas|2014|Government|Persons
+6393,2014,Tas,Non-Government,Male,67.3,Tas|2014|Non-Government|Male
+6398,2014,Tas,Non-Government,Female,66.4,Tas|2014|Non-Government|Female
+6403,2014,Tas,Non-Government,Persons,66.8,Tas|2014|Non-Government|Persons
+6408,2014,Tas,Catholic,Male,60.3,Tas|2014|Catholic|Male
+6413,2014,Tas,Catholic,Female,63.1,Tas|2014|Catholic|Female
+6418,2014,Tas,Catholic,Persons,61.8,Tas|2014|Catholic|Persons
+6423,2014,Tas,Independent,Male,77.4,Tas|2014|Independent|Male
+6428,2014,Tas,Independent,Female,71.3,Tas|2014|Independent|Female
+6433,2014,Tas,Independent,Persons,74.3,Tas|2014|Independent|Persons
+6438,2014,Tas,All affiliations,Male,65.7,Tas|2014|All affiliations|Male
+6443,2014,Tas,All affiliations,Female,71.2,Tas|2014|All affiliations|Female
+6448,2014,Tas,All affiliations,Persons,68.4,Tas|2014|All affiliations|Persons
+6453,2014,NT,Government,Male,54.2,NT|2014|Government|Male
+6458,2014,NT,Government,Female,69.1,NT|2014|Government|Female
+6463,2014,NT,Government,Persons,61.3,NT|2014|Government|Persons
+6468,2014,NT,Non-Government,Male,53.9,NT|2014|Non-Government|Male
+6473,2014,NT,Non-Government,Female,57.9,NT|2014|Non-Government|Female
+6478,2014,NT,Non-Government,Persons,56.0,NT|2014|Non-Government|Persons
+6483,2014,NT,Catholic,Male,51.1,NT|2014|Catholic|Male
+6488,2014,NT,Catholic,Female,53.5,NT|2014|Catholic|Female
+6493,2014,NT,Catholic,Persons,52.3,NT|2014|Catholic|Persons
+6498,2014,NT,Independent,Male,55.7,NT|2014|Independent|Male
+6503,2014,NT,Independent,Female,60.7,NT|2014|Independent|Female
+6508,2014,NT,Independent,Persons,58.3,NT|2014|Independent|Persons
+6513,2014,NT,All affiliations,Male,54.1,NT|2014|All affiliations|Male
+6518,2014,NT,All affiliations,Female,65.3,NT|2014|All affiliations|Female
+6523,2014,NT,All affiliations,Persons,59.6,NT|2014|All affiliations|Persons
+6528,2014,ACT,Government,Male,100.0,ACT|2014|Government|Male
+6533,2014,ACT,Government,Female,100.0,ACT|2014|Government|Female
+6538,2014,ACT,Government,Persons,100.0,ACT|2014|Government|Persons
+6543,2014,ACT,Non-Government,Male,81.1,ACT|2014|Non-Government|Male
+6548,2014,ACT,Non-Government,Female,73.2,ACT|2014|Non-Government|Female
+6553,2014,ACT,Non-Government,Persons,77.2,ACT|2014|Non-Government|Persons
+6558,2014,ACT,Catholic,Male,79.5,ACT|2014|Catholic|Male
+6563,2014,ACT,Catholic,Female,67.1,ACT|2014|Catholic|Female
+6568,2014,ACT,Catholic,Persons,73.3,ACT|2014|Catholic|Persons
+6573,2014,ACT,Independent,Male,84.1,ACT|2014|Independent|Male
+6578,2014,ACT,Independent,Female,84.7,ACT|2014|Independent|Female
+6583,2014,ACT,Independent,Persons,84.4,ACT|2014|Independent|Persons
+6588,2014,ACT,All affiliations,Male,94.1,ACT|2014|All affiliations|Male
+6593,2014,ACT,All affiliations,Female,95.2,ACT|2014|All affiliations|Female
+6598,2014,ACT,All affiliations,Persons,94.6,ACT|2014|All affiliations|Persons
+6603,2013,NSW,Government,Male,67.7,NSW|2013|Government|Male
+6608,2013,NSW,Government,Female,77.9,NSW|2013|Government|Female
+6613,2013,NSW,Government,Persons,72.7,NSW|2013|Government|Persons
+6618,2013,NSW,Non-Government,Male,79.8,NSW|2013|Non-Government|Male
+6623,2013,NSW,Non-Government,Female,86.3,NSW|2013|Non-Government|Female
+6628,2013,NSW,Non-Government,Persons,83.0,NSW|2013|Non-Government|Persons
+6633,2013,NSW,Catholic,Male,76.9,NSW|2013|Catholic|Male
+6638,2013,NSW,Catholic,Female,84.0,NSW|2013|Catholic|Female
+6643,2013,NSW,Catholic,Persons,80.4,NSW|2013|Catholic|Persons
+6648,2013,NSW,Independent,Male,84.7,NSW|2013|Independent|Male
+6653,2013,NSW,Independent,Female,90.3,NSW|2013|Independent|Female
+6658,2013,NSW,Independent,Persons,87.5,NSW|2013|Independent|Persons
+6663,2013,NSW,All affiliations,Male,72.4,NSW|2013|All affiliations|Male
+6668,2013,NSW,All affiliations,Female,81.2,NSW|2013|All affiliations|Female
+6673,2013,NSW,All affiliations,Persons,76.7,NSW|2013|All affiliations|Persons
+6678,2013,Vic,Government,Male,75.9,Vic|2013|Government|Male
+6683,2013,Vic,Government,Female,85.2,Vic|2013|Government|Female
+6688,2013,Vic,Government,Persons,80.4,Vic|2013|Government|Persons
+6693,2013,Vic,Non-Government,Male,85.0,Vic|2013|Non-Government|Male
+6698,2013,Vic,Non-Government,Female,91.6,Vic|2013|Non-Government|Female
+6703,2013,Vic,Non-Government,Persons,88.3,Vic|2013|Non-Government|Persons
+6708,2013,Vic,Catholic,Male,78.7,Vic|2013|Catholic|Male
+6713,2013,Vic,Catholic,Female,86.5,Vic|2013|Catholic|Female
+6718,2013,Vic,Catholic,Persons,82.7,Vic|2013|Catholic|Persons
+6723,2013,Vic,Independent,Male,93.1,Vic|2013|Independent|Male
+6728,2013,Vic,Independent,Female,98.4,Vic|2013|Independent|Female
+6733,2013,Vic,Independent,Persons,95.7,Vic|2013|Independent|Persons
+6738,2013,Vic,All affiliations,Male,79.6,Vic|2013|All affiliations|Male
+6743,2013,Vic,All affiliations,Female,88.0,Vic|2013|All affiliations|Female
+6748,2013,Vic,All affiliations,Persons,83.7,Vic|2013|All affiliations|Persons
+6753,2013,Qld,Government,Male,76.1,Qld|2013|Government|Male
+6758,2013,Qld,Government,Female,84.7,Qld|2013|Government|Female
+6763,2013,Qld,Government,Persons,80.2,Qld|2013|Government|Persons
+6768,2013,Qld,Non-Government,Male,93.4,Qld|2013|Non-Government|Male
+6773,2013,Qld,Non-Government,Female,93.8,Qld|2013|Non-Government|Female
+6778,2013,Qld,Non-Government,Persons,93.6,Qld|2013|Non-Government|Persons
+6783,2013,Qld,Catholic,Male,89.7,Qld|2013|Catholic|Male
+6788,2013,Qld,Catholic,Female,91.5,Qld|2013|Catholic|Female
+6793,2013,Qld,Catholic,Persons,90.6,Qld|2013|Catholic|Persons
+6798,2013,Qld,Independent,Male,97.5,Qld|2013|Independent|Male
+6803,2013,Qld,Independent,Female,96.1,Qld|2013|Independent|Female
+6808,2013,Qld,Independent,Persons,96.8,Qld|2013|Independent|Persons
+6813,2013,Qld,All affiliations,Male,82.3,Qld|2013|All affiliations|Male
+6818,2013,Qld,All affiliations,Female,88.2,Qld|2013|All affiliations|Female
+6823,2013,Qld,All affiliations,Persons,85.2,Qld|2013|All affiliations|Persons
+6828,2013,SA,Government,Male,81.8,SA|2013|Government|Male
+6833,2013,SA,Government,Female,93.5,SA|2013|Government|Female
+6838,2013,SA,Government,Persons,87.4,SA|2013|Government|Persons
+6843,2013,SA,Non-Government,Male,94.4,SA|2013|Non-Government|Male
+6848,2013,SA,Non-Government,Female,96.5,SA|2013|Non-Government|Female
+6853,2013,SA,Non-Government,Persons,95.4,SA|2013|Non-Government|Persons
+6858,2013,SA,Catholic,Male,92.5,SA|2013|Catholic|Male
+6863,2013,SA,Catholic,Female,93.0,SA|2013|Catholic|Female
+6868,2013,SA,Catholic,Persons,92.7,SA|2013|Catholic|Persons
+6873,2013,SA,Independent,Male,96.4,SA|2013|Independent|Male
+6878,2013,SA,Independent,Female,100.0,SA|2013|Independent|Female
+6883,2013,SA,Independent,Persons,98.3,SA|2013|Independent|Persons
+6888,2013,SA,All affiliations,Male,86.7,SA|2013|All affiliations|Male
+6893,2013,SA,All affiliations,Female,94.7,SA|2013|All affiliations|Female
+6898,2013,SA,All affiliations,Persons,90.6,SA|2013|All affiliations|Persons
+6903,2013,WA,Government,Male,78.1,WA|2013|Government|Male
+6908,2013,WA,Government,Female,86.7,WA|2013|Government|Female
+6913,2013,WA,Government,Persons,82.1,WA|2013|Government|Persons
+6918,2013,WA,Non-Government,Male,79.5,WA|2013|Non-Government|Male
+6923,2013,WA,Non-Government,Female,85.1,WA|2013|Non-Government|Female
+6928,2013,WA,Non-Government,Persons,82.3,WA|2013|Non-Government|Persons
+6933,2013,WA,Catholic,Male,77.5,WA|2013|Catholic|Male
+6938,2013,WA,Catholic,Female,84.7,WA|2013|Catholic|Female
+6943,2013,WA,Catholic,Persons,81.2,WA|2013|Catholic|Persons
+6948,2013,WA,Independent,Male,81.3,WA|2013|Independent|Male
+6953,2013,WA,Independent,Female,85.4,WA|2013|Independent|Female
+6958,2013,WA,Independent,Persons,83.3,WA|2013|Independent|Persons
+6963,2013,WA,All affiliations,Male,78.6,WA|2013|All affiliations|Male
+6968,2013,WA,All affiliations,Female,86.0,WA|2013|All affiliations|Female
+6973,2013,WA,All affiliations,Persons,82.2,WA|2013|All affiliations|Persons
+6978,2013,Tas,Government,Male,65.9,Tas|2013|Government|Male
+6983,2013,Tas,Government,Female,74.1,Tas|2013|Government|Female
+6988,2013,Tas,Government,Persons,69.8,Tas|2013|Government|Persons
+6993,2013,Tas,Non-Government,Male,65.6,Tas|2013|Non-Government|Male
+6998,2013,Tas,Non-Government,Female,67.1,Tas|2013|Non-Government|Female
+7003,2013,Tas,Non-Government,Persons,66.3,Tas|2013|Non-Government|Persons
+7008,2013,Tas,Catholic,Male,62.3,Tas|2013|Catholic|Male
+7013,2013,Tas,Catholic,Female,63.0,Tas|2013|Catholic|Female
+7018,2013,Tas,Catholic,Persons,62.6,Tas|2013|Catholic|Persons
+7023,2013,Tas,Independent,Male,70.0,Tas|2013|Independent|Male
+7028,2013,Tas,Independent,Female,73.7,Tas|2013|Independent|Female
+7033,2013,Tas,Independent,Persons,71.7,Tas|2013|Independent|Persons
+7038,2013,Tas,All affiliations,Male,65.8,Tas|2013|All affiliations|Male
+7043,2013,Tas,All affiliations,Female,71.7,Tas|2013|All affiliations|Female
+7048,2013,Tas,All affiliations,Persons,68.7,Tas|2013|All affiliations|Persons
+7053,2013,NT,Government,Male,50.9,NT|2013|Government|Male
+7058,2013,NT,Government,Female,62.9,NT|2013|Government|Female
+7063,2013,NT,Government,Persons,56.5,NT|2013|Government|Persons
+7068,2013,NT,Non-Government,Male,52.7,NT|2013|Non-Government|Male
+7073,2013,NT,Non-Government,Female,56.3,NT|2013|Non-Government|Female
+7078,2013,NT,Non-Government,Persons,54.4,NT|2013|Non-Government|Persons
+7083,2013,NT,Catholic,Male,45.4,NT|2013|Catholic|Male
+7088,2013,NT,Catholic,Female,50.8,NT|2013|Catholic|Female
+7093,2013,NT,Catholic,Persons,47.8,NT|2013|Catholic|Persons
+7098,2013,NT,Independent,Male,58.2,NT|2013|Independent|Male
+7103,2013,NT,Independent,Female,59.9,NT|2013|Independent|Female
+7108,2013,NT,Independent,Persons,59.0,NT|2013|Independent|Persons
+7113,2013,NT,All affiliations,Male,51.5,NT|2013|All affiliations|Male
+7118,2013,NT,All affiliations,Female,60.8,NT|2013|All affiliations|Female
+7123,2013,NT,All affiliations,Persons,55.8,NT|2013|All affiliations|Persons
+7128,2013,ACT,Government,Male,100.0,ACT|2013|Government|Male
+7133,2013,ACT,Government,Female,100.0,ACT|2013|Government|Female
+7138,2013,ACT,Government,Persons,100.0,ACT|2013|Government|Persons
+7143,2013,ACT,Non-Government,Male,78.0,ACT|2013|Non-Government|Male
+7148,2013,ACT,Non-Government,Female,78.7,ACT|2013|Non-Government|Female
+7153,2013,ACT,Non-Government,Persons,78.3,ACT|2013|Non-Government|Persons
+7158,2013,ACT,Catholic,Male,78.0,ACT|2013|Catholic|Male
+7163,2013,ACT,Catholic,Female,76.6,ACT|2013|Catholic|Female
+7168,2013,ACT,Catholic,Persons,77.3,ACT|2013|Catholic|Persons
+7173,2013,ACT,Independent,Male,77.9,ACT|2013|Independent|Male
+7178,2013,ACT,Independent,Female,82.5,ACT|2013|Independent|Female
+7183,2013,ACT,Independent,Persons,80.2,ACT|2013|Independent|Persons
+7188,2013,ACT,All affiliations,Male,89.7,ACT|2013|All affiliations|Male
+7193,2013,ACT,All affiliations,Female,93.5,ACT|2013|All affiliations|Female
+7198,2013,ACT,All affiliations,Persons,91.6,ACT|2013|All affiliations|Persons
+7203,2012,NSW,Government,Male,65.5,NSW|2012|Government|Male
+7208,2012,NSW,Government,Female,75.8,NSW|2012|Government|Female
+7213,2012,NSW,Government,Persons,70.5,NSW|2012|Government|Persons
+7218,2012,NSW,Non-Government,Male,79.7,NSW|2012|Non-Government|Male
+7223,2012,NSW,Non-Government,Female,85.0,NSW|2012|Non-Government|Female
+7228,2012,NSW,Non-Government,Persons,82.3,NSW|2012|Non-Government|Persons
+7233,2012,NSW,Catholic,Male,76.2,NSW|2012|Catholic|Male
+7238,2012,NSW,Catholic,Female,82.5,NSW|2012|Catholic|Female
+7243,2012,NSW,Catholic,Persons,79.4,NSW|2012|Catholic|Persons
+7248,2012,NSW,Independent,Male,85.4,NSW|2012|Independent|Male
+7253,2012,NSW,Independent,Female,89.2,NSW|2012|Independent|Female
+7258,2012,NSW,Independent,Persons,87.2,NSW|2012|Independent|Persons
+7263,2012,NSW,All affiliations,Male,70.8,NSW|2012|All affiliations|Male
+7268,2012,NSW,All affiliations,Female,79.3,NSW|2012|All affiliations|Female
+7273,2012,NSW,All affiliations,Persons,75.0,NSW|2012|All affiliations|Persons
+7278,2012,Vic,Government,Male,71.0,Vic|2012|Government|Male
+7283,2012,Vic,Government,Female,83.9,Vic|2012|Government|Female
+7288,2012,Vic,Government,Persons,77.2,Vic|2012|Government|Persons
+7293,2012,Vic,Non-Government,Male,85.1,Vic|2012|Non-Government|Male
+7298,2012,Vic,Non-Government,Female,93.5,Vic|2012|Non-Government|Female
+7303,2012,Vic,Non-Government,Persons,89.3,Vic|2012|Non-Government|Persons
+7308,2012,Vic,Catholic,Male,78.4,Vic|2012|Catholic|Male
+7313,2012,Vic,Catholic,Female,87.4,Vic|2012|Catholic|Female
+7318,2012,Vic,Catholic,Persons,82.9,Vic|2012|Catholic|Persons
+7323,2012,Vic,Independent,Male,93.9,Vic|2012|Independent|Male
+7328,2012,Vic,Independent,Female,100.0,Vic|2012|Independent|Female
+7333,2012,Vic,Independent,Persons,97.7,Vic|2012|Independent|Persons
+7338,2012,Vic,All affiliations,Male,76.7,Vic|2012|All affiliations|Male
+7343,2012,Vic,All affiliations,Female,88.0,Vic|2012|All affiliations|Female
+7348,2012,Vic,All affiliations,Persons,82.2,Vic|2012|All affiliations|Persons
+7353,2012,Qld,Government,Male,74.5,Qld|2012|Government|Male
+7358,2012,Qld,Government,Female,82.7,Qld|2012|Government|Female
+7363,2012,Qld,Government,Persons,78.5,Qld|2012|Government|Persons
+7368,2012,Qld,Non-Government,Male,92.2,Qld|2012|Non-Government|Male
+7373,2012,Qld,Non-Government,Female,93.1,Qld|2012|Non-Government|Female
+7378,2012,Qld,Non-Government,Persons,92.7,Qld|2012|Non-Government|Persons
+7383,2012,Qld,Catholic,Male,87.0,Qld|2012|Catholic|Male
+7388,2012,Qld,Catholic,Female,91.4,Qld|2012|Catholic|Female
+7393,2012,Qld,Catholic,Persons,89.2,Qld|2012|Catholic|Persons
+7398,2012,Qld,Independent,Male,97.9,Qld|2012|Independent|Male
+7403,2012,Qld,Independent,Female,94.8,Qld|2012|Independent|Female
+7408,2012,Qld,Independent,Persons,96.3,Qld|2012|Independent|Persons
+7413,2012,Qld,All affiliations,Male,80.9,Qld|2012|All affiliations|Male
+7418,2012,Qld,All affiliations,Female,86.7,Qld|2012|All affiliations|Female
+7423,2012,Qld,All affiliations,Persons,83.7,Qld|2012|All affiliations|Persons
+7428,2012,SA,Government,Male,77.0,SA|2012|Government|Male
+7433,2012,SA,Government,Female,91.9,SA|2012|Government|Female
+7438,2012,SA,Government,Persons,84.2,SA|2012|Government|Persons
+7443,2012,SA,Non-Government,Male,93.4,SA|2012|Non-Government|Male
+7448,2012,SA,Non-Government,Female,98.4,SA|2012|Non-Government|Female
+7453,2012,SA,Non-Government,Persons,95.9,SA|2012|Non-Government|Persons
+7458,2012,SA,Catholic,Male,91.4,SA|2012|Catholic|Male
+7463,2012,SA,Catholic,Female,90.1,SA|2012|Catholic|Female
+7468,2012,SA,Catholic,Persons,90.7,SA|2012|Catholic|Persons
+7473,2012,SA,Independent,Male,95.5,SA|2012|Independent|Male
+7478,2012,SA,Independent,Female,100.0,SA|2012|Independent|Female
+7483,2012,SA,Independent,Persons,100.0,SA|2012|Independent|Persons
+7488,2012,SA,All affiliations,Male,83.3,SA|2012|All affiliations|Male
+7493,2012,SA,All affiliations,Female,94.6,SA|2012|All affiliations|Female
+7498,2012,SA,All affiliations,Persons,88.8,SA|2012|All affiliations|Persons
+7503,2012,WA,Government,Male,72.6,WA|2012|Government|Male
+7508,2012,WA,Government,Female,82.1,WA|2012|Government|Female
+7513,2012,WA,Government,Persons,77.1,WA|2012|Government|Persons
+7518,2012,WA,Non-Government,Male,80.0,WA|2012|Non-Government|Male
+7523,2012,WA,Non-Government,Female,85.8,WA|2012|Non-Government|Female
+7528,2012,WA,Non-Government,Persons,82.9,WA|2012|Non-Government|Persons
+7533,2012,WA,Catholic,Male,76.6,WA|2012|Catholic|Male
+7538,2012,WA,Catholic,Female,84.7,WA|2012|Catholic|Female
+7543,2012,WA,Catholic,Persons,80.6,WA|2012|Catholic|Persons
+7548,2012,WA,Independent,Male,83.5,WA|2012|Independent|Male
+7553,2012,WA,Independent,Female,86.8,WA|2012|Independent|Female
+7558,2012,WA,Independent,Persons,85.2,WA|2012|Independent|Persons
+7563,2012,WA,All affiliations,Male,75.7,WA|2012|All affiliations|Male
+7568,2012,WA,All affiliations,Female,83.7,WA|2012|All affiliations|Female
+7573,2012,WA,All affiliations,Persons,79.5,WA|2012|All affiliations|Persons
+7578,2012,Tas,Government,Male,64.0,Tas|2012|Government|Male
+7583,2012,Tas,Government,Female,71.9,Tas|2012|Government|Female
+7588,2012,Tas,Government,Persons,67.8,Tas|2012|Government|Persons
+7593,2012,Tas,Non-Government,Male,62.2,Tas|2012|Non-Government|Male
+7598,2012,Tas,Non-Government,Female,72.3,Tas|2012|Non-Government|Female
+7603,2012,Tas,Non-Government,Persons,67.3,Tas|2012|Non-Government|Persons
+7608,2012,Tas,Catholic,Male,55.2,Tas|2012|Catholic|Male
+7613,2012,Tas,Catholic,Female,66.4,Tas|2012|Catholic|Female
+7618,2012,Tas,Catholic,Persons,61.0,Tas|2012|Catholic|Persons
+7623,2012,Tas,Independent,Male,71.5,Tas|2012|Independent|Male
+7628,2012,Tas,Independent,Female,81.1,Tas|2012|Independent|Female
+7633,2012,Tas,Independent,Persons,76.2,Tas|2012|Independent|Persons
+7638,2012,Tas,All affiliations,Male,63.4,Tas|2012|All affiliations|Male
+7643,2012,Tas,All affiliations,Female,72.0,Tas|2012|All affiliations|Female
+7648,2012,Tas,All affiliations,Persons,67.6,Tas|2012|All affiliations|Persons
+7653,2012,NT,Government,Male,61.1,NT|2012|Government|Male
+7658,2012,NT,Government,Female,63.3,NT|2012|Government|Female
+7663,2012,NT,Government,Persons,62.1,NT|2012|Government|Persons
+7668,2012,NT,Non-Government,Male,40.9,NT|2012|Non-Government|Male
+7673,2012,NT,Non-Government,Female,44.6,NT|2012|Non-Government|Female
+7678,2012,NT,Non-Government,Persons,42.8,NT|2012|Non-Government|Persons
+7683,2012,NT,Catholic,Male,40.9,NT|2012|Catholic|Male
+7688,2012,NT,Catholic,Female,40.9,NT|2012|Catholic|Female
+7693,2012,NT,Catholic,Persons,40.9,NT|2012|Catholic|Persons
+7698,2012,NT,Independent,Male,41.0,NT|2012|Independent|Male
+7703,2012,NT,Independent,Female,47.4,NT|2012|Independent|Female
+7708,2012,NT,Independent,Persons,44.1,NT|2012|Independent|Persons
+7713,2012,NT,All affiliations,Male,54.5,NT|2012|All affiliations|Male
+7718,2012,NT,All affiliations,Female,56.7,NT|2012|All affiliations|Female
+7723,2012,NT,All affiliations,Persons,55.6,NT|2012|All affiliations|Persons
+7728,2012,ACT,Government,Male,100.0,ACT|2012|Government|Male
+7733,2012,ACT,Government,Female,100.0,ACT|2012|Government|Female
+7738,2012,ACT,Government,Persons,100.0,ACT|2012|Government|Persons
+7743,2012,ACT,Non-Government,Male,72.0,ACT|2012|Non-Government|Male
+7748,2012,ACT,Non-Government,Female,76.1,ACT|2012|Non-Government|Female
+7753,2012,ACT,Non-Government,Persons,74.0,ACT|2012|Non-Government|Persons
+7758,2012,ACT,Catholic,Male,70.5,ACT|2012|Catholic|Male
+7763,2012,ACT,Catholic,Female,75.1,ACT|2012|Catholic|Female
+7768,2012,ACT,Catholic,Persons,72.7,ACT|2012|Catholic|Persons
+7773,2012,ACT,Independent,Male,75.1,ACT|2012|Independent|Male
+7778,2012,ACT,Independent,Female,78.0,ACT|2012|Independent|Female
+7783,2012,ACT,Independent,Persons,76.6,ACT|2012|Independent|Persons
+7788,2012,ACT,All affiliations,Male,88.8,ACT|2012|All affiliations|Male
+7793,2012,ACT,All affiliations,Female,90.9,ACT|2012|All affiliations|Female
+7798,2012,ACT,All affiliations,Persons,89.8,ACT|2012|All affiliations|Persons
+7803,2011,NSW,Government,Male,64.8,NSW|2011|Government|Male
+7808,2011,NSW,Government,Female,76.3,NSW|2011|Government|Female
+7813,2011,NSW,Government,Persons,70.5,NSW|2011|Government|Persons
+7818,2011,NSW,Non-Government,Male,77.9,NSW|2011|Non-Government|Male
+7823,2011,NSW,Non-Government,Female,85.2,NSW|2011|Non-Government|Female
+7828,2011,NSW,Non-Government,Persons,81.5,NSW|2011|Non-Government|Persons
+7833,2011,NSW,Catholic,Male,74.1,NSW|2011|Catholic|Male
+7838,2011,NSW,Catholic,Female,82.9,NSW|2011|Catholic|Female
+7843,2011,NSW,Catholic,Persons,78.5,NSW|2011|Catholic|Persons
+7848,2011,NSW,Independent,Male,84.4,NSW|2011|Independent|Male
+7853,2011,NSW,Independent,Female,89.2,NSW|2011|Independent|Female
+7858,2011,NSW,Independent,Persons,86.8,NSW|2011|Independent|Persons
+7863,2011,NSW,All affiliations,Male,69.7,NSW|2011|All affiliations|Male
+7868,2011,NSW,All affiliations,Female,79.7,NSW|2011|All affiliations|Female
+7873,2011,NSW,All affiliations,Persons,74.6,NSW|2011|All affiliations|Persons
+7878,2011,Vic,Government,Male,70.7,Vic|2011|Government|Male
+7883,2011,Vic,Government,Female,83.0,Vic|2011|Government|Female
+7888,2011,Vic,Government,Persons,76.6,Vic|2011|Government|Persons
+7893,2011,Vic,Non-Government,Male,84.7,Vic|2011|Non-Government|Male
+7898,2011,Vic,Non-Government,Female,95.2,Vic|2011|Non-Government|Female
+7903,2011,Vic,Non-Government,Persons,90.0,Vic|2011|Non-Government|Persons
+7908,2011,Vic,Catholic,Male,75.9,Vic|2011|Catholic|Male
+7913,2011,Vic,Catholic,Female,86.7,Vic|2011|Catholic|Female
+7918,2011,Vic,Catholic,Persons,81.3,Vic|2011|Catholic|Persons
+7923,2011,Vic,Independent,Male,96.3,Vic|2011|Independent|Male
+7928,2011,Vic,Independent,Female,100.0,Vic|2011|Independent|Female
+7933,2011,Vic,Independent,Persons,100.0,Vic|2011|Independent|Persons
+7938,2011,Vic,All affiliations,Male,76.2,Vic|2011|All affiliations|Male
+7943,2011,Vic,All affiliations,Female,88.1,Vic|2011|All affiliations|Female
+7948,2011,Vic,All affiliations,Persons,82.0,Vic|2011|All affiliations|Persons
+7953,2011,Qld,Government,Male,72.6,Qld|2011|Government|Male
+7958,2011,Qld,Government,Female,80.6,Qld|2011|Government|Female
+7963,2011,Qld,Government,Persons,76.4,Qld|2011|Government|Persons
+7968,2011,Qld,Non-Government,Male,94.0,Qld|2011|Non-Government|Male
+7973,2011,Qld,Non-Government,Female,95.1,Qld|2011|Non-Government|Female
+7978,2011,Qld,Non-Government,Persons,94.6,Qld|2011|Non-Government|Persons
+7983,2011,Qld,Catholic,Male,88.2,Qld|2011|Catholic|Male
+7988,2011,Qld,Catholic,Female,91.7,Qld|2011|Catholic|Female
+7993,2011,Qld,Catholic,Persons,89.9,Qld|2011|Catholic|Persons
+7998,2011,Qld,Independent,Male,100.0,Qld|2011|Independent|Male
+8003,2011,Qld,Independent,Female,98.7,Qld|2011|Independent|Female
+8008,2011,Qld,Independent,Persons,99.5,Qld|2011|Independent|Persons
+8013,2011,Qld,All affiliations,Male,80.2,Qld|2011|All affiliations|Male
+8018,2011,Qld,All affiliations,Female,86.0,Qld|2011|All affiliations|Female
+8023,2011,Qld,All affiliations,Persons,83.0,Qld|2011|All affiliations|Persons
+8028,2011,SA,Government,Male,73.0,SA|2011|Government|Male
+8033,2011,SA,Government,Female,90.3,SA|2011|Government|Female
+8038,2011,SA,Government,Persons,81.3,SA|2011|Government|Persons
+8043,2011,SA,Non-Government,Male,91.1,SA|2011|Non-Government|Male
+8048,2011,SA,Non-Government,Female,97.2,SA|2011|Non-Government|Female
+8053,2011,SA,Non-Government,Persons,94.2,SA|2011|Non-Government|Persons
+8058,2011,SA,Catholic,Male,87.7,SA|2011|Catholic|Male
+8063,2011,SA,Catholic,Female,89.9,SA|2011|Catholic|Female
+8068,2011,SA,Catholic,Persons,88.8,SA|2011|Catholic|Persons
+8073,2011,SA,Independent,Male,94.9,SA|2011|Independent|Male
+8078,2011,SA,Independent,Female,100.0,SA|2011|Independent|Female
+8083,2011,SA,Independent,Persons,100.0,SA|2011|Independent|Persons
+8088,2011,SA,All affiliations,Male,79.9,SA|2011|All affiliations|Male
+8093,2011,SA,All affiliations,Female,93.1,SA|2011|All affiliations|Female
+8098,2011,SA,All affiliations,Persons,86.3,SA|2011|All affiliations|Persons
+8103,2011,WA,Government,Male,68.8,WA|2011|Government|Male
+8108,2011,WA,Government,Female,81.6,WA|2011|Government|Female
+8113,2011,WA,Government,Persons,74.8,WA|2011|Government|Persons
+8118,2011,WA,Non-Government,Male,80.3,WA|2011|Non-Government|Male
+8123,2011,WA,Non-Government,Female,86.5,WA|2011|Non-Government|Female
+8128,2011,WA,Non-Government,Persons,83.4,WA|2011|Non-Government|Persons
+8133,2011,WA,Catholic,Male,75.5,WA|2011|Catholic|Male
+8138,2011,WA,Catholic,Female,82.8,WA|2011|Catholic|Female
+8143,2011,WA,Catholic,Persons,79.2,WA|2011|Catholic|Persons
+8148,2011,WA,Independent,Male,85.1,WA|2011|Independent|Male
+8153,2011,WA,Independent,Female,90.1,WA|2011|Independent|Female
+8158,2011,WA,Independent,Persons,87.6,WA|2011|Independent|Persons
+8163,2011,WA,All affiliations,Male,73.4,WA|2011|All affiliations|Male
+8168,2011,WA,All affiliations,Female,83.7,WA|2011|All affiliations|Female
+8173,2011,WA,All affiliations,Persons,78.4,WA|2011|All affiliations|Persons
+8178,2011,Tas,Government,Male,63.3,Tas|2011|Government|Male
+8183,2011,Tas,Government,Female,76.7,Tas|2011|Government|Female
+8188,2011,Tas,Government,Persons,69.6,Tas|2011|Government|Persons
+8193,2011,Tas,Non-Government,Male,62.8,Tas|2011|Non-Government|Male
+8198,2011,Tas,Non-Government,Female,77.7,Tas|2011|Non-Government|Female
+8203,2011,Tas,Non-Government,Persons,70.2,Tas|2011|Non-Government|Persons
+8208,2011,Tas,Catholic,Male,54.0,Tas|2011|Catholic|Male
+8213,2011,Tas,Catholic,Female,73.9,Tas|2011|Catholic|Female
+8218,2011,Tas,Catholic,Persons,64.2,Tas|2011|Catholic|Persons
+8223,2011,Tas,Independent,Male,74.2,Tas|2011|Independent|Male
+8228,2011,Tas,Independent,Female,83.5,Tas|2011|Independent|Female
+8233,2011,Tas,Independent,Persons,78.6,Tas|2011|Independent|Persons
+8238,2011,Tas,All affiliations,Male,63.2,Tas|2011|All affiliations|Male
+8243,2011,Tas,All affiliations,Female,77.1,Tas|2011|All affiliations|Female
+8248,2011,Tas,All affiliations,Persons,69.8,Tas|2011|All affiliations|Persons
+8253,2011,NT,Government,Male,62.3,NT|2011|Government|Male
+8258,2011,NT,Government,Female,65.1,NT|2011|Government|Female
+8263,2011,NT,Government,Persons,63.7,NT|2011|Government|Persons
+8268,2011,NT,Non-Government,Male,41.1,NT|2011|Non-Government|Male
+8273,2011,NT,Non-Government,Female,39.1,NT|2011|Non-Government|Female
+8278,2011,NT,Non-Government,Persons,40.1,NT|2011|Non-Government|Persons
+8283,2011,NT,Catholic,Male,41.1,NT|2011|Catholic|Male
+8288,2011,NT,Catholic,Female,37.1,NT|2011|Catholic|Female
+8293,2011,NT,Catholic,Persons,39.2,NT|2011|Catholic|Persons
+8298,2011,NT,Independent,Male,41.1,NT|2011|Independent|Male
+8303,2011,NT,Independent,Female,40.6,NT|2011|Independent|Female
+8308,2011,NT,Independent,Persons,40.9,NT|2011|Independent|Persons
+8313,2011,NT,All affiliations,Male,54.9,NT|2011|All affiliations|Male
+8318,2011,NT,All affiliations,Female,55.8,NT|2011|All affiliations|Female
+8323,2011,NT,All affiliations,Persons,55.3,NT|2011|All affiliations|Persons
+8328,2011,ACT,Government,Male,94.9,ACT|2011|Government|Male
+8333,2011,ACT,Government,Female,100.0,ACT|2011|Government|Female
+8338,2011,ACT,Government,Persons,100.0,ACT|2011|Government|Persons
+8343,2011,ACT,Non-Government,Male,78.3,ACT|2011|Non-Government|Male
+8348,2011,ACT,Non-Government,Female,77.1,ACT|2011|Non-Government|Female
+8353,2011,ACT,Non-Government,Persons,77.7,ACT|2011|Non-Government|Persons
+8358,2011,ACT,Catholic,Male,76.7,ACT|2011|Catholic|Male
+8363,2011,ACT,Catholic,Female,72.1,ACT|2011|Catholic|Female
+8368,2011,ACT,Catholic,Persons,74.4,ACT|2011|Catholic|Persons
+8373,2011,ACT,Independent,Male,81.6,ACT|2011|Independent|Male
+8378,2011,ACT,Independent,Female,86.7,ACT|2011|Independent|Female
+8383,2011,ACT,Independent,Persons,84.3,ACT|2011|Independent|Persons
+8388,2011,ACT,All affiliations,Male,86.9,ACT|2011|All affiliations|Male
+8393,2011,ACT,All affiliations,Female,91.9,ACT|2011|All affiliations|Female
+8398,2011,ACT,All affiliations,Persons,89.4,ACT|2011|All affiliations|Persons

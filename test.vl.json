@@ -1,0 +1,103 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 420,
+  "title": {"text": "Retention Contribution by School Sector (Proportion of Retained Students)", "fontSize": 18},
+
+  "params": [
+    { "name": "pYear", "value": 2024,
+      "bind": {"input":"range","min":2011,"max":2024,"step":1,"name":"Year: "} },
+    { "name": "pSex", "value": "Persons",
+      "bind": {"input":"select","options":["Persons","Male","Female"],"name":"Gender: "} }
+  ],
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/population.csv"
+  },
+
+  "transform": [
+    { "filter": "toNumber(datum.year) == pYear && datum.sex == pSex" },
+
+    { "calculate": "toNumber(datum.students)", "as": "Students" },
+    { "calculate": "datum.state_name + '|' + datum.year + '|' + datum.affiliation + '|' + datum.sex", "as": "join_key" },
+
+    {
+      "lookup": "join_key",
+      "from": {
+        "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_aff_sex.csv" },
+        "key": "join_key",
+        "fields": ["arr_all"] 
+      }
+    },
+
+    { "calculate": "toNumber(datum.arr_all)", "as": "ARR" },
+    { "calculate": "datum.Students * (datum.ARR/100)", "as": "Retained" },
+
+    {
+      "joinaggregate": [
+        { "op": "sum", "field": "Retained", "as": "StateRetainedTotal" }
+      ],
+      "groupby": ["state_name"]
+    },
+    { "calculate": "datum.Retained / datum.StateRetainedTotal", "as": "ShareWithinState" }
+  ],
+
+  "layer": [
+    {
+      "mark": {"type": "bar", "stroke": "#ffffff", "strokeWidth": 1},
+      "encoding": {
+        "x": {
+          "field": "state_name", "type": "nominal", "title": "State/Territory",
+          "sort": ["NSW","Vic","Qld","SA","WA","Tas","NT","ACT"],
+          "axis": {"labelAngle": 0}
+        },
+        "y": {
+          "field": "Retained", "type": "quantitative", "stack": "normalize",
+          "title": "Share of retained students (100% = state total)"
+        },
+        "color": {
+          "field": "ARR", "type": "quantitative",
+          "title": "ARR (%)",
+          "scale": {"scheme": "blues"}
+        },
+        "order": {
+          "field": "affiliation", "type": "nominal"
+        },
+        "tooltip": [
+          {"field": "state_name", "title": "State"},
+          {"field": "affiliation", "title": "Sector"},
+          {"field": "ARR", "title": "ARR (%)", "format": ".1f"},
+          {"field": "Retained", "title": "Estimated retained", "format": ","},
+          {"field": "ShareWithinState", "title": "Share of state retained", "format": ".0%"},
+          {"field": "Students", "title": "Year 12 students", "format": ","}
+        ]
+      }
+    },
+
+    {
+      "transform": [
+        { "filter": "datum.ShareWithinState >= 0.12" },
+        {
+          "stack": "Retained",
+          "groupby": ["state_name"],
+          "sort": [{"field": "affiliation"}],
+          "offset": "normalize",
+          "as": ["y0", "y1"]
+        },
+        { "calculate": "(datum.y0 + datum.y1) / 2", "as": "yMid" },
+        { "calculate": "datum.affiliation", "as": "sectorLabel" }
+      ],
+      "mark": {"type": "text", "baseline": "middle", "align": "center", "fontSize": 11, "fill": "#111"},
+      "encoding": {
+        "x": {"field": "state_name", "type": "nominal"},
+        "y": {"field": "yMid", "type": "quantitative"},
+        "text": {"field": "sectorLabel"}
+      }
+    }
+  ],
+
+  "config": {
+    "axis": {"grid": false},
+    "legend": {"orient": "right"}
+  }
+}

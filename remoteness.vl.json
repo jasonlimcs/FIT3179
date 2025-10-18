@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 720,
   "height": 360,
-  "title": { "text": "ARR by ASGS Remoteness (Weighted by Students FTE) - 2024", "fontSize": 18 },
+  "title": { "text": "ARR by Remoteness Area (2024)", "fontSize": 18 },
 
   "data": {
     "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/remoteness.csv"
@@ -55,7 +55,7 @@
     },
 
     {
-      "mark": { "type": "rule", "strokeWidth": 3, "opacity": 0.7 },
+      "mark": { "type": "rule", "strokeWidth": 3, "opacity": 1 },
       "encoding": {
         "y": {
           "field": "remoteness", "type": "nominal", "title": null,
@@ -75,13 +75,13 @@
           { "field": "affiliation", "title": "Affiliation" },
           { "field": "ARR_weighted", "title": "ARR (weighted, %)", "format": ".1f" },
           { "field": "PopShareWithin", "title": "Share within remoteness", "format": ".0%" },
-          { "field": "sum_StudentsFTE", "title": "Students (FTE)", "format": "," }
+          { "field": "sum_StudentsFTE", "title": "Students (FTE)", "format": ".0f" }
         ]
       }
     },
 
     {
-      "mark": { "type": "point", "filled": true, "stroke": "#333", "strokeWidth": 0.5, "size": 100 },
+      "mark": { "type": "point", "filled": true, "stroke": "#333", "strokeWidth": 0, "size": 100, "opacity": 1},
       "encoding": {
         "y": {
           "field": "remoteness", "type": "nominal", "title": null,
@@ -95,12 +95,19 @@
           "type": "nominal",
           "title": "Affiliation",
           "scale": { "domain": ["Government", "Non-Government"], "range": ["#1f77b4", "#ff7f0e"] }
-        }
+        },
+        "tooltip": [
+          { "field": "remoteness", "title": "ASGS remoteness" },
+          { "field": "affiliation", "title": "Affiliation" },
+          { "field": "ARR_weighted", "title": "ARR (weighted, %)", "format": ".1f" },
+          { "field": "PopShareWithin", "title": "Share within remoteness", "format": ".0%" },
+          { "field": "sum_StudentsFTE", "title": "Students (FTE)", "format": ".0f" }
+        ]
       }
     },
 
     {
-      "mark": { "type": "text", "dx": 6, "align": "left", "fontSize": 11, "color": "#333" },
+      "mark": { "type": "text", "dx": 13, "align": "left", "fontSize": 11, "color": "#333" },
       "encoding": {
         "y": { "field": "remoteness", "type": "nominal",
           "sort": ["Major Cities", "Inner Regional", "Outer Regional", "Remote", "Very Remote"] },

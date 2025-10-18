@@ -20,7 +20,6 @@
 
     { "calculate": "toNumber(datum.students)", "as": "Students" },
     { "calculate": "datum.state_name + '|' + datum.year + '|' + datum.affiliation + '|' + datum.sex", "as": "join_key" },
-
     {
       "lookup": "join_key",
       "from": {
@@ -31,15 +30,18 @@
     },
 
     { "calculate": "toNumber(datum.arr_all)", "as": "ARR" },
-    { "calculate": "datum.Students * (datum.ARR/100)", "as": "Retained" },
+  { "calculate": "datum.Students * (datum.ARR/100)", "as": "Retained" },
 
     {
       "joinaggregate": [
-        { "op": "sum", "field": "Retained", "as": "StateRetainedTotal" }
+        { "op": "sum", "field": "Retained", "as": "StateRetainedTotal" },
+        { "op": "sum", "field": "Students", "as": "StateStudentsTotal" }
       ],
       "groupby": ["state_name"]
     },
-    { "calculate": "datum.Retained / datum.StateRetainedTotal", "as": "ShareWithinState" }
+    { "calculate": "datum.Retained / datum.StateRetainedTotal", "as": "ShareWithinState" },
+    { "calculate": "(datum.StateRetainedTotal / datum.StateStudentsTotal) * 100", "as": "StateARRPercent" },
+    { "calculate": "(datum.Retained / datum.StateStudentsTotal) * 100", "as": "ContributionPP" }
   ],
 
   "layer": [
@@ -52,8 +54,9 @@
           "axis": {"labelAngle": 0}
         },
         "y": {
-          "field": "Retained", "type": "quantitative", "stack": "normalize",
-          "title": "Share of retained students (100% = state total)"
+          "field": "ContributionPP", "type": "quantitative", "stack": "zero",
+          "title": "ARR (retained / total students, %)",
+          "scale": {"domain": [0, 100]}
         },
         "color": {
           "field": "ARR", "type": "quantitative",
@@ -68,6 +71,8 @@
           {"field": "affiliation", "title": "Sector"},
           {"field": "ARR", "title": "ARR (%)", "format": ".1f"},
           {"field": "Retained", "title": "Estimated retained", "format": ","},
+          {"field": "ContributionPP", "title": "Contribution to ARR (pp)", "format": ".2f"},
+          {"field": "StateARRPercent", "title": "State ARR (total, %)", "format": ".1f"},
           {"field": "ShareWithinState", "title": "Share of state retained", "format": ".0%"},
           {"field": "Students", "title": "Year 12 students", "format": ","}
         ]
@@ -78,10 +83,10 @@
       "transform": [
         { "filter": "datum.ShareWithinState >= 0.12" },
         {
-          "stack": "Retained",
+          "stack": "ContributionPP",
           "groupby": ["state_name"],
           "sort": [{"field": "affiliation"}],
-          "offset": "normalize",
+          "offset": "zero",
           "as": ["y0", "y1"]
         },
         { "calculate": "(datum.y0 + datum.y1) / 2", "as": "yMid" },

@@ -91,6 +91,29 @@
         }
         .caption { font-size: 13px; color: var(--muted); margin-top: var(--space-2); }
 
+        /* Footer */
+        footer {
+            margin-top: var(--space-1);
+            padding-top: var(--space-5);
+            border-top: 1px solid var(--border);
+            color: #374151;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            gap: var(--space-5);
+        }
+        .footer-item label {
+            display: block; 
+            font-size: 12px;
+            color: var(--muted);
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            margin-top: 10px;
+        }
+        .footer-item .value { min-height: 20px; }
+
         /* Center embeds and controls */
         .center-embed { display: flex; justify-content: center; }
         .vega-embed { margin: 0 auto; }
@@ -174,7 +197,11 @@
             <div class="section-grid">
                 <div class="section-text"  style="text-align: right;">
                     <h2>ARR by Remoteness</h2>
-                    <p>In 2024, ARR varies significantly by remoteness area, with major cities generally having higher retention rates compared to very remote areas. Understanding these differences is crucial for targeted interventions.</p>
+                    <p>In 2024, ARR varies significantly by remoteness area, with very remote areas surprisingly having the highest Apparent Retention Rates while inner regional areas have the lowest.
+                        Very remote areas also have the lowest share of students in non-government schools (12%) while major cities have the highest (38%).
+                    </p>
+                    <p>Additionally, Non-government schools tend to have higher ARR in all areas compared to their Government counterparts.</p>
+                    <p>These trends highlight the need for tailored support strategies that consider the unique challenges faced by schools in different remoteness categories.</p>
                 </div>
                 <div class="section-vis">
                     <div id="remoteness"></div>
@@ -184,14 +211,41 @@
 
         <section>
             <h2 class="center">Who contributes most to retention?</h2>
-            <p class="center wide">The final visualisation below shows the contribution of different school sectors (Government, Catholic, Independent) to overall retention rates across remoteness areas in 2024.
-            Notably, Government schools contribute the most to retention in remote and very remote areas, while Catholic and Independent schools have a stronger presence in major cities and inner regional areas.
+            <p class="center wide">The visualisation below shows the contribution of different school sectors (Government, Catholic, Independent) to overall share of retained students across different states/territories in 2024.
+            Notably, Government schools supply the largest share of retained students, even when ARR is lower than other sectors most of the time. This underscores the significant role Government schools play in national retention outcomes.
+            
+            </p>
+
+            <p class="center wide">Catholic often delivers mid-to-high ARR with a moderate share; Independent tends to have high ARR but a smaller share.
+                Female students also generally have higher retention rates across all sectors especially in Government schools compared to male students.
             </p>
             <div class="center-embed">
                 <div id="stacked-bar-chart"></div>
             </div>
         </section>
 
+    </div>
+
+    <div class="page">
+        <footer>
+            <div">
+                <div class="footer-item">
+                    <label>Author</label>
+                    <div class="value">Jason Lim</div>
+                </div>
+                <div class="footer-item">
+                    <label>Date</label>
+                    <div class="value">19/10/2025</div>
+                </div>
+                <div class="footer-item">
+                    <label>Data Sources</label>
+                    <div class="value">
+                        Australian Bureau of Statistics (ABS) - https://www.abs.gov.au/statistics/people/education/schools/2024<br>
+                        Australian Curriculum, Assessment and Reporting Authority (ACARA) - https://www.acara.edu.au/reporting/national-report-on-schooling-in-australia
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
 </body>

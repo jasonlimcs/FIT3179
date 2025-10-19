@@ -2,7 +2,14 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 900,
   "height": 420,
-  "title": {"text": "Retention Contribution by School Sector", "fontSize": 18},
+  "title": {"text": "Retention Contribution by School Sector",
+            "fontSize": 18,
+            "subtitle": "Within each state, segment size shows each sector's share of retained students (estimated from enrolments x ARR). Segment color shows that sector's ARR.",
+            "subtitleFont": "Fraunces",
+            "subtitleFontSize": 12,
+            "subtitlePadding": 6,
+            "subtitleColor": "#555"
+          },
 
   "params": [
     { "name": "pYear", "value": 2024,

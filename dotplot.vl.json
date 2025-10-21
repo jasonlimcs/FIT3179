@@ -48,6 +48,9 @@
         ]
     },
     {
+      "data": {
+        "values": [{ }]
+      },
       "mark": {
         "type": "text",
         "align": "left",

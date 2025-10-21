@@ -119,6 +119,9 @@
     },
 
     {
+      "data": {
+        "values": [{ }]
+      },
       "mark": {
         "type": "text",
         "align": "right",

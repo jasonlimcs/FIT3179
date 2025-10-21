@@ -171,7 +171,9 @@
               "field": "state_name",
               "type": "nominal",
               "title": "Click legend to focus",
-              "legend": { "orient": "right" }
+              "legend": {
+                "orient": "right"
+              }
             },
             "opacity": { "condition": { "param": "stateSel", "empty": true, "value": 1 }, "value": 0.2 },
             "size": { "condition": { "param": "stateSel", "empty": true, "value": 2 }, "value": 1 },
@@ -270,6 +272,25 @@
           "data": { "values": [{ "YearNum": 2020 }] },
           "mark": { "type": "rule", "stroke": "black", "strokeDash": [3, 3] },
           "encoding": { "x": { "field": "YearNum", "type": "quantitative" } }
+        },
+
+        {
+          "data": { "values": [{ "YearNum": 2024, "label": "Slight drop in retention rates\n post COVID-19, recovering in 2024" }] },
+          "mark": {
+            "type": "text",
+            "fontSize": 11,
+            "align": "left",
+            "baseline": "top",
+            "dx": 30,
+            "dy": 15,
+            "color": "black",
+            "lineBreak": "\n"
+          },
+          "encoding": {
+            "x": { "value": 550 },
+            "y": { "value": 0 },
+            "text": { "field": "label" }
+          }
         }
       ]
     }

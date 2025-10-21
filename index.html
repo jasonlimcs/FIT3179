@@ -98,11 +98,14 @@
 
         /* Emphasis utilities for takeaways and stats */
         .takeaway {
-            display: inline-block;
+            display: inline;                  /* inline so it sits within a paragraph */
             font-weight: 700;
             background: var(--accent-soft);
-            padding: 2px 8px;
+            padding: 2px 8px;                 /* smaller padding to look good on wrapped lines */
             border-radius: 8px;
+            box-decoration-break: clone;      /* apply bg/padding per wrapped line */
+            -webkit-box-decoration-break: clone;
+            white-space: normal;              /* allow wrapping if long */
         }
         .stat { font-weight: 700; }
         .stat--accent { color: var(--accent); }
@@ -227,7 +230,7 @@
         <section>
             <h2 class="center">Who contributes most to retention?</h2>
             <p class="center wide">The visualisation below shows the contribution of different school sectors (Government, Catholic, Independent) to overall share of retained students across different states/territories in 2024.
-            <span class="takeaway">Government schools supply the largest share of retained students</span>, even when ARR is lower than other sectors most of the time. This underscores the significant role Government schools play in national retention outcomes.
+            <span class="takeaway">Government schools supply the largest share of retained students</span>, even when ARR is lower than other sectors most of the time. This highlights the significant role Government schools play in national retention outcomes.
             
             </p>
 

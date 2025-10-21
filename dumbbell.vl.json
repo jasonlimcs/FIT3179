@@ -1,10 +1,15 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 350,
+  "width": 330,
   "height": 300,
   "title": {
     "text": "Indigenous vs Non-Indigenous ARR by State (2024)",
-    "fontSize": 18
+    "fontSize": 18,
+    "subtitle": "Line length shows the retention gap between groups, and dots mark each group's ARR.",
+    "subtitleFont": "Fraunces",
+    "subtitleFontSize": 12,
+    "subtitlePadding": 6,
+    "subtitleColor": "#555"
   },
   "config": {
     "axisX": { "grid": false }
@@ -29,7 +34,7 @@
       ],
       "encoding": {
         "y": { "field": "state_name", "type": "nominal", "sort": { "field": "Gap", "order": "descending" }},
-        "x": { "field": "ArrInd", "type": "quantitative", "title": "Capped ARR (%)", "scale": { "zero": false} },
+        "x": { "field": "ArrInd", "type": "quantitative", "title": "ARR (%)", "scale": { "zero": false} },
         "x2": { "field": "ArrNonInd" },
         "opacity": { "condition": { "param": "stateSelGap", "value": 1 }, "value": 0.35 },
         "tooltip": [

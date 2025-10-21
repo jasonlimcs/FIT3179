@@ -57,11 +57,14 @@
         "text": "Apparent Retention Rates (ARR) in Australia by State, 2011-2024",
         "anchor": "middle",
         "fontSize": 18,
-        "font": "sans-serif",
         "subtitle": "Use the filters below to explore the data based on cohort, sector, sex and aboriginal status.",
         "subtitleFontSize": 12,
         "subtitleColor": "#555",
-        "subtitlePadding": 6
+        "subtitlePadding": 6,
+        "subtitleFont": "Fraunces"
+      },
+      "projection": {
+        "type": "mercator"
       },
       "layer": [
         {
@@ -100,7 +103,7 @@
             "color": {
               "field": "ARR_Avg",
               "type": "quantitative",
-              "title": "Average ARR (%)",
+              "title": "ARR (%)",
               "scale": { "scheme": "blues" }
             },
             "stroke": { "value": "#333" },
@@ -112,9 +115,9 @@
         },
         {
           "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/state_labels.csv" },
-          "transform": [
+            "transform": [
             { "filter": "datum.STE_NAME16 != 'Other Territories'" },
-            { "filter": "datum.STE_NAME16 != 'Australian Capital Territory'" }
+            { "calculate": "datum.STE_NAME16 === 'Australian Capital Territory' ? 'ACT' : datum.STE_NAME16", "as": "STE_NAME16" }
           ],
           "mark": { "type": "text", "fontSize": 12, "color": "black", "fontWeight": "bold" },
           "encoding": {
@@ -136,7 +139,8 @@
         "subtitle": "Use this line chart to filter out the data based on year",
         "subtitleFontSize": 12,
         "subtitleColor": "#555",
-        "subtitlePadding": 6
+        "subtitlePadding": 6,
+        "subtitleFont": "Fraunces"
       },
       "layer": [
         {
@@ -162,7 +166,7 @@
           "mark": { "type": "line", "strokeWidth": 1 },
           "encoding": {
             "x": { "field": "YearNum", "type": "quantitative", "title": "Year", "scale": { "nice": false }, "axis": { "format": "d" } },
-            "y": { "field": "ARR", "type": "quantitative", "title": "Retention rate (%)", "scale": { "zero": false} },
+            "y": { "field": "ARR", "type": "quantitative", "title": "ARR (%)", "scale": { "zero": false} },
             "color": {
               "field": "state_name",
               "type": "nominal",
@@ -195,7 +199,7 @@
           "mark": { "type": "line", "strokeWidth": 2 },
           "encoding": {
             "x": { "field": "YearNum", "type": "quantitative", "title": "Year", "scale": { "nice": false }, "axis": { "format": "d" } },
-            "y": { "field": "ARR", "type": "quantitative", "title": "Retention rate (%)" },
+            "y": { "field": "ARR", "type": "quantitative", "title": "ARR (%)" },
             "color": { "field": "state_name", "type": "nominal"},
             "opacity": {
               "condition": [

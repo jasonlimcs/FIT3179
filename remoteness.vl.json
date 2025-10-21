@@ -1,0 +1,144 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 350,
+  "height": 300,
+  "title": {
+    "text": "ARR by Remoteness Area (2024)",
+    "fontSize": 18,
+    "subtitle": ["Weighted ARR by ASGS remoteness; dot size shows each sector's share",
+                 "of students within that remoteness band."],
+    "subtitleFont": "Fraunces",
+    "subtitleFontSize": 12,
+    "subtitlePadding": 6,
+    "subtitleColor": "#555"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/remoteness.csv"
+  },
+
+  "transform": [
+    { "filter": "toNumber(datum.year) == 2024" },
+
+    { "calculate": "datum.state_name + '|' + datum.year + '|' + datum.affiliation", "as": "join_key" },
+    {
+      "lookup": "join_key",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/abs_arr_remoteness_2024.csv"
+        },
+        "key": "join_key",
+        "fields": ["arr_all"]
+      }
+    },
+
+    { "calculate": "toNumber(datum.arr_all)", "as": "ARR_state_proxy" },
+    { "calculate": "toNumber(datum.students_fte)", "as": "StudentsFTE" },
+    { "calculate": "datum.ARR_state_proxy * datum.StudentsFTE", "as": "wARR" },
+
+    {
+      "aggregate": [
+        { "op": "sum", "field": "wARR", "as": "sum_wARR" },
+        { "op": "sum", "field": "StudentsFTE", "as": "sum_StudentsFTE" }
+      ],
+      "groupby": ["remoteness", "affiliation"]
+    },
+    { "calculate": "datum.sum_wARR / datum.sum_StudentsFTE", "as": "ARR_weighted" },
+
+    {
+      "joinaggregate": [
+        { "op": "sum", "field": "sum_StudentsFTE", "as": "RowStudentsFTE" }
+      ],
+      "groupby": ["remoteness"]
+    },
+    { "calculate": "datum.sum_StudentsFTE / datum.RowStudentsFTE", "as": "PopShareWithin" }
+  ],
+
+  "layer": [
+    {
+      "mark": { "type": "rule", "strokeWidth": 3, "opacity": 1 },
+      "encoding": {
+        "y": {
+          "field": "remoteness", "type": "nominal", "title": null,
+          "sort": ["Major Cities", "Inner Regional", "Outer Regional", "Remote", "Very Remote"]
+        },
+        "yOffset": { "field": "affiliation" },              
+        "x": { "field": "ARR_weighted", "type": "quantitative"},
+        "x2": { "value": 0 },
+        "color": {
+          "field": "affiliation",
+          "type": "nominal",
+          "title": "Affiliation",
+          "scale": { "domain": ["Government", "Non-Government"], "range": ["#1f77b4", "#ff7f0e"] }
+        },
+        "tooltip": [
+          { "field": "remoteness", "title": "ASGS remoteness" },
+          { "field": "affiliation", "title": "Affiliation" },
+          { "field": "ARR_weighted", "title": "ARR (%)", "format": ".1f" },
+          { "field": "PopShareWithin", "title": "Share within area", "format": ".0%" },
+          { "field": "sum_StudentsFTE", "title": "Students (FTE)", "format": ".0f" }
+        ]
+      }
+    },
+
+    {
+      "mark": { "type": "point", "filled": true, "stroke": "#333", "strokeWidth": 0, "size": 100, "opacity": 1},
+      "encoding": {
+        "y": {
+          "field": "remoteness", "type": "nominal", "title": null,
+          "sort": ["Major Cities", "Inner Regional", "Outer Regional", "Remote", "Very Remote"]
+        },
+        "yOffset": { "field": "affiliation" }, 
+        "x": { "field": "ARR_weighted", "type": "quantitative", "title": "ARR (%)", "axis": { "grid": false } },
+        "size": { "field": "PopShareWithin", "type": "quantitative", "title": "Share within area", "scale": { "range": [70, 450] } },
+        "color": {
+          "field": "affiliation",
+          "type": "nominal",
+          "title": "Affiliation",
+          "scale": { "domain": ["Government", "Non-Government"], "range": ["#1f77b4", "#ff7f0e"] }
+        },
+        "tooltip": [
+          { "field": "remoteness", "title": "ASGS remoteness" },
+          { "field": "affiliation", "title": "Affiliation" },
+          { "field": "ARR_weighted", "title": "ARR (%)", "format": ".1f" },
+          { "field": "PopShareWithin", "title": "Share within area", "format": ".0%" },
+          { "field": "sum_StudentsFTE", "title": "Students (FTE)", "format": ".0f" }
+        ]
+      }
+    },
+
+    {
+      "mark": { "type": "text", "dx": 12, "align": "left", "fontSize": 12, "color": "#333" },
+      "encoding": {
+        "y": { "field": "remoteness", "type": "nominal",
+          "sort": ["Major Cities", "Inner Regional", "Outer Regional", "Remote", "Very Remote"] },
+        "yOffset": { "field": "affiliation" },
+        "x": { "field": "ARR_weighted", "type": "quantitative" },
+        "text": { "field": "ARR_weighted", "type": "quantitative", "format": ".1f" }
+      }
+    },
+
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": 50,
+        "dy": 30,
+        "fontSize": 11,
+        "color": "black",
+        "lineBreak": "\n",
+        "lineHeight": 14
+      },
+      "encoding": {
+        "x": { "datum": 85.7 },
+        "y": { "datum": "Very Remote" },
+        "text": { "value": "Very Remote Non-Government schools have\n the highest ARR (85.7%)" }
+      }
+    }
+  ],
+
+  "config": {
+    "axisY": { "labelPadding": 6 },
+    "legend": { "orient": "right" }
+  }
+}

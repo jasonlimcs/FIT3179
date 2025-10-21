@@ -4,9 +4,12 @@
   "height": 250,
   "title": { "text": "ARR vs Student-Teacher Ratio by State (2024)", 
   "subtitle": "Hover over the points to highlight specific States/Territories",
-  "subtitleColor": "gray",
+  "subtitleColor": "#555",
   "subtitlePadding": 10,
-  "fontSize": 18 },
+  "fontSize": 18,
+  "subtitleFontSize": 12,
+  "subtitleFont": "Fraunces"
+},
 
   "data": { "url": "https://raw.githubusercontent.com/jasonlimcs/FIT3179/main/DataVis2/dotplot.csv" },
 
@@ -23,7 +26,7 @@
         },
         "y": {
           "field": "arr", "type": "quantitative",
-          "title": "Apparent Retention Rate (ARR)",
+          "title": "ARR (%)",
           "scale": { "zero": false }
         },
         "color": { "field": "state", "type": "nominal", "title": "State", "legend": { "orient": "right" } },
@@ -51,15 +54,13 @@
         "baseline": "bottom",
         "dx": 5,
         "dy": -5,
-        "fontSize": 10,
-        "fontStyle": "italic",
-        "color": "#555",
-        "font": "sans-serif"
+        "fontSize": 11,
+        "lineBreak": "\n"
       },
       "encoding": {
         "x": { "value": 200 },
         "y": { "value": 220 },
-        "text": { "value": "ACT has low ARR and student-teacher ratio across all years" }
+        "text": { "value": "NT has low ARR and student-teacher ratio\n across all years" }
       }
     }
   ],

@@ -22,6 +22,12 @@
             --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
             --bg: #f0f2f5; --card: #ffffff; --panel: #f7f8fa; --muted: #6b7280;
             --ink: #111827; --accent: #2185b8; --border: #e5e7eb;
+            /* Emphasis palette */
+            --accent-soft: #e8f4fb;
+            --pos: #0e9f6e;      /* positive/up */
+            --pos-soft: #e9f9f2;
+            --neg: #dc2626;      /* negative/down */
+            --neg-soft: #fdecec;
         }
         * { box-sizing: border-box; }
         body {
@@ -90,6 +96,20 @@
         }
         .caption { font-size: 13px; color: var(--muted); margin-top: var(--space-2); }
 
+        /* Emphasis utilities for takeaways and stats */
+        .takeaway {
+            display: inline-block;
+            font-weight: 700;
+            background: var(--accent-soft);
+            padding: 2px 8px;
+            border-radius: 8px;
+        }
+        .stat { font-weight: 700; }
+        .stat--accent { color: var(--accent); }
+        .stat--up { color: var(--pos); }
+        .stat--down { color: var(--neg); }
+        .hl { font-weight: 700; color: var(--accent); }
+
         footer {
             margin-top: var(--space-1);
             padding-top: var(--space-5);
@@ -145,15 +165,15 @@
     <div class="page">
         <div class="header">
             <h1>Patterns in School Retention Across <span style="color: var(--accent)">Australia</span></h1>
-            <p class="lead">The apparent retention rate (ARR) estimates the share of a starting cohort (e.g., Year 7/8 or Year 10) that remains enrolled in a later target year (e.g., Year 12). Using ABS and ACARA data, this visualisation explores retention patterns (primarily secondary level) across Australia and factors that relate to them.</p>
+            <p class="lead">The <span style="font-weight: bold;">apparent retention rate (ARR)</span> estimates the share of a starting cohort (e.g., Year 7/8 or Year 10) that remains enrolled in a later target year (e.g., Year 12). Using ABS and ACARA data, this visualisation explores retention patterns (primarily secondary level) across Australia and factors that relate to them.</p>
         </div>
 
         <!-- Section: Map -->
         <section>
             <h2 class="center">Where Retention Is Strongest</h2>
             <p class="center wide">The chloropleth map below shows the Apparent Retention Rates of different states/territories in Australia from 2011 to 2024. 
-            The data shows that there is a 0.23% increase in overall ARR from 2011 to 2024 across all states, with Australian Capital Territory and South Australia having the highest ARR and Northern Territory having the lowest.
-            The ARR trend has started to decline in all states after 2020 possibly due to COVID-19 pandemic disruptions to schooling.</p>
+            The data shows that there is a <span style="font-weight: bold;">0.23% increase</span> in overall ARR from 2011 to 2024 across all states, with <span class="hl">Australian Capital Territory</span> and <span style="font-weight: bold; color: #0e9f6e;">South Australia</span> having the highest ARR and <span class="stat stat--down">Northern Territory</span> having the lowest.
+            The ARR trend has <span style="font-weight: bold;">started to decline</span> in all states after 2020, possibly due to COVID-19 pandemic disruptions to schooling.</p>
             <div class="center-embed">
                 <div id="map"></div>
             </div>
@@ -164,8 +184,8 @@
             <div class="section-grid">
                 <div class="section-text"  style="text-align: right;">
                     <h2>ARR vs Student-Teacher Ratio</h2>
-                    <p>Aside from the ACT, schools with lower ratios (around 9-11 students per teacher) often have higher retention (80-100%), while higher ratios (12-14) tend to correspond with lower ARR (below 70%). However, some high-ratio schools still achieve strong retention.</p>
-                    <p>Independent schools generally exhibit lower student-teacher ratios, while Government and Catholic schools tend to be higher. <span style="font-weight: bold;">Hover the chart to compare by state.</span></p>
+                    <p><span class="takeaway">Lower student-teacher ratios tend to support higher retention.</span> Aside from the ACT, schools with lower ratios (around <span class="stat stat--up">9&ndash;11</span> students per teacher) often have <span class="stat stat--up">higher retention (80&ndash;100%)</span>, while higher ratios (<span class="stat stat--down">12&ndash;14</span>) tend to correspond with <span class="stat stat--down">lower ARR (below 70%)</span>. However, some high-ratio schools still achieve strong retention.</p>
+                    <p><span style="font-weight: bold;">Independent</span> schools generally exhibit lower student-teacher ratios, while <span style="font-weight: bold;">Government</span> and <span style="font-weight: bold;">Catholic</span> schools tend to be higher. <span style="font-weight: bold;">Hover the chart to compare by state.</span></p>
                 </div>
                 <div class="section-vis">
                     <div id="dotplot"></div>
@@ -182,7 +202,7 @@
                 </div>
                 <div class="section-text">
                     <h2>Indigenous and Non-Indigenous</h2>
-                    <p>In 2024, ARR remains notably lower for Indigenous students across most states. Gaps are smallest in Tasmania and the ACT, but there remain states with much larger differences, particularly in NSW and the NT.</p>
+                    <p>In 2024, <span class="takeaway">ARR remains notably lower for <span style="color: #9467bd;">Indigenous students</span> across most states.</span> Gaps are smallest in <span style="font-weight: bold;">Tasmania</span> and the <span style="font-weight: bold;">ACT</span>, but there remain states with <span class="stat stat--down">much larger differences</span>, particularly in <span style="font-weight: bold;">NSW</span> and the <span style="font-weight: bold;">NT</span>.</p>
                     <p>Understanding and addressing structural barriers such as access, resourcing, and community support are key to improving retention outcomes.</p>
                 </div>
             </div>
@@ -193,10 +213,9 @@
             <div class="section-grid">
                 <div class="section-text"  style="text-align: right;">
                     <h2>ARR by Remoteness</h2>
-                    <p>In 2024, ARR varies significantly by remoteness area, with very remote areas surprisingly having the highest Apparent Retention Rates while inner regional areas have the lowest.
-                        Very remote areas also have the lowest share of students in non-government schools (12%) while major cities have the highest (38%).
-                    </p>
-                    <p>Additionally, Non-government schools tend to have higher ARR in all areas compared to their Government counterparts.</p>
+                    <p>In 2024, ARR varies significantly by remoteness area, with <span class="stat stat--up">Very Remote areas</span> having the <span class="stat stat--up">highest</span> Apparent Retention Rates while <span class="stat stat--down">inner regional</span> areas have the <span class="stat stat--down">lowest</span>.</p>
+                    <p>Very remote areas also have the <span class="stat stat--down">lowest share</span> of students in non-government schools (<span class="stat stat--down">12%</span>) while major cities have the <span class="stat stat--up">highest</span> (<span class="stat stat--up">38%</span>).</p>
+                    <p><span class="takeaway"><span style="color: #ff7f0e">Non-government </span>schools tend to have higher ARR in all areas</span> compared to their <span style="color: #1f77b4; font-weight: bold;">Government</span> counterparts.</p>
                     <p>These trends highlight the need for tailored support strategies that consider the unique challenges faced by schools in different remoteness categories.</p>
                 </div>
                 <div class="section-vis">
@@ -208,12 +227,12 @@
         <section>
             <h2 class="center">Who contributes most to retention?</h2>
             <p class="center wide">The visualisation below shows the contribution of different school sectors (Government, Catholic, Independent) to overall share of retained students across different states/territories in 2024.
-            Notably, Government schools supply the largest share of retained students, even when ARR is lower than other sectors most of the time. This underscores the significant role Government schools play in national retention outcomes.
+            <span class="takeaway">Government schools supply the largest share of retained students</span>, even when ARR is lower than other sectors most of the time. This underscores the significant role Government schools play in national retention outcomes.
             
             </p>
 
-            <p class="center wide">Catholic often delivers mid-to-high ARR with a moderate share; Independent tends to have high ARR but a smaller share.
-                Female students also generally have higher retention rates across all sectors especially in Government schools compared to male students.
+            <p class="center wide"><span style="font-weight: bold;">Catholic</span> often delivers mid-to-high ARR with a moderate share; <span style="font-weight: bold;">Independent</span> tends to have high ARR but a smaller share.
+                <span style="font-weight: bold;">Female students</span> also generally have <span style="font-weight: bold;">higher retention rates</span> across all sectors, especially in Government schools, compared to male students.
             </p>
             <div class="center-embed">
                 <div id="stacked-bar-chart"></div>
@@ -224,7 +243,7 @@
 
     <div class="page">
         <footer>
-            <div">
+            <div>
                 <div class="footer-item">
                     <label>Author</label>
                     <div class="value">Jason Lim</div>

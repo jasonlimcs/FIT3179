@@ -1,6 +1,8 @@
-// Shared embed options: apply Fraunces to all chart titles
+// Shared embed options: apply Fraunces to all chart titles and force SVG renderer for reliable interactivity
 const embedOptions = {
     actions: false,
+    renderer: 'svg',
+    hover: true,
     config: {
         title: { font: 'Fraunces' }
     }

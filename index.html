@@ -137,6 +137,11 @@
 
         .center-embed { display: flex; justify-content: center; }
         .vega-embed { margin: 0 auto; }
+        /* Ensure legends are clickable in embedded charts */
+        .vega-embed .role-legend,
+        .vega-embed .mark-legend-entry,
+        .vega-embed .mark-legend-symbol,
+        .vega-embed .mark-legend-label { pointer-events: all; cursor: pointer; }
         #filters, .filters, #controls, .controls {
             display: flex; justify-content: center; align-items: center;
             gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-3);

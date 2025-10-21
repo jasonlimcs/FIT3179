@@ -63,6 +63,9 @@
         "subtitlePadding": 6,
         "subtitleFont": "Fraunces"
       },
+      "projection": {
+        "type": "mercator"
+      },
       "layer": [
         {
           "data": {

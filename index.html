@@ -26,7 +26,7 @@
         * { box-sizing: border-box; }
         body {
             margin: 0;
-            font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             color: var(--ink);
             line-height: 1.7;
             background-color: var(--bg);
@@ -72,7 +72,6 @@
         }
         .lead { font-size: 18px; color: #374151; max-width: 80ch; margin: 0 auto; }
 
-        /* Section layout */
         section { margin: var(--space-7) 0; }
         .section-grid {
             display: grid;
@@ -91,7 +90,6 @@
         }
         .caption { font-size: 13px; color: var(--muted); margin-top: var(--space-2); }
 
-        /* Footer */
         footer {
             margin-top: var(--space-1);
             padding-top: var(--space-5);
@@ -114,7 +112,6 @@
         }
         .footer-item .value { min-height: 20px; }
 
-        /* Center embeds and controls */
         .center-embed { display: flex; justify-content: center; }
         .vega-embed { margin: 0 auto; }
         #filters, .filters, #controls, .controls {
@@ -122,13 +119,12 @@
             gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-3);
         }
 
-        /* Responsive */
         @media (max-width: 900px){
             .section-grid { grid-template-columns: 1fr; }
             .section-text { order: 1; }
             .section-vis { order: 2; }
         }
-        /* Center Vega-Lite bindings for map and widen text */
+
         #map .vega-embed { margin: 0 auto; }
         #map .vega-bindings { display: flex; justify-content: center; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
         #map .vega-bindings label { margin-right: var(--space-1); color: #374151; }
@@ -152,7 +148,7 @@
             <p class="lead">The apparent retention rate (ARR) estimates the share of a starting cohort (e.g., Year 7/8 or Year 10) that remains enrolled in a later target year (e.g., Year 12). Using ABS and ACARA data, this visualisation explores retention patterns (primarily secondary level) across Australia and factors that relate to them.</p>
         </div>
 
-        <!-- Section: Map (full width) -->
+        <!-- Section: Map -->
         <section>
             <h2 class="center">Where Retention Is Strongest</h2>
             <p class="center wide">The chloropleth map below shows the Apparent Retention Rates of different states/territories in Australia from 2011 to 2024. 
